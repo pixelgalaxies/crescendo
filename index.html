@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="crescendo.css">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<title>Crescendo - A flexbox grid framework</title>
+</head>
+
+<body>
+	
+	<nav class="nav-wrapper end">
+		<ul class="nav-list">
+			<li><a href="#grid" class="nav-item">The Grid</a></li>
+			<li><a href="#buttons" class="nav-item">Buttons</a></li>
+			<li><a href="#jumbotron" class="nav-item">Jumbotrons</a></li>
+			<li><a href="#extras" class="nav-item">Extras</a></li>
+		</ul>
+	</nav>
+	
+	<div id="home" class="jumbo true-center">
+		<h1 class="">Crescendo</h1>
+		<p>A mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox.</p>
+		<a id="gitIcon" href="https://github.com/pixelgalaxies/crescendo"><img src="images/github-icon.png"></a>
+	</div>
+	
+	<div id="grid" class="grid">
+		<div class="row">
+			<div class=" col-10">
+				<h1>The Grid</h1>
+				<p>Padding and color were added to each column to show how the grid will look.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" col-grid col-10 center">
+				col-10
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-9 center">
+				col-9
+			</div>
+			
+			<div class="col-grid col-1 center">
+				col-1
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-8 center">
+				col-8
+			</div>
+			
+			<div class="col-grid col-2 center">
+				col-2
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-7 center">
+				col-7
+			</div>
+			
+			<div class="col-grid col-3 center">
+				col-3
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-6 center">
+				col-6
+			</div>
+			
+			<div class="col-grid col-4 center">
+				col-4
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-5 center">
+				col-5
+			</div>
+			
+			<div class="col-grid col-5 center">
+				col-5
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-third center">
+				col-third
+			</div>
+			<div class="col-grid col-third center">
+				col-third
+			</div>
+			<div class="col-grid col-third center">
+				col-third
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-fourth center">
+				col-fourth
+			</div>
+			<div class="col-grid col-fourth center">
+				col-fourth
+			</div>
+			<div class="col-grid col-fourth center">
+				col-fourth
+			</div>
+			<div class="col-grid col-fourth center">
+				col-fourth
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+			<div class="col-grid col-sixth center">
+				col-sixth
+			</div>
+		</div>
+	</div> <!-- Closes grid -->
+	
+	<div id="buttons" class="grid">
+		<div class="row">
+			<div class="col-10">
+				<h1>Buttons</h1>
+				<p>There are three button styles that each have unique propeties. More will be added in future versions of Crescendo.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-third left">
+				<h4>Ghost Button</h4>
+				<a class="btn ghost-btn" href="">Anchor</a>
+				<input type="button" class="btn ghost-btn" value="Input">
+				<button class="btn ghost-btn">Button</button>
+			</div>
+			
+			<div class="col-third left">
+				<h4>Ghost Button Dark</h4>
+				<a class="btn ghost-dark-btn" href="">Anchor</a>
+				<input type="button" class="btn ghost-dark-btn" value="Input">
+				<button class="btn ghost-dark-btn">Button</button>
+			</div>
+			
+			<div class="col-third left">
+				<h4>Default Button</h4>
+				<a class="btn default-btn" href="">Anchor</a>
+				<input type="button" class="btn default-btn" value="Input">
+				<button class="btn default-btn">Button</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="jumbotron" class="jumbo true-center">
+		<h2>Jumbotrons</h2>
+	</div>
+	
+	<div id="jumbo-center" class="jumbo true-center">
+		<h4>class="jumbo true-center"</h4>
+	</div>
+	
+	<div id="jumbo-left" class="jumbo just-center left">
+		<h4>class="jumbo just-center left"</h4>
+	</div>
+	
+	<div id="jumbo-right" class="jumbo just-center right">
+		<h4>class="jumbo just-center right"</h4>
+	</div>
+	
+	<div id="extras" class="grid">
+		<div class="row start">
+			<div class="col-10 ">
+				<h1>Some Extra Grid Classes</h1>
+				<p>These are just a couple classes you may use in your grids, rows, and columns.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-5">
+				<h3>.inner-between</h3>
+				<p>Use this class in a new div placed inside a column.</p>
+				<div class="inner-between inner">
+					<img src="images/space1.jpg">
+					<img src="images/space3.jpg">
+					<img src="images/space4.jpg">
+					<img src="images/space2.jpg">
+				</div>
+			</div>
+			<div class="col-5">
+			<h3>.inner-around</h3>
+			<p>Use this class in a new div placed inside a column.</p>
+				<div class="inner-around inner">
+					<img src="images/space1.jpg">
+					<img src="images/space3.jpg">
+					<img src="images/space4.jpg">
+					<img src="images/space2.jpg">
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-third end">
+				<h5>This is the .end class.</h5>
+				<p>This class goes alongside your .col-* class. It will send all of your content to the bottom of the column.</p>
+			</div>
+			
+			<div class="col-third start">
+				<h5>This is the .start class.</h5>
+				<p>This class goes alongside your .col-* class. It will set all of your content to the top of the column.</p>
+			</div>
+			
+			<div class="col-third just-center">
+				<h5>This is the .just-center class.</h5>
+				<p>This class goes alongside your .col-* class. It will send all of your content to the middle of the column. </p>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-third right">
+				<h5>This is the .right class.</h5>
+				<p>This class goes alongside your .col-* class. It will align all of your content to the right of the column.</p>
+			</div>
+			
+			<div class="col-third left">
+				<h5>This is the .left class.</h5>
+				<p>This class goes alongside your .col-* class. It will align all of your content to the left of the column.</p>
+			</div>
+			
+			<div class="col-third center">
+				<h5>This is the .center class</h5>
+				<p>This class goes alongside your .col-* class. It will align all of your content to the center of the column.</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer>
+		<h6>Crescendo was created by<a href="www.dustinclark.info">Dustin Clark</a>&copy;2016</h6>
+		<a href=#home>Top</a>
+		<a href=#grid>Grid</a>
+		<a href=#buttons>Buttons</a>
+		<a href=#jumbotron>Jumbo</a>
+		<a href=#extras>Extras</a>
+	</footer>
+</body>
+</html>
