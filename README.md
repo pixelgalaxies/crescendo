@@ -2,6 +2,7 @@
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. Besides the grid, Crescendo features a few utility/ styling classes for things like jumbotrons and ghost buttons. 
 
 To use Crescendo, just include this link in your head tags: https://pixelgalaxies.github.io/crescendo/crescendo.css
+To a quick demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 
 ### Navigation classes:
 
