@@ -2,22 +2,29 @@
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. Besides the grid, Crescendo features a few utility/ styling classes for things like jumbotrons and ghost buttons. 
 
 
-### Navigation classes: 
+### Navigation classes:
+
 >#### .nav-wrapper
 >>This class goes in the nav tag or in a div tag. It will flex its children column-wise at mobile sizes and then into a row starting at 768px. Also at 768px, flex items are automatically separated equally across the navigation. 
+
 >#### .nav-fixed
 >>This class will make your navigation fixed to the top of the screen, but only at screen sizes of 768px or larger.
+
 >#### .nav-list
 >>This class goes in unordered list tags that are placed in the navigation bar. Like it’s wrapper, nav-list will flex its children in a column at mobile sizes and then into a row starting at screen sizes 768px wide.
+
 >#### .nav-item
 >>This class goes in the children of list item tags. Usually anchors.
+
 ### Grid classes:
+
 >#### .grid
 >> Width is set to 100% of the viewport. The grid flexes in a column with the content starting in the default position(flex-start).
+
 >#### .row
 >> Flex-basis is set to 100% to span the entire width of the grid. It will wrap columns if the wrong number of columns were used. justify-content: space-around is set to initialize the grid to have gutters.
->#### .col-*
 
+>#### .col-*
 >> Class syntax: col-1, col-9, col-10, etc. As long as the numbers add up to ten, the grid will work. If for some reason you put too few columns in a row, the columns will flex themselves horizontally to fill up the row. If you put too many, it will wrap into a new line, and flex the width of the viewport. Columns flex downward into a, you guessed it, column.
 
 >> As Crescendo was designed mobile-first, the columns’ widths will get bigger based on screen size. 
@@ -47,75 +54,62 @@
 >> .col-sixth will flex 1/6 or ~16%
 
 >#### .inner-between
-
 >> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid. Uses the justify-content: space-between css rule. 
 
 >#### .inner-around
-
 >> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column for content you may want to distribute equally across the span of a column, instead of making a whole new grid. Uses the justify-content: space-around css rule.
 
 ### Misc. Classes:
 
 >#### .btn
-
-This class can be used on button or anchor tags to give it Crescendo’s button styling and behavior. Padding is set to .5 rem.
+>>This class can be used on button or anchor tags to give it Crescendo’s button styling and behavior. Padding is set to .5 rem.
 
 >#### .ghost-btn 
 >> This class will style a button, input[type=‘button’], or anchor tag with a white border, white text, and take away the default background color. 
 
-.ghost-dark-btn
+>#### .ghost-dark-btn
+>> This class will style a button or anchor tag with a black border, black text, and take away the default background color. 
 
-This class will style a button or anchor tag with a black border, black text, and take away the default background color. 
+>#### .default-btn 
+>> This class will style a button or anchor tag light gray background color, a dark gray border, and darker gray text(almost black).
 
-.default-btn 
+>#### .jumbo
+>> This class when used in a div creates a jumbotron spanning the entire viewport. The jumbotron flexes it’s items into a column.
 
-This class will style a button or anchor tag light gray background color, a dark gray border, and darker gray text(almost black).
+>> h1 tags and p tags are sized to be bigger in a jumbotron div and will adjust depending on the size of the viewport. 
 
-
-.jumbo
-
-This class when used in a div creates a jumbotron spanning the entire viewport. The jumbotron flexes it’s items into a column.
-
-h1 tags and p tags are sized to be bigger in a jumbotron div and will adjust depending on the size of the viewport. 
-
-Additional styling of the jumbotron can of course be applied by the user. 
+>> Additional styling of the jumbotron can of course be applied by the user. 
 
 
-.true-center
+>#### .true-center
+>>Centers items vertically and horizontally.
 
-Centers items vertically and horizontally.
+>#### .center
+>> Aligns content to the center of a column.
 
-.center
+>#### .right 
+>> Aligns content to the right of a column.
 
-Aligns content to the center of a column.
+>#### .left
+>> Aligns content to the left of a column.
 
-.right 
+>#### .just-center
+>> Shifts content to the center of their flex box. Determined by flex-direction.
 
-Aligns content to the right of a column.
+>#### .start 
+>> Shifts content to the start of their flex box. Determined by flex-direction.
 
-.left
-
-Aligns content to the left of a column.
-
-.just-center
- Shifts content to the center of their flex box. Determined by flex-direction.
-
-.start 
-
-Shifts content to the start of their flex box. Determined by flex-direction.
-
-.end
-
-Shifts content to the end of their flex box. Determined by flex-direction.
+>#### .end
+>> Shifts content to the end of their flex box. Determined by flex-direction.
 
 
-Headers:
+###Headers:
 
-Headers take on alternate sizes in Crescendo. 
+>#### Headers take on alternate sizes in Crescendo. 
 
-h1: 2.5rem
-h2: 2.3rem
-h3: 2rem
-h4: 1.8rem
-h5: 1.6rem
-h6: 1.4rem
+>> h1: 2.5rem
+>> h2: 2.3rem
+>> h3: 2rem
+>> h4: 1.8rem
+>> h5: 1.6rem
+>> h6: 1.4rem
