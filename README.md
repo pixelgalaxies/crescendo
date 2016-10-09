@@ -34,24 +34,39 @@
 
 >> Medium Screens (768px):
 >> .col-10 will flex 100%
+
 >> .col-9 to .col-1 and .col-fourth will flex 50%
+
 >> .col-third and .col-sixth will flex ~33%
 
 >> Large Screens (1100px):
+
 >> .col-1will flex 10%
+
 >> .col-2 will flex 20%
+
 >> .col-3 will flex 30%
+
 >> .col-4 will flex 40%
+
 >> .col-5 will flex 50%
->> .col-6 will flex 50%
+
+>> .col-6 will flex 60%
+
 >> .col-7 will flex 70%
+
 >> .col-8 will flex 80%
+
 >> .col-9 will flex 90%
+
 >> .col-10 will flex 100% 
 
 >> .col-third will flex 1/3 or ~33%
+
 >> .col-fourth will flex 1/4 or 25%
+
 >> .col-sixth will flex 1/6 or ~16%
+
 
 >#### .inner-between
 >> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid. Uses the justify-content: space-between css rule. 
@@ -108,8 +123,13 @@
 >#### Headers take on alternate sizes in Crescendo. 
 
 >> h1: 2.5rem
+
 >> h2: 2.3rem
+
 >> h3: 2rem
+
 >> h4: 1.8rem
+
 >> h5: 1.6rem
+
 >> h6: 1.4rem
