@@ -3,7 +3,7 @@
 
 To use Crescendo, just include this link in your head tags: https://pixelgalaxies.github.io/crescendo/crescendo.css
 
-To a quick demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
+A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 
 ### Navigation classes:
 
