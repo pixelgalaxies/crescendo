@@ -3,7 +3,9 @@
 
 To use Crescendo, just paste this snippet into you head tags:
 
-`<link type="text/css" rel="stylesheet" href="https://pixelgalaxies.github.io/crescendo/crescendo.css">`
+```
+<link type="text/css" rel="stylesheet" href="https://pixelgalaxies.github.io/crescendo/crescendo.css">
+```
 
 A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 
@@ -19,24 +21,53 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 >#### .nav-fixed
 >>This class will make your navigation fixed to the top of the screen, but only at screen sizes of 768px or larger.
 
-```<nav class="nav wrapper nav-fixed"></nav>```
+```
+<nav class="nav wrapper nav-fixed"></nav>
+```
 
 >#### .nav-list
 >>This class goes in unordered list tags that are placed in the navigation bar. Like it’s wrapper, nav-list will flex its children in a column at mobile sizes and then into a row starting at screen sizes 768px wide.
 
+```
+<ul class="nav-list></ul>
+```
+
 >#### .nav-item
 >>This class goes in the children of list item tags. Usually anchors.
+
+```
+<li><a href="#" class="nav-item">Link</a></li>
+```
 
 ### Grid classes:
 
 >#### .grid
 >> Width is set to 100% of the viewport. The grid flexes in a column with the content starting in the default position(flex-start).
 
+```
+<div class="grid"></div>
+```
+
 >#### .row
 >> Flex-basis is set to 100% to span the entire width of the grid. It will wrap columns if the wrong number of columns were used. justify-content: space-around is set to initialize the grid to have gutters.
 
+```
+<div class="grid">
+  <div class="row"></div>
+</div>
+```
+
 >#### .col-*
 >> Class syntax: col-1, col-9, col-10, etc. As long as the numbers add up to ten, the grid will work. If for some reason you put too few columns in a row, the columns will flex themselves horizontally to fill up the row. If you put too many, it will wrap into a new line, and flex the width of the viewport. Columns flex downward into a, you guessed it, column.
+
+```
+<div class="grid">
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-5"></div>
+  </div>
+</div>
+```
 
 >> As Crescendo was designed mobile-first, the columns’ widths will get bigger based on screen size. 
 
@@ -80,27 +111,73 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 
 
 >#### .inner-between
->> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid. Uses the justify-content: space-between css rule. 
+>> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid. Uses the justify-content: space-between css rule.
+
+```
+<div class="grid">
+  <div class="row">
+    <div class="col-5">
+      <div class="inner-between"></div>
+    </div>
+    <div class="col-5">
+      <div class="inner-between"></div>
+    </div>
+  </div>
+</div>
+```
 
 >#### .inner-around
 >> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column for content you may want to distribute equally across the span of a column, instead of making a whole new grid. Uses the justify-content: space-around css rule.
+
+```
+<div class="grid">
+  <div class="row">
+    <div class="col-5">
+      <div class="inner-around"></div>
+    </div>
+    <div class="col-5">
+      <div class="inner-around"></div>
+    </div>
+  </div>
+</div>
+```
 
 ### Misc. Classes:
 
 >#### .btn
 >>This class can be used on button or anchor tags to give it Crescendo’s button styling and behavior. Padding is set to .5 rem.
 
+```
+<a href="#" class="btn">Link</a>
+```
+
 >#### .ghost-btn 
->> This class will style a button, input[type=‘button’], or anchor tag with a white border, white text, and take away the default background color. 
+>> This class will style a button, input[type=‘button’], or anchor tag with a white border, white text, and take away the default background color.
+
+```
+<a href="#" class="btn ghost-btn">Link</a>
+```
 
 >#### .ghost-dark-btn
->> This class will style a button or anchor tag with a black border, black text, and take away the default background color. 
+>> This class will style a button or anchor tag with a black border, black text, and take away the default background color.
+
+```
+<a href="#" class="btn ghost-dark-btn">Link</a>
+```
 
 >#### .default-btn 
 >> This class will style a button or anchor tag light gray background color, a dark gray border, and darker gray text(almost black).
 
+```
+<a href="#" class="btn default-btn">Link</a>
+```
+
 >#### .jumbo
 >> This class when used in a div creates a jumbotron spanning the entire viewport. The jumbotron flexes it’s items into a column.
+
+```
+<div class="jumbo"></div>
+```
 
 >> h1 tags and p tags are sized to be bigger in a jumbotron div and will adjust depending on the size of the viewport. 
 
@@ -110,23 +187,51 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 >#### .true-center
 >>Centers items vertically and horizontally.
 
+```
+<div class="jumbo true-center"></div>
+```
+
 >#### .center
 >> Aligns content to the center of a column.
+
+```
+<div class="col-10 center"></div>
+```
 
 >#### .right 
 >> Aligns content to the right of a column.
 
+```
+<div class="col-10 right"></div>
+```
+
 >#### .left
 >> Aligns content to the left of a column.
+
+```
+<div class="col-10 left"></div>
+```
 
 >#### .just-center
 >> Shifts content to the center of their flex box. Determined by flex-direction.
 
+```
+<div class="col-10 just-center"></div>
+```
+
 >#### .start 
 >> Shifts content to the start of their flex box. Determined by flex-direction.
 
+```
+<div class="col-10 start"></div>
+```
+
 >#### .end
 >> Shifts content to the end of their flex box. Determined by flex-direction.
+
+```
+<div class="col-10 end"></div>
+```
 
 
 ###Headers:
