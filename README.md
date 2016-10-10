@@ -12,10 +12,14 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 >#### .nav-wrapper
 >>This class goes in the nav tag or in a div tag. It will flex its children column-wise at mobile sizes and then into a row starting at 768px. Also at 768px, flex items are automatically separated equally across the navigation. 
 
-`<nav class="nav-wrapper"></nav>`
+```
+<nav class="nav-wrapper"></nav>
+```
 
 >#### .nav-fixed
 >>This class will make your navigation fixed to the top of the screen, but only at screen sizes of 768px or larger.
+
+```<nav class="nav wrapper nav-fixed"></nav>```
 
 >#### .nav-list
 >>This class goes in unordered list tags that are placed in the navigation bar. Like it’s wrapper, nav-list will flex its children in a column at mobile sizes and then into a row starting at screen sizes 768px wide.
