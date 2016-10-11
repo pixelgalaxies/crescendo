@@ -1,10 +1,14 @@
-/*** Crescendo by Dustin Clark ***/
+/*Crescendo by Dustin Clark 2016
+--------------------------------------------------
+*/
 
-/* Resets and presets */
-*,
-*:after,
-*:before {
-	box-shadow: none;
+/* Resets and presets 
+--------------------------------------------------
+*/
+
+*, 
+*:before,
+*:after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -29,7 +33,9 @@ a {
 
 
 
-/*** NAVIGATION ***/
+/* NAVIGATION 
+--------------------------------------------------
+*/
 nav {
 	width: 100%;
 }
@@ -49,7 +55,9 @@ nav {
 
 
 
-/*** Grid ***/
+/* Grid 
+--------------------------------------------------
+*/
 .grid {
 	display: flex;
 	flex-direction: column;
@@ -60,7 +68,9 @@ nav {
 
 
 
-/*** ROWS ***/
+/* ROWS 
+--------------------------------------------------
+*/
 .row {
 	display: flex;
 	flex-basis: 100%;
@@ -72,7 +82,9 @@ nav {
 
 
 
-/* COLUMNS */
+/* COLUMNS 
+--------------------------------------------------
+*/
 [class*='col-'] {
 	display: flex;
 	flex-direction: column;
@@ -86,9 +98,13 @@ nav {
 
 
 
-/*** MEDIA QUERIES ***/
+/* MEDIA QUERIES 
+--------------------------------------------------
+*/
 
-/* small screens*/
+/* small screens 
+--------------------------------------------------
+*/
 @media (min-width: 300px) {
 	/* all columns span entire viewport */
 	.col-10,
@@ -109,8 +125,8 @@ nav {
 	
 	/* removes right and left margins of columns, sets padding for styling*/
 	[class*='col-'] {
-		margin: 0.5% 0;
-		padding: 0 .5rem;
+		margin: 0.3rem 0;
+		padding: 0rem .5rem;
 	}
 	
 	.jumbo h1 { font-size: 2.5rem; }
@@ -143,12 +159,17 @@ nav {
 	}
 }
 
+/* small/medium inbetween 
+--------------------------------------------------
+*/
 @media (min-width: 500px) {
 	.jumbo > h1 { font-size: 3.5rem; }
 	.jumbo > p { font-size: 1.5rem; }
 }
 
-/* medium screens */
+/* medium screens 
+--------------------------------------------------
+*/
 @media (min-width: 768px) {
 	/* adjusts column widths */
 	.col-10 { flex: 1 0 99% }
@@ -169,7 +190,7 @@ nav {
 	
 	/* adds gutters and takes away padding in columns */
 	[class*='col-'] {
-		margin: 0.5%;
+		margin: .3rem 0.5%;
 		padding: 0;
 	}
 	
@@ -199,7 +220,9 @@ nav {
 	}
 }
 
-/* large screens */
+/* large screens 
+--------------------------------------------------
+*/
 @media (min-width: 1100px) {
 	/* adjust columns sizes */
 	.col-10 { flex: 1 0 99%; }
@@ -224,7 +247,9 @@ nav {
 
 
 
-/*** BUTTONS ***/
+/* BUTTONS 
+--------------------------------------------------
+*/
 .btn { 
 	font-size: 1rem;
 	padding: .5rem;
@@ -252,7 +277,10 @@ nav {
 
 
 
-/*** STYLES - MISC ***/
+/* STYLES - MISC 
+--------------------------------------------------
+*/
+
 /* centers both veritically and horizontally */
 .true-center {
 	align-items: center;
@@ -283,7 +311,6 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
 }
 
 .inner-between > * {
@@ -296,7 +323,6 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
 }
 
 .inner-around > * {
@@ -308,9 +334,9 @@ nav {
 
 
 
-
-
-/*** Header Resizing ***/
+/* Header Resizing 
+--------------------------------------------------
+*/
 h1 { font-size: 2.5rem;}
 h2 { font-size: 2.3rem; }
 h3 { font-size: 2rem; }
