@@ -2,9 +2,9 @@
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. Besides the grid, Crescendo features a few utility/ styling classes for things like jumbotrons and ghost buttons. 
 
 ### Support
-Crescendo was built in Google Chrome but works on Firefox, Edge, and Opera as well. Safari does not support the functions used in Crescendo.  
+Crescendo was built in Google Chrome. However, it will work in Firefox, Edge, and Opera as well. Safari does not support the functionionality used in Crescendo.
 
-To use Crescendo, just paste this snippet into you head tags:
+To use Crescendo, just paste this snippet into your head tags:
 
 ```
 <link type="text/css" rel="stylesheet" href="https://pixelgalaxies.github.io/crescendo/crescendo.css">
@@ -52,7 +52,7 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 ```
 
 >#### .row
->> Flex-basis is set to 100% to span the entire width of the grid. It will wrap columns if the wrong number of columns were used. justify-content: space-around is set to initialize the grid to have gutters.
+>> Flex-basis is set to 100% to span the entire width of the grid. The row class div houses your column divs. 
 
 ```
 <div class="grid">
