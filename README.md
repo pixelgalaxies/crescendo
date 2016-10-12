@@ -61,13 +61,13 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 ```
 
 >#### .col-*
->> Class syntax: col-1, col-9, col-10, etc. As long as the numbers add up to ten, the grid will work. If for some reason you put too few columns in a row, the columns will flex themselves horizontally to fill up the row. If you put too many, it will wrap into a new line, and flex the width of the viewport. Columns flex downward into a, you guessed it, column.
+>> Class syntax: col-1, col-9, col-10, etc. As long as the numbers add up to twelve, the grid will work. If for some reason you put too few columns in a row, the columns will flex themselves horizontally to fill up the row. If you put too many, it will wrap into a new line, and flex the width of the viewport. Columns flex downward into a, you guessed it, column.
 
 ```
 <div class="grid">
   <div class="row">
-    <div class="col-5"></div>
-    <div class="col-5"></div>
+    <div class="col-6"></div>
+    <div class="col-6"></div>
   </div>
 </div>
 ```
