@@ -9,6 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 	
 	
+	
 	<title>Crescendo - A flexbox grid framework</title>
 </head>
 
@@ -31,139 +32,100 @@
 	
 	<div id="grid" class="grid">
 		<div class="row">
-			<div class=" col-10">
+			<div class=" cols-12">
 				<h1>The Grid</h1>
 				<p>Padding and color were added to each column to show how the grid will look.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class=" col-grid col-10 center">
-				col-10
+			<div class="cols-12 center grid-content">
+				<p>cols-12</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-9 center">
-				col-9
+			<div class="cols-11 center grid-content">
+				<p>cols-11</p>
 			</div>
 			
-			<div class="col-grid col-1 center">
-				col-1
+			<div class="cols-1 center grid-content">
+				<p>cols-1</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-8 center">
-				col-8
+			<div class="cols-10 center grid-content">
+				<p>cols-10</p>
 			</div>
 			
-			<div class="col-grid col-2 center">
-				col-2
+			<div class="cols-2 center grid-content">
+				<p>cols-2</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-7 center">
-				col-7
+			<div class="cols-9 center grid-content">
+				<p>cols-9</p>
 			</div>
 			
-			<div class="col-grid col-3 center">
-				col-3
+			<div class="cols-3 center grid-content">
+				<p>cols-3</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-6 center">
-				col-6
+			<div class="cols-8 center grid-content">
+				<p>cols-8</p>
 			</div>
 			
-			<div class="col-grid col-4 center">
-				col-4
+			<div class="cols-4 center grid-content">
+				<p>cols-4</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-5 center">
-				col-5
+			<div class="cols-7 center grid-content">
+				<p>cols-7</p>
 			</div>
 			
-			<div class="col-grid col-5 center">
-				col-5
+			<div class="cols-5 center grid-content">
+				<p>cols-5</p>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-grid col-third center">
-				col-third
+			<div class="cols-6 center grid-content">
+				<p>cols-6</p>
 			</div>
-			<div class="col-grid col-third center">
-				col-third
-			</div>
-			<div class="col-grid col-third center">
-				col-third
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-grid col-fourth center">
-				col-fourth
-			</div>
-			<div class="col-grid col-fourth center">
-				col-fourth
-			</div>
-			<div class="col-grid col-fourth center">
-				col-fourth
-			</div>
-			<div class="col-grid col-fourth center">
-				col-fourth
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-grid col-sixth center">
-				col-sixth
-			</div>
-			<div class="col-grid col-sixth center">
-				col-sixth
-			</div>
-			<div class="col-grid col-sixth center">
-				col-sixth
-			</div>
-			<div class="col-grid col-sixth center">
-				col-sixth
-			</div>
-			<div class="col-grid col-sixth center">
-				col-sixth
-			</div>
-			<div class="col-grid col-sixth center">
-				col-sixth
+			<div class="cols-6 center grid-content">
+				<p>cols-6</p>
 			</div>
 		</div>
 	</div> <!-- Closes grid -->
 	
 	<div id="buttons" class="grid">
 		<div class="row">
-			<div class="col-10">
+			<div class="cols-10">
 				<h1>Buttons</h1>
 				<p>There are three button styles that each have unique propeties. More will be added in future versions of Crescendo.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-third left">
+			<div class="cols-1 colm-4 left">
 				<h4>Ghost Button</h4>
 				<a class="btn ghost-btn" href="">Anchor</a>
 				<input type="button" class="btn ghost-btn" value="Input">
 				<button class="btn ghost-btn">Button</button>
 			</div>
 			
-			<div class="col-third left">
+			<div class="cols-1 colm-4 left">
 				<h4>Ghost Button Dark</h4>
 				<a class="btn ghost-dark-btn" href="">Anchor</a>
 				<input type="button" class="btn ghost-dark-btn" value="Input">
 				<button class="btn ghost-dark-btn">Button</button>
 			</div>
 			
-			<div class="col-third left">
+			<div class="cols-1 colm-4 left">
 				<h4>Default Button</h4>
 				<a class="btn default-btn" href="">Anchor</a>
 				<input type="button" class="btn default-btn" value="Input">
@@ -197,7 +159,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-5">
+			<div class="cols-12 colm-6">
 				<h3>.inner-between</h3>
 				<p>Use this class in a new div placed inside a column.</p>
 				<div class="inner-between inner">
@@ -207,7 +169,8 @@
 					<img src="images/space2.jpg">
 				</div>
 			</div>
-			<div class="col-5">
+			
+			<div class="cols-12 colm-6">
 			<h3>.inner-around</h3>
 			<p>Use this class in a new div placed inside a column.</p>
 				<div class="inner-around inner">
@@ -220,34 +183,34 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-third end">
+			<div class="cols-12 colm-4 end">
 				<h5>This is the .end class.</h5>
 				<p>This class goes alongside your .col-* class. It will send all of your content to the bottom of the column.</p>
 			</div>
 			
-			<div class="col-third start">
+			<div class="cols-12 colm-4 start">
 				<h5>This is the .start class.</h5>
 				<p>This class goes alongside your .col-* class. It will set all of your content to the top of the column.</p>
 			</div>
 			
-			<div class="col-third just-center">
+			<div class="cols-12 colm-4 just-center">
 				<h5>This is the .just-center class.</h5>
 				<p>This class goes alongside your .col-* class. It will send all of your content to the middle of the column. </p>
 			</div>	
 		</div>
 		
 		<div class="row">
-			<div class="col-third right">
+			<div class="cols-12 colm-4 right">
 				<h5>This is the .right class.</h5>
 				<p>This class goes alongside your .col-* class. It will align all of your content to the right of the column.</p>
 			</div>
 			
-			<div class="col-third left">
+			<div class="cols-12 colm-4 left">
 				<h5>This is the .left class.</h5>
 				<p>This class goes alongside your .col-* class. It will align all of your content to the left of the column.</p>
 			</div>
 			
-			<div class="col-third center">
+			<div class="cols-12 colm-4 center">
 				<h5>This is the .center class</h5>
 				<p>This class goes alongside your .col-* class. It will align all of your content to the center of the column.</p>
 			</div>
