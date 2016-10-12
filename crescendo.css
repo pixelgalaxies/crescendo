@@ -85,12 +85,13 @@ nav {
 /* COLUMNS 
 --------------------------------------------------
 */
-[class*='col-'] {
+[class*='col'] {
 	display: flex;
 	flex-direction: column;
+	margin: 0.3rem 0.5%;
 }
 
-[class*='col-'] > * {
+[class*='col'] > * {
 	margin: .25rem 0;
 }
 
@@ -106,28 +107,18 @@ nav {
 --------------------------------------------------
 */
 @media (min-width: 300px) {
-	/* all columns span entire viewport */
-	.col-10,
-	.col-9,
-	.col-8,
-	.col-7,
-	.col-6,
-	.col-5,
-	.col-4,
-	.col-3,
-	.col-2,
-	.col-1,
-	.col-third,
-	.col-fourth,
-	.col-sixth { 
-		flex-basis: 100%; 
-	}
-	
-	/* removes right and left margins of columns, sets padding for styling*/
-	[class*='col-'] {
-		margin: 0.3rem 0;
-		padding: 0rem .5rem;
-	}
+	.cols-12 { flex: 1 99%; }
+	.cols-11 { flex: 1 0 90.66% }
+	.cols-10 { flex: 1 0 82.33%; }
+	.cols-9 { flex: 1 0 74%; }
+	.cols-8 { flex: 1 0 65.66%; }
+	.cols-7 { flex: 1 0 57.33%; }
+	.cols-6 { flex: 1 0 49%; }
+	.cols-5 { flex: 1 0 40.66%; }
+	.cols-4 { flex: 1 0 32.33%; }
+	.cols-3 { flex: 1 0 24%; }
+	.cols-2 { flex: 1 0 15.66%; }
+	.cols-1 { flex: 1 0 7.33%; }
 	
 	.jumbo h1 { font-size: 2.5rem; }
 	.jumbo p { font-size: 1.25rem; }
@@ -162,7 +153,7 @@ nav {
 /* small/medium inbetween 
 --------------------------------------------------
 */
-@media (min-width: 500px) {
+@media (min-width: 480px) {
 	.jumbo > h1 { font-size: 3.5rem; }
 	.jumbo > p { font-size: 1.5rem; }
 }
@@ -171,28 +162,18 @@ nav {
 --------------------------------------------------
 */
 @media (min-width: 768px) {
-	/* adjusts column widths */
-	.col-10 { flex: 1 0 99% }
-	.col-third { flex: 1 0 32.33%; }
-	.col-sixth { flex: 1 0 32.33%; }
-	.col-9,
-	.col-8,
-	.col-7,
-	.col-6,
-	.col-5,
-	.col-4,
-	.col-3,
-	.col-2,
-	.col-1,
-	.col-fourth {
-		flex: 1 0 49%;	
-	}
-	
-	/* adds gutters and takes away padding in columns */
-	[class*='col-'] {
-		margin: .3rem 0.5%;
-		padding: 0;
-	}
+	.colm-12 { flex: 1 99%; }
+	.colm-11 { flex: 1 0 90.66 }
+	.colm-10 { flex: 1 0 82.33%; }
+	.colm-9 { flex: 1 0 74%; }
+	.colm-8 { flex: 1 0 65.66%; }
+	.colm-7 { flex: 1 0 57.33%; }
+	.colm-6 { flex: 1 0 49%; }
+	.colm-5 { flex: 1 0 40.66%; }
+	.colm-4 { flex: 1 0 32.33%; }
+	.colm-3 { flex: 1 0 24%; }
+	.colm-2 { flex: 1 0 15.66%; }
+	.colm-1 { flex: 1 0 7.33%; }
 	
 	.jumbo > h1 { font-size: 5rem; }
 	.jumbo > p { font-size: 2.5rem; }
@@ -223,21 +204,19 @@ nav {
 /* large screens 
 --------------------------------------------------
 */
-@media (min-width: 1100px) {
-	/* adjust columns sizes */
-	.col-10 { flex: 1 0 99%; }
-	.col-9 { flex: 1 0 89%; }
-	.col-8 { flex: 1 0 79%; }
-	.col-7 { flex: 1 0 69%; }
-	.col-6 { flex: 1 0 59%; }
-	.col-5 { flex: 1 0 49%; }
-	.col-4 { flex: 1 0 39%; }
-	.col-3 { flex: 1 0 29%; }
-	.col-2 { flex: 1 0 19%; }
-	.col-1 { flex: 1 0 9%; }
-	.col-third { flex: 1 0 32.33%; }
-	.col-fourth { flex: 1 0 24%; }
-	.col-sixth { flex: 1 0 15.666%; }
+@media (min-width: 1200px) {
+	.coll-12 { flex: 1 99%; }
+	.coll-11 { flex: 1 0 90.66 }
+	.coll-10 { flex: 1 0 82.33%; }
+	.coll-9 { flex: 1 0 74%; }
+	.coll-8 { flex: 1 0 65.66%; }
+	.coll-7 { flex: 1 0 57.33%; }
+	.coll-6 { flex: 1 0 49%; }
+	.coll-5 { flex: 1 0 40.66%; }
+	.coll-4 { flex: 1 0 32.33%; }
+	.coll-3 { flex: 1 0 24%; }
+	.coll-2 { flex: 1 0 15.66%; }
+	.coll-1 { flex: 1 0 7.33%; }
 	
 	.jumbo > h1 { font-size: 6rem; }
 	.jumbo > p { font-size: 3.5rem; }
