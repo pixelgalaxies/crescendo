@@ -61,7 +61,7 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 ```
 
 >#### .cols-\* .colm-\* .coll-\*
->> Class syntax: cols-1, colm-9, coll-10, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a, you guessed it, column. The s m and l before the dashes indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with cols-\* and it will inherit this behavior all the way up to desktop screens. Just remember, if you want multiple behaviors, all col\*-\* need to add up to twelve in their respective rows.
+>> Class syntax: cols-1, colm-9, coll-10, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a, you guessed it, column. The s, m, and l before the dashes indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with cols-\* and it will inherit this behavior all the way up to desktop screens. Just remember, if you want multiple behaviors, all col\*-\* need to add up to twelve in their respective rows.
 
 >> The following code will have the columns flex 100% at small screen sizes and then split 50/50 starting at medium screen sizes.
 
