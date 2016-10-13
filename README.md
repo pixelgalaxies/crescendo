@@ -60,57 +60,45 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 </div>
 ```
 
->#### .col-*
->> Class syntax: col-1, col-9, col-10, etc. As long as the numbers add up to twelve, the grid will work. If for some reason you put too few columns in a row, the columns will flex themselves horizontally to fill up the row. If you put too many, it will wrap into a new line, and flex the width of the viewport. Columns flex downward into a, you guessed it, column.
+>#### .cols-\* .colm-\* .coll-\*
+>> Class syntax: cols-1, colm-9, coll-10, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a, you guessed it, column. The s m and l before the dashes indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with cols-\* and it will inherit this behavior all the way up to desktop screens. Just remember, if you want multiple behaviors, all col\*-\* need to add up to twelve in their respective rows.
+
+>> The following code will have the columns flex 100% at small screen sizes and then split 50/50 starting at medium screen sizes.
 
 ```
 <div class="grid">
   <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
+    <div class="cols-12 colm-6"></div>
+    <div class="cols-12 colm-6"></div>
   </div>
 </div>
 ```
+>> \*note that all columns have a right and left margin of 0.5%
 
->> As Crescendo was designed mobile-first, the columns’ widths will get bigger based on screen size. 
+>> .col\*-1 will flex 7.33%
 
->> Small Screens (300px):
->> .col-* (all columns) will flex 100% of the viewport.
+>> .col\*-2 will flex 15.66%
 
->> Medium Screens (768px):
->> .col-10 will flex 100%
+>> .col\*-3 will flex 24%
 
->> .col-9 to .col-1 and .col-fourth will flex 50%
+>> .col\*-4 will flex 32.33%
 
->> .col-third and .col-sixth will flex ~33%
+>> .col\*-5 will flex 40.66%
 
->> Large Screens (1100px):
+>> .col\*-6 will flex 49%
 
->> .col-1will flex 10%
+>> .col\*-7 will flex 57.33%
 
->> .col-2 will flex 20%
+>> .col\*-8 will flex 65.66%
 
->> .col-3 will flex 30%
+>> .col\*-9 will flex 74%
 
->> .col-4 will flex 40%
+>> .col\*-10 will flex 82.33% 
 
->> .col-5 will flex 50%
+>> .col\*-11 will flex 90.66%
 
->> .col-6 will flex 60%
+>> .col\*-12 will flex 99%
 
->> .col-7 will flex 70%
-
->> .col-8 will flex 80%
-
->> .col-9 will flex 90%
-
->> .col-10 will flex 100% 
-
->> .col-third will flex 1/3 or ~33%
-
->> .col-fourth will flex 1/4 or 25%
-
->> .col-sixth will flex 1/6 or ~16%
 
 
 >#### .inner-between
