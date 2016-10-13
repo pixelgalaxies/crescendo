@@ -107,10 +107,10 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 ```
 <div class="grid">
   <div class="row">
-    <div class="col-5">
+    <div class="colm-6">
       <div class="inner-between"></div>
     </div>
-    <div class="col-5">
+    <div class="colm-6">
       <div class="inner-between"></div>
     </div>
   </div>
@@ -123,10 +123,10 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 ```
 <div class="grid">
   <div class="row">
-    <div class="col-5">
+    <div class="colm-6">
       <div class="inner-around"></div>
     </div>
-    <div class="col-5">
+    <div class="colm-6">
       <div class="inner-around"></div>
     </div>
   </div>
@@ -186,42 +186,42 @@ A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
 >> Aligns content to the center of a column.
 
 ```
-<div class="col-10 center"></div>
+<div class="cols-10 center"></div>
 ```
 
 >#### .right 
 >> Aligns content to the right of a column.
 
 ```
-<div class="col-10 right"></div>
+<div class="cols-10 right"></div>
 ```
 
 >#### .left
 >> Aligns content to the left of a column.
 
 ```
-<div class="col-10 left"></div>
+<div class="cols-10 left"></div>
 ```
 
 >#### .just-center
 >> Shifts content to the center of their flex box. Determined by flex-direction.
 
 ```
-<div class="col-10 just-center"></div>
+<div class="cols-10 just-center"></div>
 ```
 
 >#### .start 
 >> Shifts content to the start of their flex box. Determined by flex-direction.
 
 ```
-<div class="col-10 start"></div>
+<div class="cols-10 start"></div>
 ```
 
 >#### .end
 >> Shifts content to the end of their flex box. Determined by flex-direction.
 
 ```
-<div class="col-10 end"></div>
+<div class="cols-10 end"></div>
 ```
 
 
