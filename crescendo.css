@@ -194,15 +194,15 @@ nav {
 		padding: .7rem;
 	}
 	
-	.ghost-btn {
+	.nav-item .ghost-btn {
 		border: 1px #ffffff solid;
 	}
 	
-	.ghost-dark-btn {
+	.nav-item .ghost-dark-btn {
 		border: 1px #000000 solid;
 	}
 	
-	.default-btn {
+	.nav-item .default-btn {
 		border: 1px #636363 solid;
 	}
 }
