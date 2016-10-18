@@ -20,16 +20,6 @@ nav a {
 	background-color: #D3D3D3;
 }
 
-#gitIcon {
-	height: 64px;
-	width: 64px;
-	margin-top: 1rem;
-}
-
-#gitIcon:hover {
-	background-color: #DA9D7F;
-}
-
 
 
 /* Index Jumbotron
@@ -43,6 +33,14 @@ nav a {
 	color: #D3D3D3;
 	min-height: 100%;
 	text-align: justify;
+}
+
+#home p {
+	text-align: justify;
+}
+
+#head-logo {
+	height: 250px;
 }
 
 
@@ -144,6 +142,18 @@ footer {
 footer a {
 	color: #D3D3D3;
 	padding: 0 .5rem;
+}
+
+#gitIcon {
+	height: 50px;
+	width: 50px;
+	display: block;
+	padding: 0;
+	margin: .5rem auto;
+}
+
+#gitIcon:hover {
+	background-color: #DA9D7F;
 }
 
 
