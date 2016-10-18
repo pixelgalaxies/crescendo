@@ -141,13 +141,7 @@ nav {
 		display: block;
 		padding: .5rem;
 	}
-	
-	/* removes border styling on buttons in the nav */
-	.nav-item .ghost-btn,
-	.nav-item .ghost-dark-btn,
-	.nav-item .default-btn {
-		border: none;
-	}
+
 }
 
 /* small/medium inbetween 
@@ -199,6 +193,18 @@ nav {
 	.nav-item {
 		padding: .7rem;
 	}
+	
+	.ghost-btn {
+		border: 1px #ffffff solid;
+	}
+	
+	.ghost-dark-btn {
+		border: 1px #000000 solid;
+	}
+	
+	.default-btn {
+		border: 1px #636363 solid;
+	}
 }
 
 /* large screens 
@@ -236,19 +242,16 @@ nav {
 
 .ghost-btn {
 	background-color: transparent;
-	border: 1px #ffffff solid;
 	color: #ffffff;
 }
 
 .ghost-dark-btn {
 	background-color: transparent;
-	border: 1px #000000 solid;
 	color: #000000;
 }
 
 .default-btn {
 	background-color: #fafafa;
-	border: 1px #636363 solid;
 	color: #101010;
 }
 
