@@ -20,6 +20,12 @@ nav a {
 	background-color: #D3D3D3;
 }
 
+#nav-logo {
+	height: 4rem;
+	width: 4rem;
+	margin-left: .7rem;
+}
+
 
 
 /* Index Jumbotron
@@ -39,9 +45,7 @@ nav a {
 	text-align: justify;
 }
 
-#head-logo {
-	height: 250px;
-}
+
 
 
 
@@ -166,6 +170,10 @@ footer a {
 @media (min-width: 300px) {
 	#home {
 		padding: 0 4rem;
+	}
+	
+	#nav-logo {
+		display: none;
 	}
 }
 
