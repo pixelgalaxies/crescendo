@@ -88,7 +88,7 @@ nav {
 [class*='col'] {
 	display: flex;
 	flex-direction: column;
-	margin: 0.3rem 0.5%;
+	padding: .5rem;
 }
 
 [class*='col'] > * {
@@ -146,6 +146,10 @@ nav {
 	nav .ghost-dark-btn, 
 	nav .default-btn {
 		border: none;
+	}
+	
+	[class*='col'] {
+		margin: .25rem .5%;
 	}
 }
 
@@ -208,6 +212,10 @@ nav {
 	nav .default-btn {
 		border: 1px #636363 solid;
 	}
+	
+	[class*='col'] {
+		margin: .3rem .5%;
+	}
 }
 
 /* large screens 
@@ -229,6 +237,10 @@ nav {
 	
 	.jumbo > h1 { font-size: 6rem; }
 	.jumbo > p { font-size: 3.5rem; }
+	
+	[class*='col'] {
+		margin: .5rem .5%;
+	}
 }
 
 
