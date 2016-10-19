@@ -141,7 +141,12 @@ nav {
 		display: block;
 		padding: .5rem;
 	}
-
+	
+	nav .ghost-btn,
+	nav .ghost-dark-btn, 
+	nav .default-btn {
+		border: none;
+	}
 }
 
 /* small/medium inbetween 
@@ -191,18 +196,16 @@ nav {
 	
 	/* changes the padding of navigation items */
 	.nav-item {
-		padding: .7rem;
+		padding: 1rem;
 	}
 	
-	.nav-item .ghost-btn {
+	nav .ghost-btn {
 		border: 1px #ffffff solid;
 	}
-	
-	.nav-item .ghost-dark-btn {
+	nav .ghost-dark-btn {
 		border: 1px #000000 solid;
 	}
-	
-	.nav-item .default-btn {
+	nav .default-btn {
 		border: 1px #636363 solid;
 	}
 }
@@ -242,16 +245,19 @@ nav {
 
 .ghost-btn {
 	background-color: transparent;
+	border: 1px #ffffff solid;
 	color: #ffffff;
 }
 
 .ghost-dark-btn {
 	background-color: transparent;
+	border: 1px #000000 solid;
 	color: #000000;
 }
 
 .default-btn {
 	background-color: #fafafa;
+	border: 1px #636363 solid;
 	color: #101010;
 }
 
