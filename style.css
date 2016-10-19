@@ -62,7 +62,6 @@ nav a {
 
 .grid-content {
 	background-color: #DA9D7F;
-	padding: .3rem;
 }
 
 
@@ -77,9 +76,8 @@ nav a {
 	color: #D3D3D3;
 }
 
-#buttons .cols-1 {
+#buttons .cols-12 {
 	font-size: 1.2rem;
-	padding: .25rem;
 }
 
 
@@ -129,7 +127,6 @@ nav a {
 #extras .colm-4 {
 	background-color: #D3D3D3;
 	height: 15rem;
-	padding: .25rem;
 }
 
 
