@@ -78,6 +78,11 @@ nav a {
 
 #buttons .cols-12 {
 	font-size: 1.2rem;
+	padding: .5rem;
+}
+
+#buttons .btn {
+	margin: .25rem 0;;
 }
 
 
@@ -127,6 +132,7 @@ nav a {
 #extras .colm-4 {
 	background-color: #D3D3D3;
 	height: 15rem;
+	padding: .5rem;
 }
 
 

@@ -88,11 +88,6 @@ nav {
 [class*='col'] {
 	display: flex;
 	flex-direction: column;
-	padding: .5rem;
-}
-
-[class*='col'] > * {
-	margin: .25rem 0;
 }
 
 
