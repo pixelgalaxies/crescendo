@@ -21,8 +21,8 @@ nav a {
 }
 
 #nav-logo {
-	height: 4rem;
-	width: 4rem;
+	height: 4.5rem;
+	width: 4.5rem;
 	margin-left: .7rem;
 }
 
@@ -181,5 +181,9 @@ footer a {
 	
 	#buttons .colm-4 {
 		border: 2px solid #DA9D7F;
+	}
+	
+	#nav-logo {
+		display: inherit;
 	}
 }
