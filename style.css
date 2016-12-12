@@ -8,24 +8,32 @@
 }
 
 nav {
-	background-color: #609293;
+	background-color: #2E2E5C;
 }
 
 nav a {
-	color: #10101A;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	padding: 1rem;
 }
 
-.nav-item:hover {
-	background-color: #D3D3D3;
+.nav-full {
+	padding: 1rem 0;
+}
+
+.menu-drop {
+	padding: 1rem;
+	font-size: 1.5rem;
 }
 
 #nav-logo {
-	height: 4.5rem;
-	width: 4.5rem;
+	height: 3.5rem;
+	width: 3.5rem;
 	margin-left: .7rem;
 }
 
+.menu-drop-content {
+	background: rgba(0,0,0,0.8);
+}
 
 
 /* Index Jumbotron
@@ -41,52 +49,47 @@ nav a {
 	text-align: justify;
 }
 
-#home p {
-	text-align: justify;
+
+/* Documentation 
+--------------------------------------------------
+*/
+
+#about-container,
+#documentation-container {
+	background-color: #DA9D7F
+}
+
+.answer {
+	font-size: 1.5rem;
 }
 
 
-
-
-
-
-
-
-/* Grid Div
+/* Grids
 --------------------------------------------------
 */
-#grid {
+#grid-container, #gridfw-container {
 	background-color: #D3D3D3;
 	color: #10101A;
 }
 
 .grid-content {
-	background-color: #DA9D7F;
+	background-color: #609293;
+	padding: 1rem 0;
 }
 
 
-
-
-
-/* Buttons Div
+/* Buttons
 --------------------------------------------------
 */
-#buttons {
+#buttons-container {
 	background-color: #2E2E5C;
 	color: #D3D3D3;
 }
 
-#buttons .cols-12 {
-	font-size: 1.2rem;
-	padding: .5rem;
+#buttons-container hr {
+	margin: 1rem auto;
+	width: 60%;
 }
-
-#buttons .btn {
-	margin: .25rem 0;;
-}
-
-
-
 
 
 /* Jumbotrons
@@ -96,6 +99,7 @@ nav a {
 	background-color: #609293;
 	height: 50%;
 }
+
 #jumbo-center {
 	background-color: #D3D3D3;
 	height: 30%;
@@ -112,34 +116,30 @@ nav a {
 }
 
 
-
-
-
-/* Grid Classes
+/* Utilities
 --------------------------------------------------
 */
-#extras {
+#utilities {
 	background-color: #DA9D7F;
-	color: #10101A;;
+	color: #10101A;
 }
 
-#extras .inner-between,
-#extras .inner-around {
+#utilities .inner-between,
+#utilities .inner-around {
 	border: 2px solid #10101A;
 }
 
 
-#extras .colm-4 {
+#utilities .colm-4 {
 	background-color: #D3D3D3;
 	height: 15rem;
 	padding: .5rem;
 }
 
 
-
-
-
-
+/* Footer
+--------------------------------------------------
+*/
 footer {
 	background-color: #609293;
 	padding: 1rem;
@@ -164,32 +164,17 @@ footer a {
 }
 
 
-
-
-
 /* Media Queries
 --------------------------------------------------
 */
 @media (min-width: 300px) {
-	#home {
-		padding: 0 4rem;
-	}
-	
-	#nav-logo {
-		display: none;
+	nav a {
+		color: #d3d3d3;
 	}
 }
 
 @media (min-width: 768px) {
-	#home {
-		padding: 0 8rem;
-	}
-	
-	#buttons .colm-4 {
-		border: 2px solid #DA9D7F;
-	}
-	
-	#nav-logo {
-		display: inherit;
+	nav a {
+		color: #10101A;
 	}
 }

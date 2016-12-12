@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Crescendo Documentation site -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -9,135 +10,368 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/crescendoLogo.png">
 	
-	
-	
 	<title>Crescendo - A flexbox grid framework</title>
 </head>
 
 <body>
 	
-	<nav id="nav" class="nav-wrapper">
+	<nav>
 		<img id="nav-logo" src="images/crescendoLogo.png">
+
+		<div class="nav-full">
+			<ul>
+				<li><a href="#about-container">About</a></li>
+					<li><a href="#grid-container">The Grids</a></li>
+					<li><a href="#buttons-container">Buttons</a></li>
+					<li><a href="#typography-container">Typography</a></li>
+					<li><a href="#utilities-container">Utilities</a></li>
+					<li><a href="#jumbotron">Jumbotrons</a></li
+			</ul>
+		</div>
+
+		<div class="menu-drop">
+			<p>beep</p>
+			<div class="menu-drop-content">
+				<ul>
+					<li><a href="#about-container">About</a></li>
+					<li><a href="#grid-container">The Grids</a></li>
+					<li><a href="#buttons-container">Buttons</a></li>
+					<li><a href="#typography-container">Typography</a></li>
+					<li><a href="#utilities-container">Utilities</a></li>
+					<li><a href="#jumbotron">Jumbotrons</a></li>
+				</ul>
+			</div>
+
+		</div>
 		
-		<ul class="nav-list">
-			<li><a href="#grid" class="nav-item">The Grid</a></li>
-			<li><a href="#buttons" class="nav-item">Buttons</a></li>
-			<li><a href="#jumbotron" class="nav-item">Jumbotrons</a></li>
-			<li><a href="#extras" class="nav-item">Extras</a></li>
-		</ul>
 	</nav>
 	
 	<div id="home" class="jumbo true-center">
-		<h1 class="">Crescendo</h1>
-		<p>A mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox.</p>
+		<h1 class="boom">Crescendo</h1>
+		<p>A flexbox grid framework.</p>
 	</div>
 	
-	<div id="grid" class="grid">
-		<div class="row">
-			<div class=" cols-12">
-				<h1>The Grid</h1>
-				<p>Padding and color were added to each column to show how the grid will look.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="cols-12 center grid-content">
-				<p>cols-12</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-11 center grid-content">
-				<p>cols-11</p>
-			</div>
-			
-			<div class="cols-1 center grid-content">
-				<p>cols-1</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-10 center grid-content">
-				<p>cols-10</p>
-			</div>
-			
-			<div class="cols-2 center grid-content">
-				<p>cols-2</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-9 center grid-content">
-				<p>cols-9</p>
-			</div>
-			
-			<div class="cols-3 center grid-content">
-				<p>cols-3</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-8 center grid-content">
-				<p>cols-8</p>
-			</div>
-			
-			<div class="cols-4 center grid-content">
-				<p>cols-4</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-7 center grid-content">
-				<p>cols-7</p>
-			</div>
-			
-			<div class="cols-5 center grid-content">
-				<p>cols-5</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-6 center grid-content">
-				<p>cols-6</p>
-			</div>
-			<div class="cols-6 center grid-content">
-				<p>cols-6</p>
-			</div>
-		</div>
-	</div> <!-- Closes grid -->
-	
-	<div id="buttons" class="grid">
-		<div class="row">
-			<div class="cols-10">
-				<h1>Buttons</h1>
-				<p>There are three button styles that each have unique propeties. More will be added in future versions of Crescendo.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="cols-12 colm-4 left">
-				<h4>Ghost Button</h4>
-				<a class="btn ghost-btn" href="">Anchor</a>
-				<input type="button" class="btn ghost-btn" value="Input">
-				<button class="btn ghost-btn">Button</button>
-			</div>
-			
-			<div class="cols-12 colm-4 left">
-				<h4>Ghost Button Dark</h4>
-				<a class="btn ghost-dark-btn" href="">Anchor</a>
-				<input type="button" class="btn ghost-dark-btn" value="Input">
-				<button class="btn ghost-dark-btn">Button</button>
-			</div>
-			
-			<div class="cols-12 colm-4 left">
-				<h4>Default Button</h4>
-				<a class="btn default-btn" href="">Anchor</a>
-				<input type="button" class="btn default-btn" value="Input">
-				<button class="btn default-btn">Button</button>
+	<div id="about-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class="cols-6 coll-3">
+					<h4>Mobile First</h4>
+					<p>Crescendo was with a mobile first approach in mind. It allows for fully-responsive functionaility when building your websites.</p>
+				</div>
+				
+				<div class="cols-6 coll-3">
+					<h4>Lightweight</h4>
+					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS file is _kb and the minified file is only _kb.</p>
+				</div>
+				
+				<div class="cols-6 coll-3">
+					<h4>Open Source</h4>
+					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source. You can find it <a>here</a>.</p>
+				</div>
+				<div class="cols-6 coll-3">
+					<h4>Support</h4>
+					<p>Crescendo is supported by all modern browsers except Safari (for now).</p>
+				</div>
 			</div>
 		</div>
 	</div>
+<!-- end of #about-container -->
+
+	<div id="documentation-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class="cols-12 center">
+					<h1>Is Crescendo right for you?</h1>
+					<p class="answer">The simple answer is yes, it is. Crescendo features simple to use grids which are perfect for any project, big or small. It's two grids combined with it's several utility classes are just what you need to build fast, responsive, yet elegant websites.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end of #documentation-container -->
 	
-	<div id="jumbotron" class="jumbo true-center">
-		<h2>Jumbotrons</h2>
+	<div id="grid-container">
+		<div class="grid">
+			<div class="row">
+				<div class=" cols-12">
+					<h1>The Grid</h1>
+					<p>A background color was added to each column to show how the grid functions.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cols-12 center grid-content">
+					<p>cols-12</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-11 center grid-content">
+					<p>cols-11</p>
+				</div>
+
+				<div class="cols-1 center grid-content">
+					<p>cols-1</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-10 center grid-content">
+					<p>cols-10</p>
+				</div>
+
+				<div class="cols-2 center grid-content">
+					<p>cols-2</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-9 center grid-content">
+					<p>cols-9</p>
+				</div>
+
+				<div class="cols-3 center grid-content">
+					<p>cols-3</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-8 center grid-content">
+					<p>cols-8</p>
+				</div>
+
+				<div class="cols-4 center grid-content">
+					<p>cols-4</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-7 center grid-content">
+					<p>cols-7</p>
+				</div>
+
+				<div class="cols-5 center grid-content">
+					<p>cols-5</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-6 center grid-content">
+					<p>cols-6</p>
+				</div>
+				<div class="cols-6 center grid-content">
+					<p>cols-6</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end of #grid-container -->
+	
+	<div id="gridfw-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class=" cols-12">
+					<h1>The Fixed-Width Grid</h1>
+					<p>A background color was added to each column to show how the grid functions.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cols-12 center grid-content">
+					<p>cols-12</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-11 center grid-content">
+					<p>cols-11</p>
+				</div>
+
+				<div class="cols-1 center grid-content">
+					<p>cols-1</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-10 center grid-content">
+					<p>cols-10</p>
+				</div>
+
+				<div class="cols-2 center grid-content">
+					<p>cols-2</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-9 center grid-content">
+					<p>cols-9</p>
+				</div>
+
+				<div class="cols-3 center grid-content">
+					<p>cols-3</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-8 center grid-content">
+					<p>cols-8</p>
+				</div>
+
+				<div class="cols-4 center grid-content">
+					<p>cols-4</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-7 center grid-content">
+					<p>cols-7</p>
+				</div>
+
+				<div class="cols-5 center grid-content">
+					<p>cols-5</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-6 center grid-content">
+					<p>cols-6</p>
+				</div>
+				<div class="cols-6 center grid-content">
+					<p>cols-6</p>
+				</div>
+			</div>
+		</div> 
+	</div>
+<!-- end of #gridfw-container -->
+	
+	<div id="buttons-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class="cols-12">
+					<h1>Buttons</h1>
+					<p>There are two button styles that each have unique propeties. The .btn class and it's sister classes, .ghost-btn and .default-btn, can be applied to a button tag, an input['submit'] tag, an input['button'] tag, and lastly an anchor tag. More button classes will be added in future versions of Crescendo.</p>
+					<hr>
+					<h4>Ghost Button</h4>
+					<p>The first button class is the Ghost Button. It features a transparent background with a black border and matching text. When you roll over this button it will fill in black and the text will turn white. You can of course override the colors in a separate stylesheet.</p>
+					<div class="inner-around">
+						<a class="btn ghost-btn" href="">Anchor</a>
+						<input type="button" class="btn ghost-btn" value="Input">
+						<button class="btn ghost-btn">Button</button>
+						<input type="submit" class="btn ghost-btn" value="Submit">
+					</div>
+					<hr>
+					<h4>Default Button</h4>
+					<p>The second button class is the Default Button. It features a dark gray background with off-white text. Like the ghost button, you're able to override the colors in a separate stylesheet.</p>
+					<div class="inner-around">
+						<a class="btn default-btn" href="">Anchor</a>
+						<input type="button" class="btn default-btn" value="Input">
+						<button class="btn default-btn">Button</button>
+						<input type="submit" class="btn default-btn" value="Submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end of #buttons-container -->
+
+	<div id="typography-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class="cols-12 colm-6">
+					<h1>Typography</h1>
+					<p>Crescendo makes a few changes to your browsers default font sizing.</p>
+					<h3>Headers</h3>
+					<p>Headers get resized. An example of each is to the right. Or below, depending on your device.</p>
+					<p>h1 is 3.5rem</p>
+					<p>h2 is 3rem</p>
+					<p>h3 is 2.5rem</p>
+					<p>h4 is 2rem</p>
+					<p>h5 is 1.5rem</p>
+					<p>h6 is 1rem</p>
+				</div>
+				
+				<div class="cols-12 colm-6 true-center">
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<h4>Header 4</h4>
+					<h5>Header 5</h5>
+					<h6>Header 6</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end of #typography-container -->
+	
+	<div id="utilities-container">
+		<div id="utilities" class="grid">
+			<div class="row start">
+				<div class="cols-12">
+					<h1>Utility Classes</h1>
+					<p>These are just a couple classes you may use in your grids, rows, and columns.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="cols-12 colm-6">
+					<h3>.inner-between</h3>
+					<p>Use this class in a new div placed inside a column.</p>
+					<div class="inner-between inner">
+						<img src="images/space1.jpg">
+						<img src="images/space3.jpg">
+						<img src="images/space4.jpg">
+						<img src="images/space2.jpg">
+					</div>
+				</div>
+
+				<div class="cols-12 colm-6">
+				<h3>.inner-around</h3>
+				<p>Use this class in a new div placed inside a column.</p>
+					<div class="inner-around inner">
+						<img src="images/space1.jpg">
+						<img src="images/space3.jpg">
+						<img src="images/space4.jpg">
+						<img src="images/space2.jpg">
+					</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="cols-12 colm-4 end">
+					<h5>This is the .end class.</h5>
+					<p>This class goes alongside your .col* class. It will send all of your content to the bottom of the column.</p>
+				</div>
+
+				<div class="cols-12 colm-4 start">
+					<h5>This is the .start class.</h5>
+					<p>This class goes alongside your .col* class. It will set all of your content to the top of the column.</p>
+				</div>
+
+				<div class="cols-12 colm-4 just-center">
+					<h5>This is the .just-center class.</h5>
+					<p>This class goes alongside your .col* class. It will send all of your content to the middle of the column. </p>
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="cols-12 colm-4 right">
+					<h5>This is the .right class.</h5>
+					<p>This class goes alongside your .col* class. It will align all of your content to the right of the column.</p>
+				</div>
+
+				<div class="cols-12 colm-4 left">
+					<h5>This is the .left class.</h5>
+					<p>This class goes alongside your .col* class. It will align all of your content to the left of the column.</p>
+				</div>
+
+				<div class="cols-12 colm-4 center">
+					<h5>This is the .center class</h5>
+					<p>This class goes alongside your .col* class. It will align all of your content to the center of the column.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- closes utilities-container -->
+
+<div id="jumbotron" class="jumbo true-center">
+		<h1>Jumbotrons</h1>
 	</div>
 	
 	<div id="jumbo-center" class="jumbo true-center">
@@ -150,74 +384,6 @@
 	
 	<div id="jumbo-right" class="jumbo just-center right">
 		<h4>class="jumbo just-center right"</h4>
-	</div>
-	
-	<div id="extras" class="grid">
-		<div class="row start">
-			<div class="cols-12">
-				<h1>Some Extra Grid Classes</h1>
-				<p>These are just a couple classes you may use in your grids, rows, and columns.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-12 colm-6">
-				<h3>.inner-between</h3>
-				<p>Use this class in a new div placed inside a column.</p>
-				<div class="inner-between inner">
-					<img src="images/space1.jpg">
-					<img src="images/space3.jpg">
-					<img src="images/space4.jpg">
-					<img src="images/space2.jpg">
-				</div>
-			</div>
-			
-			<div class="cols-12 colm-6">
-			<h3>.inner-around</h3>
-			<p>Use this class in a new div placed inside a column.</p>
-				<div class="inner-around inner">
-					<img src="images/space1.jpg">
-					<img src="images/space3.jpg">
-					<img src="images/space4.jpg">
-					<img src="images/space2.jpg">
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="cols-12 colm-4 end">
-				<h5>This is the .end class.</h5>
-				<p>This class goes alongside your .col* class. It will send all of your content to the bottom of the column.</p>
-			</div>
-			
-			<div class="cols-12 colm-4 start">
-				<h5>This is the .start class.</h5>
-				<p>This class goes alongside your .col* class. It will set all of your content to the top of the column.</p>
-			</div>
-			
-			<div class="cols-12 colm-4 just-center">
-				<h5>This is the .just-center class.</h5>
-				<p>This class goes alongside your .col* class. It will send all of your content to the middle of the column. </p>
-			</div>	
-		</div>
-		
-		<div class="row">
-			<div class="cols-12 colm-4 right">
-				<h5>This is the .right class.</h5>
-				<p>This class goes alongside your .col* class. It will align all of your content to the right of the column.</p>
-			</div>
-			
-			<div class="cols-12 colm-4 left">
-				<h5>This is the .left class.</h5>
-				<p>This class goes alongside your .col* class. It will align all of your content to the left of the column.</p>
-			</div>
-			
-			<div class="cols-12 colm-4 center">
-				<h5>This is the .center class</h5>
-				<p>This class goes alongside your .col* class. It will align all of your content to the center of the column.</p>
-			</div>
-		</div>
-		
 	</div>
 	
 	<footer>
