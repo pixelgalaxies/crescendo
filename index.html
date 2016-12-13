@@ -10,6 +10,8 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/crescendoLogo.png">
 	
+	<script src="crescendo.js"></script>
+	
 	<title>Crescendo - A flexbox grid framework</title>
 </head>
 
@@ -18,33 +20,30 @@
 	<nav>
 		<img id="nav-logo" src="images/crescendoLogo.png">
 
-		<div class="nav-full">
+		<div class="nav-bar">
 			<ul>
-				<li><a href="#about-container">About</a></li>
-					<li><a href="#grid-container">The Grids</a></li>
-					<li><a href="#buttons-container">Buttons</a></li>
-					<li><a href="#typography-container">Typography</a></li>
-					<li><a href="#utilities-container">Utilities</a></li>
-					<li><a href="#jumbotron">Jumbotrons</a></li
+				<li><a href="#grid-container">The Grids</a></li>
+				<li><a href="#buttons-container">Buttons</a></li>
+				<li><a href="#typography-container">Typography</a></li>
+				<li><a href="#utilities-container">Utilities</a></li>
+				<li><a href="#jumbotron">Jumbotrons</a></li>
 			</ul>
 		</div>
-
-		<div class="menu-drop">
-			<p>beep</p>
-			<div class="menu-drop-content">
-				<ul>
-					<li><a href="#about-container">About</a></li>
-					<li><a href="#grid-container">The Grids</a></li>
-					<li><a href="#buttons-container">Buttons</a></li>
-					<li><a href="#typography-container">Typography</a></li>
-					<li><a href="#utilities-container">Utilities</a></li>
-					<li><a href="#jumbotron">Jumbotrons</a></li>
-				</ul>
-			</div>
-
-		</div>
 		
+		<img class="menu-icon" src="images/crescendoMenu.png" onclick="menuDrop()">
+		<img class="close-icon" src="images/crescendoClose.png" onclick="menuClose()">
 	</nav>
+	
+	<div class="menu-drop">
+		<ul>
+			<li><a href="#grid-container">The Grids</a></li>
+			<li><a href="#buttons-container">Buttons</a></li>
+			<li><a href="#typography-container">Typography</a></li>
+			<li><a href="#utilities-container">Utilities</a></li>
+			<li><a href="#jumbotron">Jumbotrons</a></li>
+		</ul>
+	</div>
+	
 	
 	<div id="home" class="jumbo true-center">
 		<h1 class="boom">Crescendo</h1>
@@ -375,15 +374,15 @@
 	</div>
 	
 	<div id="jumbo-center" class="jumbo true-center">
-		<h4>class="jumbo true-center"</h4>
+		<p>class="jumbo true-center"</p>
 	</div>
 	
 	<div id="jumbo-left" class="jumbo just-center left">
-		<h4>class="jumbo just-center left"</h4>
+		<p>class="jumbo just-center left"</p>
 	</div>
 	
 	<div id="jumbo-right" class="jumbo just-center right">
-		<h4>class="jumbo just-center right"</h4>
+		<p>class="jumbo just-center right"</p>
 	</div>
 	
 	<footer>
@@ -393,7 +392,7 @@
 		<a href=#buttons>Buttons</a>
 		<a href=#jumbotron>Jumbo</a>
 		<a href=#extras>Extras</a>
-		<a id="gitIcon" href="https://github.com/pixelgalaxies/crescendo"><img src="images/github-icon.png"></a>
+<!--		<a id="gitIcon" href="https://github.com/pixelgalaxies/crescendo"><img src="images/github-icon.png"></a>-->
 	</footer>
 </body>
 </html>

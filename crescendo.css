@@ -42,32 +42,26 @@ nav {
 	align-items: center;
 }
 
-.nav-full li {
+.nav-bar li {
 	list-style: none;
 	display: inline;
 }
 
-.menu-drop {
-	display: inline-block;
+.close-icon {
+	display: none;
 }
 
-.menu-drop-content {
-	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+.menu-drop {
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 	display: none;
 	left: 0;
-	padding: 1rem 0;
 	position: absolute;
-	margin-top: 1rem;
 	text-align: center;
 	width: 100%;
 }
 
-.menu-drop-content li {
+.menu-drop li {
 	padding: 1rem 0;
-}
-
-.menu-drop:hover .menu-drop-content {
-	display: block;
 }
 
 
@@ -235,7 +229,7 @@ h6 { font-size: 1rem; }
 	.jumbo h1 { font-size: 4rem; }
 	.jumbo p { font-size: 1.25rem; }
 	
-	.nav-full {
+	.nav-bar {
 		display: none;
 	}
 	
@@ -244,7 +238,6 @@ h6 { font-size: 1rem; }
 	.jumbo {
 		padding: 0 .5rem;
 	}
-	
 	
 	[class*='col'] {
 		margin: .25rem .5%;
@@ -279,13 +272,14 @@ h6 { font-size: 1rem; }
 	.jumbo > h1 { font-size: 5rem; }
 	.jumbo > p { font-size: 1.75rem; }
 	
-	.nav-full {
+	.nav-bar {
 		display: inherit;
 	}
 	
-	.menu-drop {
+	.menu-icon {
 		display: none;
 	}
+	
 	
 	[class*='col'] {
 		margin: .3rem .5%;

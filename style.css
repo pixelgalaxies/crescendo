@@ -7,31 +7,36 @@
 	font-family: 'Abel', sans-serif;
 }
 
-nav {
-	background-color: #2E2E5C;
+body {
+	background-image: url('images/crescendoTrees.jpg');
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
 }
 
-nav a {
-	font-size: 1.5rem;
+nav a,
+.menu-drop a {
+	font-size: 1.4rem;
+	color: #D3D3D3;
 	padding: 1rem;
 }
 
-.nav-full {
+.nav-bar {
 	padding: 1rem 0;
-}
-
-.menu-drop {
-	padding: 1rem;
-	font-size: 1.5rem;
 }
 
 #nav-logo {
 	height: 3.5rem;
-	width: 3.5rem;
-	margin-left: .7rem;
+	margin-left: 1rem;
 }
 
-.menu-drop-content {
+.menu-icon,
+.close-icon {
+	height: 2rem;
+	margin-right: 1rem;
+}
+
+.menu-drop {
 	background: rgba(0,0,0,0.8);
 }
 
@@ -40,13 +45,10 @@ nav a {
 --------------------------------------------------
 */
 #home {
-	background-image: url('images/crescendoTrees.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
 	color: #D3D3D3;
 	min-height: 100%;
 	text-align: justify;
+	text-shadow: #000000 0px 5px 10px;
 }
 
 
@@ -168,13 +170,13 @@ footer a {
 --------------------------------------------------
 */
 @media (min-width: 300px) {
-	nav a {
-		color: #d3d3d3;
+	nav {
+		background: rgba(0,0,0,0.8);
 	}
 }
 
 @media (min-width: 768px) {
-	nav a {
-		color: #10101A;
+	nav {
+		background-color: transparent;
 	}
 }
