@@ -1,8 +1,8 @@
-# Crescendo
+# Crescendo v2.0
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. Besides the grid, Crescendo features a few utility/ styling classes for things like jumbotrons and ghost buttons. 
 
 ### Support
-Crescendo was built in Google Chrome. However, it will work in Firefox, Edge, and Opera as well. Safari does not support the functionality used in Crescendo.
+Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Moilla Firefox, Microsoft Edge, Safari). 
 
 To use Crescendo, just paste this snippet into your head tags:
 
@@ -10,36 +10,83 @@ To use Crescendo, just paste this snippet into your head tags:
 <link type="text/css" rel="stylesheet" href="https://pixelgalaxies.github.io/crescendo/crescendo.css">
 ```
 
-A little demo of Crescendo in action: https://pixelgalaxies.github.io/crescendo/
-
 ### Navigation classes:
 
->#### .nav-wrapper
->>This class goes in the nav tag or in a div tag. It will flex its children column-wise at mobile sizes and then into a row starting at 768px. Also at 768px, flex items are automatically separated equally across the navigation. 
+>#### .nav
+>>This class goes in the nav tag. It will make sure its width is 100% of available space.
+
+>#### .nav-absolute
+>>This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position as absolute so it will overlay anything at the top of the screen.
 
 ```
-<nav class="nav-wrapper"></nav>
+<nav class="nav"></nav>
+<nav class="nav-absolute"></nav>
 ```
 
->#### .nav-fixed
->>This class will make your navigation fixed to the top of the screen, but only at screen sizes of 768px or larger.
+>#### .nav-container
+>>This class goes in a div tag that is nested in your nav. It will hold all of your content. 
+>>*Note this is a flexed div. It will flex its contents in a row and put a space between them.  
 
 ```
-<nav class="nav wrapper nav-fixed"></nav>
+<div class="nav-container"></div>
 ```
 
->#### .nav-list
->>This class goes in unordered list tags that are placed in the navigation bar. Like it’s wrapper, nav-list will flex its children in a column at mobile sizes and then into a row starting at screen sizes 768px wide.
+>#### .nav-links
+>>This class belongs in a div that is nested in the nav-container. It will hold your links and will disappear at smaller screens. 
 
 ```
-<ul class="nav-list></ul>
+<div class="nav-links></div>
 ```
 
->#### .nav-item
->>This class goes in the children of list item tags. Usually anchors.
+>#### .menu-icon
+>>This class goes in the img tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. Be sure to include the onclick attribute for the drop down functionality.
 
 ```
-<li><a href="#" class="nav-item">Link</a></li>
+<img class="menu-icon" src="#" onclick="menuDrop()">
+```
+
+>#### .close-icon
+>>This class goes in the img tag you want to use as your close icon. It disappears when you press it and will only appear when the menu-icon img is pressed.  
+
+```
+<img class="close-icon" src="#" onclick="menuClose()">
+```
+
+>#### .dropdown
+>>This class goes in a div inside the nav but outside of the nav container. This is because of positioning issues when nav-absolute is used. 
+
+```
+<div class="dropdown">
+  <ul>
+    <li><a href="#" onclick="menuClose()"></a></li>
+    <li><a href="#" onclick="menuClose()"></a></li>
+    <li><a href="#" onclick="menuClose()"></a></li>
+  </ul>
+</div>
+```
+
+>#### All together now.
+```
+<nav class="nav-absolute">
+		<div class="nav-container">
+			<div class="nav-links">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+			<img class="menu-icon" src="#" onclick="menuDrop()">
+			<img class="close-icon" src="#" onclick="menuClose()">
+		</div>
+		<div class="dropdown">
+			<ul>
+				<li><a href="#" onclick="menuClose()"></a></li>
+				<li><a href="#" onclick="menuClose()"></a></li>
+				<li><a href="#" onclick="menuClose()"></a></li>
+			</ul>
+		</div>
+	</nav>
 ```
 
 ### Grid classes:
