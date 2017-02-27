@@ -194,17 +194,6 @@ p { font-size: 1.6rem; }
 .circle { border-radius: 50%; }
 
 
-/* 
--------------------------------------- Headers
-*/
-h1 { font-size: 4rem;}
-h2 { font-size: 3.5rem; }
-h3 { font-size: 3rem; }
-h4 { font-size: 2.5rem; }
-h5 { font-size: 2rem; }
-h6 { font-size: 1.5rem; }
-
-
 /*
 ------------------------------------ Media queries
 
@@ -225,7 +214,7 @@ h6 { font-size: 1.5rem; }
 	.cols-2 { flex: 1 0 calc((100% * 2 / 12) - 20px); }
 	.cols-1 { flex: 1 0 calc((100% * 1 / 12) - 20px); }
 	
-	.jumbo h1 { font-size: 7rem; }
+	.jumbo h1 { font-size: 5rem; }
 	.jumbo p { font-size: 2rem; }
 	
 	.nav-links {
@@ -235,6 +224,13 @@ h6 { font-size: 1.5rem; }
 	[class*='col'] {
 		margin: 10px;
 	}
+	
+	h1 { font-size: 3.6rem;}
+	h2 { font-size: 3.2rem; }
+	h3 { font-size: 2.8rem; }
+	h4 { font-size: 2.4rem; }
+	h5 { font-size: 2rem; }
+	h6 { font-size: 1.6rem; }
 }
 
 
@@ -262,6 +258,16 @@ h6 { font-size: 1.5rem; }
 	.menu-icon {
 		display: none;
 	}
+	
+	.jumbo h1 { font-size: 6rem; }
+	.jumbo p { font-size: 2.5rem; }
+	
+	h1 { font-size: 4rem;}
+	h2 { font-size: 3.5rem; }
+	h3 { font-size: 3rem; }
+	h4 { font-size: 2.5rem; }
+	h5 { font-size: 2rem; }
+	h6 { font-size: 1.5rem; }
 }
 
 
@@ -282,7 +288,7 @@ h6 { font-size: 1.5rem; }
 	.coll-2 { flex: 1 0 calc((100% * 2 / 12) - 20px); }
 	.coll-1 { flex: 1 0 calc((100% * 1 / 12) - 20px); }
 	
-	.jumbo > h1 { font-size: 9rem; }
+	.jumbo > h1 { font-size: 7rem; }
 	.jumbo > p { font-size: 3rem; }
 	
 	.grid-fw {
