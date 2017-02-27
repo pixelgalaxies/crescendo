@@ -1,9 +1,7 @@
 /*Crescendo by Dustin Clark 2016
 --------------------------------------------------
-*/
 
-/* Resets and presets 
---------------------------------------------------
+------------------------------- Resets and presets 
 */
 
 *, 
@@ -31,18 +29,14 @@ a {
 	font-size: 1.6rem;
 }
 
-p {
-	font-size: 1.6rem;
-}
+p { font-size: 1.6rem; }
 
 
 
-/* NAVIGATION 
---------------------------------------------------
+/* 
+--------------------------------------Navigation
 */
-.nav {
-	width: 100%;
-}
+.nav { width: 100%; }
 
 .nav-absolute {
 	position: absolute;
@@ -62,9 +56,7 @@ p {
 	display: inline;
 }
 
-.close-icon {
-	display: none;
-}
+.close-icon { display: none; }
 
 .dropdown {
 	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
@@ -75,13 +67,11 @@ p {
 	width: 100%;
 }
 
-.dropdown li {
-	padding: 1rem 0;
-}
+.dropdown li { padding: 1rem 0; }
 
 
-/* JUMBTRON 
---------------------------------------------------
+/*
+----------------------------------- Jumbotron
 */
 .jumbo {
 	display: flex;
@@ -90,8 +80,8 @@ p {
 }
 
 
-/* Grid 
---------------------------------------------------
+/*
+------------------------------------ Grids
 */
 .grid {
 	display: flex;
@@ -106,8 +96,8 @@ p {
 }
 
 
-/* ROWS 
---------------------------------------------------
+/*
+------------------------------------ Row
 */
 .row {
 	display: flex;
@@ -117,8 +107,8 @@ p {
 }
 
 
-/* COLUMNS 
---------------------------------------------------
+/*
+---------------------------------------- Columns
 */
 [class*='col'] {
 	display: flex;
@@ -126,32 +116,30 @@ p {
 }
 
 
-/* BUTTONS 
---------------------------------------------------
+/* 
+--------------------------------------- Buttons
 */
 .btn { 
-	border-radius: .3rem;
 	padding: 1rem;
+	border: none;
+	font-size: 1.5rem;
+	border-radius: .5rem;
+	width: 12rem;
+	text-align: center;
 }
 
-.btn:active {
-	opacity: .6;
-}
+.btn:active { opacity: .9; }
 
-.ghost-btn {
-	background-color: transparent;
-	border: 2px #000000 solid;
-	color: #000000;
-}
+.btn-primary { background-color: #318aa5; }
 
-.ghost-btn:hover {
-	background-color: #000000;
-	color: #FFFFFF;
-}
+.btn-success { background-color: #457f39; }
 
+.btn-warning { background-color: #ccc133; }
 
-/* UTILITY 
---------------------------------------------------
+.btn-error { background-color: #8c3838; }
+
+/*
+---------------------------------------- Utilities
 */
 .true-center {
 	align-items: center;
@@ -198,16 +186,16 @@ p {
 
 .inner-around > * {
 	/* when wrapping, seperates items. */
-	margin: .3rem 0;
+	margin: .5rem 0;
 }
 
-.round { border-radius: 1rem; }
+.round { border-radius: 50px; }
 
-.circle { border-radius 50%; }
+.circle { border-radius: 50%; }
 
 
-/* Header Resizing 
---------------------------------------------------
+/* 
+-------------------------------------- Headers
 */
 h1 { font-size: 4rem;}
 h2 { font-size: 3.5rem; }
@@ -217,12 +205,11 @@ h5 { font-size: 2rem; }
 h6 { font-size: 1.5rem; }
 
 
-/* MEDIA QUERIES 
---------------------------------------------------
-*/
+/*
+------------------------------------ Media queries
 
-/* small screens 
---------------------------------------------------
+
+------------------------------------ small screens
 */
 @media (min-width: 300px) {
 	.cols-12 { flex: 1 0 calc(100% - 20px); }
@@ -250,14 +237,9 @@ h6 { font-size: 1.5rem; }
 	}
 }
 
-/* S-M inbetween 
---------------------------------------------------
-*/
-@media (min-width: 480px) {
-}
 
-/* medium screens 
---------------------------------------------------
+/*
+--------------------------------------- medium screens
 */
 @media (min-width: 768px) {
 	.colm-12 { flex: 1 0 calc(100% - 20px); }
@@ -280,18 +262,11 @@ h6 { font-size: 1.5rem; }
 	.menu-icon {
 		display: none;
 	}
-	
 }
 
-/* M-L inbetween 
---------------------------------------------------
-*/
-@media (min-width: 992px) {
-	
-}
 
-/* large screens 
---------------------------------------------------
+/*
+--------------------------------------- large screens
 */
 @media (min-width: 1200px) {
 	.coll-12 { flex: 1 0 calc(100% - 20px); }
