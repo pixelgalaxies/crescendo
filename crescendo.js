@@ -7,7 +7,7 @@
 
 //displays dropdown items and switches icon
 function menuDrop() {
-	document.getElementsByClassName("menu-drop")[0].style.display="block";
+	document.getElementsByClassName("dropdown")[0].style.display="block";
 	
 	document.getElementsByClassName("menu-icon")[0].style.display="none";
 	
@@ -17,7 +17,7 @@ function menuDrop() {
 
 //closes dropdown items and switches icons
 function menuClose() {
-	document.getElementsByClassName("menu-drop")[0].style.display="none";
+	document.getElementsByClassName("dropdown")[0].style.display="none";
 	
 	document.getElementsByClassName("menu-icon")[0].style.display="inherit";
 	
@@ -32,18 +32,18 @@ function hide() {
 		
 		document.getElementsByClassName("close-icon")[0].style.display="none";
 		
-		document.getElementsByClassName("menu-drop")[0].style.display="none";
+		document.getElementsByClassName("dropdown")[0].style.display="none";
 		
-		document.getElementsByClassName("nav-bar")[0].style.display="none";
+		document.getElementsByClassName("nav-links")[0].style.display="none";
 	}
 	else {
 		document.getElementsByClassName("menu-icon")[0].style.display="none";
 		
 		document.getElementsByClassName("close-icon")[0].style.display="none";
 		
-		document.getElementsByClassName("menu-drop")[0].style.display="none";
+		document.getElementsByClassName("dropdown")[0].style.display="none";
 		
-		document.getElementsByClassName("nav-bar")[0].style.display="inherit";
+		document.getElementsByClassName("nav-links")[0].style.display="inherit";
 	}
 	
 }

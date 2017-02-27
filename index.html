@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!-- Crescendo Documentation site -->
+<!-- Crescendo site -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100|Scope+One" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="crescendo.css">
-	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="homeStyle.css">
 	<link rel="icon" href="images/crescendoLogo.png">
 	
 	<script src="crescendo.js"></script>
@@ -16,86 +16,84 @@
 </head>
 
 <body>
-	<div class="splash-container">
-		<nav>
-			<img id="nav-logo" src="images/crescendoLogo.png">
-
-			<div class="nav-bar">
+	<nav class="nav-absolute">
+		<div class="nav-container">
+			<img id="nav-logo" src="images/crescendoLogo.svg">
+			
+			<div class="nav-links">
 				<ul>
-					<li><a href="#grid-container">The Grids</a></li>
-					<li><a href="#buttons-container">Buttons</a></li>
+					<li><a href="#about-container">About</a></li>
+					<li><a href="#grid-container">Grid</a></li>
 					<li><a href="#typography-container">Typography</a></li>
-					<li><a href="#utilities-container">Utilities</a></li>
-					<li><a href="#jumbotron">Jumbotrons</a></li>
 				</ul>
 			</div>
-
-			<img class="menu-icon" src="images/crescendoMenu.png" onclick="menuDrop()">
-			<img class="close-icon" src="images/crescendoClose.png" onclick="menuClose()">
-		</nav>
-
-		<div class="menu-drop">
+			
+			<img class="menu-icon" src="images/crescendoMenu.svg" onclick="menuDrop()">
+			<img class="close-icon" src="images/crescendoX.svg" onclick="menuClose()">
+		</div>
+		
+		<div class="dropdown">
 			<ul>
-				<li><a href="#grid-container">The Grids</a></li>
-				<li><a href="#buttons-container">Buttons</a></li>
-				<li><a href="#typography-container">Typography</a></li>
-				<li><a href="#utilities-container">Utilities</a></li>
-				<li><a href="#jumbotron">Jumbotrons</a></li>
+				<li><a href="#about-container" onclick="menuClose()">About</a></li>
+				<li><a href="#grid-container" onclick="menuClose()">Grid</a></li>
+				<li><a href="#typography-container" onclick="menuClose()">Typography</a></li>
 			</ul>
 		</div>
-
-
-		<div id="home" class="jumbo true-center">
-			<h1 class="boom">Crescendo</h1>
-			<p>A flexbox grid framework.</p>
-		</div>
+	</nav>
 	
+	<div id="home" class="jumbo true-center">
+		<h1>Crescendo 2</h1>
+		<p>A flexbox grid framework</p>
 	</div>
 	
 	<div id="about-container">
-		<div class="grid-fw">
+		<div class="about grid-fw">
 			<div class="row">
-				<div class="cols-6 coll-3">
+				<div class="cols-12 colm-6 coll-3 center">
+					<img src="images/crescendoMobile.svg">
 					<h4>Mobile First</h4>
-					<p>Crescendo was with a mobile first approach in mind. It allows for fully-responsive functionaility when building your websites.</p>
+					<p>Crescendo was built with a mobile first approach. This allows for fully-responsive functionaility when building your websites.</p>
 				</div>
 				
-				<div class="cols-6 coll-3">
+				<div class="cols-12 colm-6 coll-3 center">
+					<img src="images/crescendoFeather.svg">
 					<h4>Lightweight</h4>
 					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS file is _kb and the minified file is only _kb.</p>
 				</div>
 				
-				<div class="cols-6 coll-3">
+				<div class="cols-12 colm-6 coll-3 center">
+					<a href="https://www.github.com/pixelgalaxies/crescendo"><img src="images/crescendoGit.svg"></a>
 					<h4>Open Source</h4>
-					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source. You can find it <a>here</a>.</p>
+					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source.</p>
 				</div>
-				<div class="cols-6 coll-3">
+				<div class="cols-12 colm-6 coll-3 center">
+					<img src="images/crescendoCheck.svg">
 					<h4>Support</h4>
-					<p>Crescendo is supported by all modern browsers except Safari (for now).</p>
+					<p>Crescendo 2 is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera, Firefox, Edge, and finally, Safari.</p>
 				</div>
 			</div>
-		</div>
-	</div>
-<!-- end of #about-container -->
-
-	<div id="documentation-container">
-		<div class="grid-fw">
-			<div class="row">
+			
+			<div class="row answer">
 				<div class="cols-12 center">
-					<h1>Is Crescendo right for you?</h1>
-					<p class="answer">The simple answer is yes, it is. Crescendo features simple to use grids which are perfect for any project, big or small. It's two grids combined with it's several utility classes are just what you need to build fast, responsive, yet elegant websites.</p>
+					<h3>Is Crescendo right for you?</h3>
+					<p>The simple answer is yes, it is. Crescendo features simple to use grids which are perfect for any project, big or small. It's two grids combined with it's several utility classes are just what you need to build fast, responsive, yet elegant websites. Visit the API page here and learn to use Crescendo today.</p>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- end of #documentation-container -->
+	</div><!-- end of #about-container -->
 	
-	<div id="grid-container">
+	<div id="grids-container">
 		<div class="grid">
+			<div class="new row">
+				<div class="cols-12 center">
+					<h1>New in Crescendo 2</h1>
+				</div>
+			</div>
+			
 			<div class="row">
-				<div class=" cols-12">
-					<h1>The Grid</h1>
-					<p>A background color was added to each column to show how the grid functions.</p>
+				<div class="cols-12">
+					<h2>The Grid</h2>
+					<p>This is the basic grid. It flexes the full width of available space. Yes, this means it's nestable. In fact, the grid you see below is currently nested in another grid.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -163,15 +161,12 @@
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- end of #grid-container -->
-	
-	<div id="gridfw-container">
+		
 		<div class="grid-fw">
 			<div class="row">
-				<div class=" cols-12">
-					<h1>The Fixed-Width Grid</h1>
-					<p>A background color was added to each column to show how the grid functions.</p>
+				<div class="cols-12">
+					<h2>The Fixed-width Grid</h2>
+					<p>This is the fixed-width grid. It's essentially the basic grid but will stop flexing when the screen's wdith exceeds 1200 pixels. This one is not nestable. </p>
 				</div>
 			</div>
 			<div class="row">
@@ -238,163 +233,84 @@
 					<p>cols-6</p>
 				</div>
 			</div>
-		</div> 
-	</div>
-<!-- end of #gridfw-container -->
+	</div> 
+	</div><!-- ends grids-container -->
+	
+	<div id="utility-container">
+		<div class="grid-fw">
+			<div class="row">
+				<div class="cols-12">
+					<h2>New Utility Classes</h2>
+					<p>A couple of new utility classes were added to the roster.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="cols-6 center">
+					<h3>Introducing Round</h3>
+					<p>This is the .round class. It curves its corners at 50px.</p>
+					<img class="round" src="images/crescendoTreesMobile.jpg">
+				</div>
+				
+				<div class="cols-6 center">
+					<h3>Introducing Circle</h3>
+					<p>This is the .circle class. It makes its item, you guessed it, circular.</p>
+					<img class="circle" src="images/crescendoTreesMobile.jpg">
+				</div>
+			</div>
+		</div>
+	</div><!-- ends utility-container -->
 	
 	<div id="buttons-container">
 		<div class="grid-fw">
 			<div class="row">
 				<div class="cols-12">
-					<h1>Buttons</h1>
-					<p>There are two button styles that each have unique propeties. The .btn class and it's sister classes, .ghost-btn and .default-btn, can be applied to a button tag, an input['submit'] tag, an input['button'] tag, and lastly an anchor tag. More button classes will be added in future versions of Crescendo.</p>
-					<hr>
-					<h4>Ghost Button</h4>
-					<p>The first button class is the Ghost Button. It features a transparent background with a black border and matching text. When you roll over this button it will fill in black and the text will turn white. You can of course override the colors in a separate stylesheet.</p>
-					<div class="inner-around">
-						<a class="btn ghost-btn" href="">Anchor</a>
-						<input type="button" class="btn ghost-btn" value="Input">
-						<button class="btn ghost-btn">Button</button>
-						<input type="submit" class="btn ghost-btn" value="Submit">
-					</div>
-					<hr>
-					<h4>Default Button</h4>
-					<p>The second button class is the Default Button. It features a dark gray background with off-white text. Like the ghost button, you're able to override the colors in a separate stylesheet.</p>
-					<div class="inner-around">
-						<a class="btn default-btn" href="">Anchor</a>
-						<input type="button" class="btn default-btn" value="Input">
-						<button class="btn default-btn">Button</button>
-						<input type="submit" class="btn default-btn" value="Submit">
+					<h2>Buttons</h2>
+					<p>In Crescendo 2, we did away with ghost buttons and added some buttons everyone should be familiar with. We also reintroduce the .btn class with a couple changes. First we set a fixed width of 120px. Then we gave it a set padding of 10px. Lastly we set the font-size to 15px. After the changes to the .btn were made, we added the secondary classes you see below. </p>
+					<div class="inner-around center">
+						<button class="btn btn-primary">primary</button>
+						<button class="btn btn-success">success</button>
+						<button class="btn btn-warning">warning</button>
+						<button class="btn btn-error">error</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- end of #buttons-container -->
-
+	</div><!-- ends buttons-containers -->
+	
 	<div id="typography-container">
 		<div class="grid-fw">
 			<div class="row">
-				<div class="cols-12 colm-6">
-					<h1>Typography</h1>
-					<p>Crescendo makes a few changes to your browsers default font sizing.</p>
-					<h3>Headers</h3>
-					<p>Headers get resized. An example of each is to the right. Or below, depending on your device.</p>
-					<p>h1 is 3.5rem</p>
-					<p>h2 is 3rem</p>
-					<p>h3 is 2.5rem</p>
-					<p>h4 is 2rem</p>
-					<p>h5 is 1.5rem</p>
-					<p>h6 is 1rem</p>
+				<div class="cols-12">
+					<h2>Typography</h2>
+					<p>Just a couple of changes here. Headers do get resized (new numbers below). We recalculated font-size for cleaner numbers. Defaults to 16px no matter the user's browsers settings.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="cols-6 true-center typ-content">
+					<p>h1 is 40px</p>
+					<p>h2 is 35px</p>
+					<p>h3 is 30px</p>
+					<p>h4 is 25px</p>
+					<p>h5 is 20px</p>
+					<p>h6 is 15px</p>
 				</div>
 				
-				<div class="cols-12 colm-6 true-center">
-					<h1>Header 1</h1>
-					<h2>Header 2</h2>
-					<h3>Header 3</h3>
-					<h4>Header 4</h4>
-					<h5>Header 5</h5>
-					<h6>Header 6</h6>
+				<div class="cols-6 true-center typ-content">
+					<h1>This is h1.</h1>
+					<h2>This is h2.</h2>
+					<h3>This is h3.</h3>
+					<h4>This is h4.</h4>
+					<h5>This is h5.</h5>
+					<h6>This is h6.</h6>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- end of #typography-container -->
-	
-	<div id="utilities-container">
-		<div id="utilities" class="grid">
-			<div class="row start">
-				<div class="cols-12">
-					<h1>Utility Classes</h1>
-					<p>These are just a couple classes you may use in your grids, rows, and columns.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="cols-12 colm-6">
-					<h3>.inner-between</h3>
-					<p>Use this class in a new div placed inside a column.</p>
-					<div class="inner-between inner">
-						<img src="images/space1.jpg">
-						<img src="images/space3.jpg">
-						<img src="images/space4.jpg">
-						<img src="images/space2.jpg">
-					</div>
-				</div>
-
-				<div class="cols-12 colm-6">
-				<h3>.inner-around</h3>
-				<p>Use this class in a new div placed inside a column.</p>
-					<div class="inner-around inner">
-						<img src="images/space1.jpg">
-						<img src="images/space3.jpg">
-						<img src="images/space4.jpg">
-						<img src="images/space2.jpg">
-					</div>
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="cols-12 colm-4 end">
-					<h5>This is the .end class.</h5>
-					<p>This class goes alongside your .col* class. It will send all of your content to the bottom of the column.</p>
-				</div>
-
-				<div class="cols-12 colm-4 start">
-					<h5>This is the .start class.</h5>
-					<p>This class goes alongside your .col* class. It will set all of your content to the top of the column.</p>
-				</div>
-
-				<div class="cols-12 colm-4 just-center">
-					<h5>This is the .just-center class.</h5>
-					<p>This class goes alongside your .col* class. It will send all of your content to the middle of the column. </p>
-				</div>	
-			</div>
-
-			<div class="row">
-				<div class="cols-12 colm-4 right">
-					<h5>This is the .right class.</h5>
-					<p>This class goes alongside your .col* class. It will align all of your content to the right of the column.</p>
-				</div>
-
-				<div class="cols-12 colm-4 left">
-					<h5>This is the .left class.</h5>
-					<p>This class goes alongside your .col* class. It will align all of your content to the left of the column.</p>
-				</div>
-
-				<div class="cols-12 colm-4 center">
-					<h5>This is the .center class</h5>
-					<p>This class goes alongside your .col* class. It will align all of your content to the center of the column.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- closes utilities-container -->
-
-<div id="jumbotron" class="jumbo true-center">
-		<h1>Jumbotrons</h1>
-	</div>
-	
-	<div id="jumbo-center" class="jumbo true-center">
-		<p>class="jumbo true-center"</p>
-	</div>
-	
-	<div id="jumbo-left" class="jumbo just-center left">
-		<p>class="jumbo just-center left"</p>
-	</div>
-	
-	<div id="jumbo-right" class="jumbo just-center right">
-		<p>class="jumbo just-center right"</p>
-	</div>
+	</div><!-- ends typography-container -->
 	
 	<footer>
-		<h6>Crescendo was created by<a href="http://www.dustinclark.info">Dustin Clark</a>&copy;2016</h6>
-		<a href=#nav>Top</a>
-		<a href=#grid>Grid</a>
-		<a href=#buttons>Buttons</a>
-		<a href=#jumbotron>Jumbo</a>
-		<a href=#extras>Extras</a>
-<!--		<a id="gitIcon" href="https://github.com/pixelgalaxies/crescendo"><img src="images/github-icon.png"></a>-->
+		<h4>Crescendo was created by<a href="http://www.dustinclark.info">Dustin Clark</a>&copy;2016</h4>
 	</footer>
 </body>
 </html>

@@ -1,9 +1,7 @@
 /*Crescendo by Dustin Clark 2016
 --------------------------------------------------
-*/
 
-/* Resets and presets 
---------------------------------------------------
+------------------------------- Resets and presets 
 */
 
 *, 
@@ -12,9 +10,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-size: 62.5%;
 }
-
-
 
 button, input[type='button'], input[type='submit'], a { outline: none;}
 
@@ -29,30 +26,39 @@ img {
 
 a {
 	text-decoration: none;
+	font-size: 1.6rem;
 }
 
+p { font-size: 1.6rem; }
 
-/* NAVIGATION 
---------------------------------------------------
+
+
+/* 
+--------------------------------------Navigation
 */
-nav {
+.nav { width: 100%; }
+
+.nav-absolute {
+	position: absolute;
+	width: 100%;
+}
+
+.nav-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
-.nav-bar li {
+.nav-links li {
 	list-style: none;
 	display: inline;
 }
 
-.close-icon {
-	display: none;
-}
+.close-icon { display: none; }
 
-
-.menu-drop {
+.dropdown {
 	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
 	display: none;
 	left: 0;
@@ -61,48 +67,48 @@ nav {
 	width: 100%;
 }
 
-.menu-drop li {
-	padding: 1rem 0;
-}
+.dropdown li { padding: 1rem 0; }
 
 
-/* JUMBTRON 
---------------------------------------------------
+/*
+----------------------------------- Jumbotron
 */
 .jumbo {
 	display: flex;
 	flex-direction: column;
-	min-width: 100%;
+	flex: 0 0 auto;
 }
 
 
-/* Grid 
---------------------------------------------------
+/*
+------------------------------------ Grids
 */
 .grid {
 	display: flex;
 	flex-direction: column;
+	flex: 0 0 auto;
 }
 
 .grid-fw {
 	display: flex;
 	flex-direction: column;
+	flex: 0 0 auto;
 }
 
 
-/* ROWS 
---------------------------------------------------
+/*
+------------------------------------ Row
 */
 .row {
 	display: flex;
-	flex-basis: 100%;
+	flex: 0 0 auto;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
 
-/* COLUMNS 
---------------------------------------------------
+/*
+---------------------------------------- Columns
 */
 [class*='col'] {
 	display: flex;
@@ -110,218 +116,177 @@ nav {
 }
 
 
-/* BUTTONS 
---------------------------------------------------
+/* 
+--------------------------------------- Buttons
 */
 .btn { 
-	border-radius: 3px;
-	font-size: 1.2rem;
-	padding: .7rem;
-}
-
-.btn:active {
-	opacity: .6;
-}
-
-.ghost-btn {
-	background-color: transparent;
-	border: 2px #000000 solid;
-	color: #000000;
-}
-
-.ghost-btn:hover {
-	background-color: #000000;
-	color: #FFFFFF;
-}
-
-.default-btn {
-	background-color: #232323;
+	padding: 1rem;
 	border: none;
-	color: #FFFFFF;
+	font-size: 1.5rem;
+	border-radius: .5rem;
+	width: 12rem;
+	text-align: center;
 }
 
+.btn:active { opacity: .9; }
 
-/* STYLES - Utilities
---------------------------------------------------
+.btn-primary { background-color: #318aa5; }
+
+.btn-success { background-color: #457f39; }
+
+.btn-warning { background-color: #ccc133; }
+
+.btn-error { background-color: #8c3838; }
+
+/*
+---------------------------------------- Utilities
 */
-
-/* centers both veritically and horizontally */
 .true-center {
 	align-items: center;
 	justify-content: center;
 }
+/* centers both veritically and horizontally */
 
-/* use on column flex boxes to center content horizontally */
 .center { align-items: center; }
+/* use on column flex boxes to center content horizontally */
 
-/* use on column flex boxes to float right */
 .right { align-items: flex-end; }
+/* use on column flex boxes to float right */
 
-
-/* use on column flex boxes to float left */
 .left { align-items: flex-start }
+/* use on column flex boxes to float left */
 
-/* centers flex items based on flex direction */
 .just-center { justify-content: center; }
+/* centers flex items based on flex direction */
 
-/* use on flex boxes to shift items up or left, depeding on direction */
 .start { justify-content: flex-start; }
+/* use on flex boxes to shift items up or left, depeding on direction */
 
-/* use on flex boxes to shift items down or right, depeding on direction */
 .end { justify-content: flex-end; }
+/* use on flex boxes to shift items down or right, depeding on direction */
 
-/* use inside a col-* to separate items in a row*/
 .inner-between {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+/* use inside a col-* to separate items in a row*/
 
 .inner-between > * {
 	/* when wrapping, seperates items. */
-	margin: .25rem 0;
+	margin: .3rem 0;
 }
 
-/* use inside a col-* to achieve equal spacing of items in a row*/
 .inner-around {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+/* use inside a col-* to achieve equal spacing of items in a row*/
 
 .inner-around > * {
 	/* when wrapping, seperates items. */
-	margin: .25rem 0;
+	margin: .5rem 0;
 }
 
+.round { border-radius: 50px; }
 
-/* Header Resizing 
---------------------------------------------------
+.circle { border-radius: 50%; }
+
+
+/* 
+-------------------------------------- Headers
 */
-h1 { font-size: 3.5rem;}
-h2 { font-size: 3rem; }
-h3 { font-size: 2.5rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1rem; }
+h1 { font-size: 4rem;}
+h2 { font-size: 3.5rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.5rem; }
 
 
-/* MEDIA QUERIES 
---------------------------------------------------
-*/
+/*
+------------------------------------ Media queries
 
-/* small screens 
---------------------------------------------------
+
+------------------------------------ small screens
 */
 @media (min-width: 300px) {
-	.cols-12 { flex: 1 99%; }
-	.cols-11 { flex: 1 0 90.66% }
-	.cols-10 { flex: 1 0 82.33%; }
-	.cols-9 { flex: 1 0 74%; }
-	.cols-8 { flex: 1 0 65.66%; }
-	.cols-7 { flex: 1 0 57.33%; }
-	.cols-6 { flex: 1 0 49%; }
-	.cols-5 { flex: 1 0 40.66%; }
-	.cols-4 { flex: 1 0 32.33%; }
-	.cols-3 { flex: 1 0 24%; }
-	.cols-2 { flex: 1 0 15.66%; }
-	.cols-1 { flex: 1 0 7.33%; }
+	.cols-12 { flex: 1 0 calc(100% - 20px); }
+	.cols-11 { flex: 1 0 calc((100% * 11 / 12) - 20px); }
+	.cols-10 { flex: 1 0 calc((100% * 10 / 12) - 20px); }
+	.cols-9 { flex: 1 0 calc((100% * 9 / 12) - 20px); }
+	.cols-8 { flex: 1 0 calc((100% * 8 / 12) - 20px); }
+	.cols-7 { flex: 1 0 calc((100% * 7 / 12) - 20px); }
+	.cols-6 { flex: 1 0 calc((100% * 6 / 12) - 20px); }
+	.cols-5 { flex: 1 0 calc((100% * 5 / 12) - 20px); }
+	.cols-4 { flex: 1 0 calc((100% * 4 / 12) - 20px); }
+	.cols-3 { flex: 1 0 calc((100% * 3 / 12) - 20px); }
+	.cols-2 { flex: 1 0 calc((100% * 2 / 12) - 20px); }
+	.cols-1 { flex: 1 0 calc((100% * 1 / 12) - 20px); }
 	
-	.jumbo h1 { font-size: 4rem; }
-	.jumbo p { font-size: 1.25rem; }
+	.jumbo h1 { font-size: 7rem; }
+	.jumbo p { font-size: 2rem; }
 	
-	.nav-bar {
+	.nav-links {
 		display: none;
 	}
 	
-	.grid,
-	.grid-fw,
-	.jumbo {
-		padding: 0 .5rem;
-	}
-	
 	[class*='col'] {
-		margin: .25rem .5%;
+		margin: 10px;
 	}
 }
 
-/* S-M inbetween 
---------------------------------------------------
-*/
-@media (min-width: 480px) {
-	.jumbo > h1 { font-size: 4.5rem; }
-	.jumbo > p { font-size: 1.5rem; }
-}
 
-/* medium screens 
---------------------------------------------------
+/*
+--------------------------------------- medium screens
 */
 @media (min-width: 768px) {
-	.colm-12 { flex: 1 99%; }
-	.colm-11 { flex: 1 0 90.66 }
-	.colm-10 { flex: 1 0 82.33%; }
-	.colm-9 { flex: 1 0 74%; }
-	.colm-8 { flex: 1 0 65.66%; }
-	.colm-7 { flex: 1 0 57.33%; }
-	.colm-6 { flex: 1 0 49%; }
-	.colm-5 { flex: 1 0 40.66%; }
-	.colm-4 { flex: 1 0 32.33%; }
-	.colm-3 { flex: 1 0 24%; }
-	.colm-2 { flex: 1 0 15.66%; }
-	.colm-1 { flex: 1 0 7.33%; }
+	.colm-12 { flex: 1 0 calc(100% - 20px); }
+	.colm-11 { flex: 1 0 calc((100% * 11 / 12) - 20px); }
+	.colm-10 { flex: 1 0 calc((100% * 10 / 12) - 20px); }
+	.colm-9 { flex: 1 0 calc((100% * 9 / 12) - 20px); }
+	.colm-8 { flex: 1 0 calc((100% * 8 / 12) - 20px); }
+	.colm-7 { flex: 1 0 calc((100% * 7 / 12) - 20px); }
+	.colm-6 { flex: 1 0 calc((100% * 6 / 12) - 20px); }
+	.colm-5 { flex: 1 0 calc((100% * 5 / 12) - 20px); }
+	.colm-4 { flex: 1 0 calc((100% * 4 / 12) - 20px); }
+	.colm-3 { flex: 1 0 calc((100% * 3 / 12) - 20px); }
+	.colm-2 { flex: 1 0 calc((100% * 2 / 12) - 20px); }
+	.colm-1 { flex: 1 0 calc((100% * 1 / 12) - 20px); }
 	
-	.jumbo > h1 { font-size: 5rem; }
-	.jumbo > p { font-size: 1.75rem; }
-	
-	.nav-bar {
+	.nav-links {
 		display: inherit;
 	}
 	
 	.menu-icon {
 		display: none;
 	}
-	
-	
-	[class*='col'] {
-		margin: .3rem .5%;
-	}
 }
 
-/* M-L inbetween 
---------------------------------------------------
-*/
-@media (min-width: 992px) {
-	.grid-fw {
-		max-width: 992px;
-		margin: 0 auto;
-	}
-}
 
-/* large screens 
---------------------------------------------------
+/*
+--------------------------------------- large screens
 */
 @media (min-width: 1200px) {
-	.coll-12 { flex: 1 99%; }
-	.coll-11 { flex: 1 0 90.66 }
-	.coll-10 { flex: 1 0 82.33%; }
-	.coll-9 { flex: 1 0 74%; }
-	.coll-8 { flex: 1 0 65.66%; }
-	.coll-7 { flex: 1 0 57.33%; }
-	.coll-6 { flex: 1 0 49%; }
-	.coll-5 { flex: 1 0 40.66%; }
-	.coll-4 { flex: 1 0 32.33%; }
-	.coll-3 { flex: 1 0 24%; }
-	.coll-2 { flex: 1 0 15.66%; }
-	.coll-1 { flex: 1 0 7.33%; }
+	.coll-12 { flex: 1 0 calc(100% - 20px); }
+	.coll-11 { flex: 1 0 calc((100% * 11 / 12) - 20px); }
+	.coll-10 { flex: 1 0 calc((100% * 10 / 12) - 20px); }
+	.coll-9 { flex: 1 0 calc((100% * 9 / 12) - 20px); }
+	.coll-8 { flex: 1 0 calc((100% * 8 / 12) - 20px); }
+	.coll-7 { flex: 1 0 calc((100% * 7 / 12) - 20px); }
+	.coll-6 { flex: 1 0 calc((100% * 6 / 12) - 20px); }
+	.coll-5 { flex: 1 0 calc((100% * 5 / 12) - 20px); }
+	.coll-4 { flex: 1 0 calc((100% * 4 / 12) - 20px); }
+	.coll-3 { flex: 1 0 calc((100% * 3 / 12) - 20px); }
+	.coll-2 { flex: 1 0 calc((100% * 2 / 12) - 20px); }
+	.coll-1 { flex: 1 0 calc((100% * 1 / 12) - 20px); }
 	
-	.jumbo > h1 { font-size: 7rem; }
-	.jumbo > p { font-size: 2rem; }
-	
-	[class*='col'] {
-		margin: .5rem .5%;
-	}
+	.jumbo > h1 { font-size: 9rem; }
+	.jumbo > p { font-size: 3rem; }
 	
 	.grid-fw {
 		max-width: 1200px;
+		margin: 0 auto;
 	}
 }
