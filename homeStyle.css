@@ -2,7 +2,7 @@
 	By Dustin Clark
 --------------------------------------------------
 */
-* {
+body {
 	font-family: 'Scope One', serif;
 	color: #0e100d;
 }
@@ -14,8 +14,7 @@
 	background-color: rgba(14,16,13,0.8);
 }
 
-.nav-absolute a,
-.dropdown a {
+nav a {
 	font-size: 2.5rem;
 	color: #d8d7d8;
 	padding: 2rem;
@@ -92,7 +91,7 @@
 	background-color: #0e100d;
 }
 
-.new h1 {
+.new h2 {
 	color: #d8d7d8;
 }
 
@@ -146,13 +145,13 @@ footer {
 	text-align: center;
 }
 
-footer h4 {
+footer h5 {
 	color: #d8d7d8;
 }
 
 footer a {
 	color: #3a2039;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	padding: 0 .8rem;
 }
 
