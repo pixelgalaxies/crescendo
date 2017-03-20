@@ -121,7 +121,6 @@ a {
 .btn { 
 	padding: 1rem;
 	font-size: 1.6rem;
-	width: 12rem;
 	text-align: center;
 }
 
@@ -130,21 +129,25 @@ a {
 .btn-primary { 
 	background-color: #318aa5; 
 	border-radius: .5rem;
+	width: 12rem;
 }
 
 .btn-success { 
 	background-color: #457f39;
 	border-radius: .5rem;
+	width: 12rem;
 }
 
 .btn-warning { 
 	background-color: #ccc133;
 	border-radius: .5rem;
+	width: 12rem;
 }
 
 .btn-error { 
 	background-color: #8c3838;
 	border-radius: .5rem;
+	width: 12rem;
 }
 
 /*
