@@ -1,9 +1,6 @@
 // Javascript for Crescendo
 // Author: Dustin Clark 2016
 
-//Shout out to Edward Meyer for his big brain and helping me when I was stuck.
-
-
 
 //displays dropdown items and switches icon
 function menuDrop() {

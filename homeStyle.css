@@ -7,7 +7,10 @@ body {
 	color: #0e100d;
 }
 
-p, .btn { font-size: 1.6rem; }
+p, .btn { 
+	font-size: 1.6rem; 
+	color: #0e100d;
+}
 
 
 
@@ -20,7 +23,7 @@ p, .btn { font-size: 1.6rem; }
 }
 
 nav a {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #d8d7d8;
 	padding: 2rem;
 	font-family: 'Heebo', sans-serif;
@@ -31,7 +34,7 @@ nav a {
 }
 
 #nav-logo {
-	height: 7.5rem;
+	height: 7rem;
 	margin-left: 1rem;
 }
 
@@ -65,34 +68,37 @@ nav a {
 /* 
 -----------------------------------About 
 */
-#about-container {
+#about {
 	background-color: #d8d7d8;
 }
 
-.about img {
+#about img {
 	height: 7.5rem;
 	width: 7.5rem;
 }
 
-.answer {
-	padding: 5rem 0;
+#about a {
+	font-size: 1.6rem;
+	text-decoration: underline;
+	color: #0e100d;
 }
 
 
 /*
 --------------------------------grids-container
 */
-#grids-container {
-	background-color: #354051;
-}
 
-.new {
+#new {
 	padding: 5rem 0;
 	background-color: #0e100d;
 }
 
-.new h2 {
+#new h2 {
 	color: #d8d7d8;
+}
+
+#grids {
+	background-color: #354051;
 }
 
 .grid-content {
@@ -108,7 +114,7 @@ nav a {
 /*
 ---------------------------utility-container
 */
-#utility-container {
+#utilities {
 	background-color: #d8d7d8;
 }
 
@@ -123,7 +129,7 @@ nav a {
 
 /*-------------------------------buttons-container
 */
-#buttons-container {
+#buttons {
 	background-color: #d8d7d8;
 }
 
@@ -131,7 +137,7 @@ nav a {
 /*
 ------------------------typography-container
 */
-#typography-container {
+#typography {
 	background-color: #d8d7d8;
 }
 
@@ -145,14 +151,15 @@ footer {
 	text-align: center;
 }
 
-footer h5 {
+footer h5, footer h6 {
 	color: #d8d7d8;
 }
 
 footer a {
-	color: #3a2039;
+	color: #d8d7d8;
 	font-size: 2rem;
 	padding: 0 .8rem;
+	text-decoration: underline;
 }
 
 

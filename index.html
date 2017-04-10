@@ -8,11 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Heebo:100|Scope+One" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="crescendo.css">
 	<link type="text/css" rel="stylesheet" href="homeStyle.css">
-	<link rel="icon" href="images/crescendoLogo.png">
+	<link type="image/svg" rel="shortcut icon" href="images/logo.png">
 	
-	<script src="crescendo.js"></script>
-	
-	<title>Crescendo v2 - A flexbox grid framework</title>
+	<title>Crescendo - a flexbox grid framework</title>
 </head>
 
 <body>
@@ -22,8 +20,8 @@
 			
 			<div class="nav-links">
 				<ul>
-					<li><a href="#about-container">About</a></li>
-					<li><a href="#grids-container">News</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#new">News</a></li>
 				</ul>
 			</div>
 			
@@ -33,8 +31,8 @@
 		
 		<div class="dropdown">
 			<ul>
-				<li><a href="#about-container" onclick="menuClose()">About</a></li>
-				<li><a href="#grids-container" onclick="menuClose()">New</a></li>
+				<li><a href="#about" onclick="menuClose()">About</a></li>
+				<li><a href="#new" onclick="menuClose()">New</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -44,8 +42,8 @@
 		<p>A flexbox grid framework</p>
 	</div>
 	
-	<div id="about-container">
-		<div class="about grid-fw">
+	<div id="about" class="grid-container">
+		<div class="grid-fw">
 			<div class="row">
 				<div class="cols-12 colm-6 coll-3 center">
 					<img src="images/crescendoMobile.svg">
@@ -56,44 +54,43 @@
 				<div class="cols-12 colm-6 coll-3 center">
 					<img src="images/crescendoFeather.svg">
 					<h4>Lightweight</h4>
-					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS file is _kb and the minified file is only _kb.</p>
+					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS file is 6kb and the minified file is only 4kb.</p>
 				</div>
 				
 				<div class="cols-12 colm-6 coll-3 center">
-					<a href="https://www.github.com/pixelgalaxies/crescendo"><img src="images/crescendoGit.svg"></a>
+					<img src="images/crescendoGit.svg">
 					<h4>Open Source</h4>
-					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source.</p>
+					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source. View it <a href="https://github.com/pixelgalaxies/crescendo">here</a>.</p>
 				</div>
 				<div class="cols-12 colm-6 coll-3 center">
 					<img src="images/crescendoCheck.svg">
 					<h4>Support</h4>
-					<p>Crescendo 2 is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera, Firefox, Edge, and finally, Safari.</p>
+					<p>Crescendo is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera, Firefox, Edge, and finally, Safari.</p>
 				</div>
 			</div>
 			
-			<div class="row answer">
+			<div class="row">
 				<div class="cols-12 center">
 					<h3>Why use Crescendo?</h3>
-					<p>Crescendo features simple to use grids which are perfect for any project, big or small. Its two grids combined with its several utility classes are just what you need to build fast, responsive, yet elegant websites. Visit the API page here and learn to use Crescendo today.</p>
+					<p>Crescendo features simple to use grids which are perfect for any project, big or small. Its two grids combined with its several utility classes are just what you need to build fast, responsive, yet elegant websites. Visit the API page <a href="#">here</a> and start using Crescendo today.</p>
 				</div>
 			</div>
 		</div>
-	</div><!-- end of #about-container -->
+	</div><!-- ends #about -->
 	
-	<div id="grids-container">
+	<div id ="new" class="jumbo center">
+		<h2>New in Crescendo v2</h2>
+	</div>
+	
+	<div id="grids" class="grid-container">		
 		<div class="grid">
-			<div class="new row">
-				<div class="cols-12 center">
-					<h2>New in Crescendo v2</h2>
-				</div>
-			</div>
-			
 			<div class="row">
 				<div class="cols-12">
 					<h2>The Grid</h2>
 					<p>This is the basic grid. It flexes the full width of available space. Yes, this means it's nestable.</p>
 				</div>
 			</div>
+			
 			<div class="row">
 				<div class="cols-12 center grid-content">
 					<p>12</p>
@@ -164,7 +161,7 @@
 			<div class="row">
 				<div class="cols-12">
 					<h2>The Fixed-width Grid</h2>
-					<p>This is the fixed-width grid. It's essentially the basic grid but will stop flexing when the screen's width exceeds 1200 pixels. This one is not nestable. </p>
+					<p>This is the fixed-width grid. It's essentially the basic grid but will stop flexing when the screen's width exceeds 960 pixels. This one is not nestable. </p>
 				</div>
 			</div>
 			<div class="row">
@@ -232,9 +229,9 @@
 				</div>
 			</div>
 	</div> 
-	</div><!-- ends grids-container -->
+	</div><!-- ends grids -->
 	
-	<div id="utility-container">
+	<div id="utilities" class="grid-container">
 		<div class="grid-fw">
 			<div class="row">
 				<div class="cols-12">
@@ -257,9 +254,9 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- ends utility-container -->
+	</div><!-- ends utility -->
 	
-	<div id="buttons-container">
+	<div id="buttons" class="grid-container">
 		<div class="grid-fw">
 			<div class="row">
 				<div class="cols-12">
@@ -274,9 +271,9 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- ends buttons-container -->
+	</div><!-- ends buttons -->
 	
-	<div id="typography-container">
+	<div id="typography" class="grid-container">
 		<div class="grid-fw">
 			<div class="row">
 				<div class="cols-12">
@@ -305,10 +302,13 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- ends typography-container -->
+	</div><!-- ends typography -->
 	
 	<footer>
-		<h5>Crescendo v2 was created by<a href="http://www.dustinclark.info">Dustin Clark</a>&copy;2016</h5>
+		<h5>Crescendo was created by<a href="http://www.dustinclark.info">Dustin Clark</a>&copy;2016</h5>
+		<h6>Current version 2.1</h6>
 	</footer>
+	
+	<script src="crescendo.js"></script>
 </body>
 </html>
