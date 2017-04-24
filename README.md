@@ -2,13 +2,26 @@
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. 
 
 ### Support
-Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Moilla Firefox, Microsoft Edge, Safari). 
+Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Moilla Firefox, Microsoft Edge, Safari).
 
+### Install:
 To use Crescendo, just paste these snippets into your head tags:
 ```
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.css">
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.js">
 ```
+Or you can download it **here**.
+
+#### Changes in 2.1
+>(finally)Added a minified CSS file
+>Added the nav-fixed class
+>Added the nav-container-fw class
+>Added the grid-container class
+>Added a favicon
+>Added documentation link
+>Removed default font-size on btn class
+>Changed width on grid-fw from 1000px to 960px
+>Cleaned up CSS
 
 ### Resets and Presets:
 Key Points:
@@ -43,15 +56,22 @@ a {
 
 
 ### Navigation classes:
-
 #### .nav
 >This class goes in the nav tag. It will make sure its width is 100% of available space.
+```
+<nav class="nav"></nav>
+```
 
 #### .nav-absolute
 >This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position as absolute so it will overlay anything at the top of the screen.
 ```
-<nav class="nav"></nav>
 <nav class="nav-absolute"></nav>
+```
+
+#### .nav-fixed
+>This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position to fixed so it will stay fixed to the top of your screen.
+```
+<nav class="nav-fixed"></nav>
 ```
 
 #### .nav-container
@@ -59,6 +79,13 @@ a {
 >*Note this is a flexed div. It will flex its contents in a row and put a space between them.
 ```
 <div class="nav-container"></div>
+```
+
+#### .nav-container-fw
+>This class goes in a div tag that is nested in your nav. It will hold all of your content. It will have a maximum width of 960px;
+>*Note this is a flexed div. It will flex its contents in a row and put a space between them.*
+```
+<div class="nav-container-fw"></div>
 ```
 
 #### .nav-links
@@ -116,7 +143,6 @@ a {
 ```
 
 ### Grid classes:
-
 #### .grid-container
 >This is the div that holds your grids. It has a padding on top and bottom of 35px. The grid-container is where you apply background images or color. 
 ```
@@ -161,7 +187,6 @@ a {
 ```
 
 ### Button Classes:
-
 #### .btn
 >Use this class on anything you want to look like a button. It centers text and adds a padding of 10px. Also, when clicked, the item fades a teeny tiny bit to resemble a click. Crescendo leaves the font-size (*remember Crescendo defaults font-size to 10px*) and width up to the user to specify. 
 ```
@@ -172,7 +197,6 @@ a {
 >Crescendo comes with four buttons everyone should be familiar with. They feature familiar but more muted, less vibrant colors. These classes with have round edges and set width of 120px;
 
 ### Utility Classes:
-
 #### .inner-between
 >Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid.
 ```
