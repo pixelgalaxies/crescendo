@@ -1,0 +1,185 @@
+/* Stylesheet for Crescendo 2
+	By Dustin Clark
+--------------------------------------------------
+*/
+body {
+	font-family: 'Scope One', serif;
+	color: #0e100d;
+}
+
+p, .btn { 
+	font-size: 1.6rem; 
+	color: #0e100d;
+}
+
+
+
+
+/* 
+----------------------------------------Navigation
+*/
+.nav-absolute {
+	background-color: rgba(14,16,13,0.8);
+}
+
+nav a {
+	font-size: 2rem;
+	color: #d8d7d8;
+	padding: 2rem;
+	font-family: 'Heebo', sans-serif;
+}
+
+.nav-links {
+	padding: 1rem 0;
+}
+
+#nav-logo {
+	height: 7rem;
+	margin-left: 1rem;
+}
+
+.menu-icon,
+.close-icon {
+	height: 4rem;
+	margin-right: 1rem;
+}
+
+.dropdown {
+	background: rgba(14,16,13,0.8);
+}
+
+
+/* 
+----------------------------------Index Jumbotron
+*/
+#home {
+	color: #d8d7d8;
+	min-height: 100%;
+	text-align: justify;
+	text-shadow: #000000 0px 5px 10px;
+}
+
+#home h1, #home p {
+	font-family: 'Heebo', sans-serif;
+	color: #d8d7d8;
+}
+
+
+/* 
+-----------------------------------About 
+*/
+#about {
+	background-color: #d8d7d8;
+}
+
+#about img {
+	height: 7.5rem;
+	width: 7.5rem;
+}
+
+#about a {
+	font-size: 1.6rem;
+	text-decoration: underline;
+	color: #0e100d;
+}
+
+
+/*
+--------------------------------grids-container
+*/
+
+#new {
+	padding: 5rem 0;
+	background-color: #0e100d;
+}
+
+#new h2 {
+	color: #d8d7d8;
+}
+
+#grids {
+	background-color: #354051;
+}
+
+.grid-content {
+	padding: 1rem 0;
+	background-color: #0e100d;
+}
+
+.grid-content p {
+	color: #d8d7d8;
+}
+
+
+/*
+---------------------------utility-container
+*/
+#utilities {
+	background-color: #d8d7d8;
+}
+
+.round {
+	max-height: 250px;
+}
+
+.circle {
+	max-height: 250px;
+}
+
+
+/*-------------------------------buttons-container
+*/
+#buttons {
+	background-color: #d8d7d8;
+}
+
+
+/*
+------------------------typography-container
+*/
+#typography {
+	background-color: #d8d7d8;
+}
+
+
+/* 
+--------------------------------------Footer
+*/
+footer {
+	background-color: #0e100d;
+	padding: 5rem;
+	text-align: center;
+}
+
+footer h5, footer h6 {
+	color: #d8d7d8;
+}
+
+footer a {
+	color: #d8d7d8;
+	font-size: 2rem;
+	padding: 0 .8rem;
+	text-decoration: underline;
+}
+
+
+/* 
+-------------------------------------Media Queries
+*/
+@media (min-width: 300px) {
+	#home {
+	height: 100%;
+	background-image: url('images/crescendoTreesMobile.jpg');
+	background-attachment: scroll;
+	background-position: center;
+	}
+}
+
+@media (min-width: 768px) {
+	#home {
+	background-image: url('images/crescendoTrees.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	}
+}
