@@ -9,6 +9,8 @@ To use Crescendo, just paste these snippets into your head tags:
 ```
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.css">
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.js">
+
+<link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo-min.css">
 ```
 Or you can download it **here**.
 
