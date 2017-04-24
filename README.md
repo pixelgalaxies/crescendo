@@ -12,7 +12,7 @@ To use Crescendo, just paste these snippets into your head tags:
 
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo-min.css">
 ```
-Or you can download it **here**.
+Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/blob/master/crescendo.zip).
 
 #### Changes in 2.1
 -(finally)Added a minified CSS file
