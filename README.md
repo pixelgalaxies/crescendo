@@ -11,6 +11,35 @@ To use Crescendo, just paste these snippets into your head tags:
 ```
 
 ### Resets and Presets:
+Key Points:
+>font-size is defaulted to 10px
+>removes the outline of active items when using the keyboard to navigate pages
+>removes the underlining of anchor tags
+```
+*, 
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+button, input[type='button'], input[type='submit'], a { outline: none;}
+
+body, html {
+	height: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+```
 
 
 ### Navigation classes:
@@ -98,13 +127,13 @@ To use Crescendo, just paste these snippets into your head tags:
 >Width is set to 100% of the viewport. The grid flexes in a column with the content starting in the default position(flex-start).
 
 ```
-	<div class="grid"></div>
+<div class="grid"></div>
 ```
 
 #### .grid-fw
 >This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 960px, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start). 
 ```
-	<div class="grid-fw"></div>
+<div class="grid-fw"></div>
 ```
 
 #### .row
@@ -176,7 +205,7 @@ To use Crescendo, just paste these snippets into your head tags:
 
 #### .jumbo
 >This class when given to a div creates a jumbotron spanning the entire viewport horizontally. The jumbotron flexes it’s items into a column. Combine with other utility classes to arrange content.
->> h1 tags and p tags have a larger font-sie in a jumbotron div and will adjust depending on the size of the viewport. 
+>> h1 tags and p tags have a larger font-size in a jumbotron div and will adjust depending on the size of the viewport. 
 ```
 <div class="jumbo"></div>
 ```
