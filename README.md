@@ -16,19 +16,29 @@ Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw
 
 #### Changes in 2.1
 -(finally)Added a minified CSS file
+
 -Added the nav-fixed class
+
 -Added the nav-container-fw class
+
 -Added the grid-container class
+
 -Added a favicon
+
 -Added documentation link
+
 -Removed default font-size on btn class
+
 -Changed width on grid-fw from 1000px to 960px
+
 -Cleaned up CSS
 
 ### Resets and Presets:
 Key Points:
 -font-size is defaulted to 10px
+
 -removes the outline of active items when using the keyboard to navigate pages
+
 -removes the underlining of anchor tags
 ```
 *, 
