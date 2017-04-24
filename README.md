@@ -17,7 +17,7 @@ Key Points:
 >removes the underlining of anchor tags
 ```
 *, 
-*:before,
+*:before, 
 *:after {
 	box-sizing: border-box;
 	margin: 0;
