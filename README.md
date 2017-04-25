@@ -1,6 +1,6 @@
 # Crescendo 
 ### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. 
-
+current vesrion 2.1
 ### Support
 Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Mozilla Firefox, Microsoft Edge, Safari).
 
