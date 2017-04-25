@@ -4,7 +4,7 @@
 ### Support
 Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Mozilla Firefox, Microsoft Edge, Safari).
 
-### Install:
+### Installation:
 To use Crescendo, just paste these snippets into your head tags:
 ```
 <link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.css">
