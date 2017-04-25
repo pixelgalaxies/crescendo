@@ -35,6 +35,7 @@ Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw
 
 ### Resets and Presets:
 Key Points:
+
 -font-size is defaulted to 10px
 
 -removes the outline of active items when using the keyboard to navigate pages
