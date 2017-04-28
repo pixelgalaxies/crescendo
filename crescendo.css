@@ -13,7 +13,7 @@
 	font-size: 10px;
 }
 
-button, input[type='button'], input[type='submit'], a { outline: none;}
+button, input, a, textarea { outline: none;}
 
 body, html {
 	height: 100%;
