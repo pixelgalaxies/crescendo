@@ -1,9 +1,9 @@
 // Javascript for Crescendo
-// Author: Dustin Clark 2016
+// Author: Dustin Clark
 
 
 //displays dropdown items and switches icon
-function menuDrop() {
+function menuOpen() {
 	document.getElementsByClassName("dropdown")[0].style.display="block";
 	
 	document.getElementsByClassName("menu-icon")[0].style.display="none";
