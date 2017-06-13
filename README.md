@@ -110,7 +110,7 @@ a {
 #### .menu-icon
 >This class goes in the img tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. Be sure to include the onclick attribute for the drop down functionality.
 ```
-<img class="menu-icon" src="#" onclick="menuDrop()">
+<img class="menu-icon" src="#" onclick="menuOpen()">
 ```
 
 #### .close-icon
@@ -142,7 +142,7 @@ a {
 					<li><a href="#"></a></li>
 				</ul>
 			</div>
-			<img class="menu-icon" src="#" onclick="menuDrop()">
+			<img class="menu-icon" src="#" onclick="menuOpen()">
 			<img class="close-icon" src="#" onclick="menuClose()">
 		</div>
 		<div class="dropdown">
