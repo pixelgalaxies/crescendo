@@ -22,7 +22,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
@@ -89,7 +88,7 @@ p, .btn {
 }
 
 nav a {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #d8d7d8;
 	padding: 2rem;
 	font-family: 'Heebo', sans-serif;
