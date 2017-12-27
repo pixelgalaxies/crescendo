@@ -1,35 +1,23 @@
 # Crescendo 
-### Crescendo is a mobile-first grid framework built with the Flexible Box Layout Module or as you might know it, Flexbox. 
-current version 2.1
+### Crescendo is a mobile-first grid library built with the Flexible Box Layout Module or as you might know it, Flexbox. 
+current version 2.2
 ### Support
 Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Mozilla Firefox, Microsoft Edge, Safari).
 
 ### Installation:
 To use Crescendo, just paste these snippets into your head tags:
 ```
-<link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.css">
-<link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo.js">
+<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.js">
+<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo-mini.css">
 
-<link type="text/css" rel="stylesheet" href="https://rawcdn.githack.com/pixelgalaxies/crescendo/master/crescendo-min.css">
+<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.css">
 ```
 Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
-#### Changes in 2.1
--(finally)Added a minified CSS file
+#### Changes in 2.2
+-Added more resets and presets 
 
--Added the nav-fixed class
-
--Added the nav-container-fw class
-
--Added the grid-container class
-
--Added a favicon
-
--Added documentation link
-
--Removed default font-size on btn class
-
--Changed width on grid-fw from 1000px to 960px
+-Removed the need for the grid-container class (padding: 35px 0;) User is now free to call the container whatever they please and style it however they want.
 
 -Cleaned up CSS
 
@@ -41,30 +29,63 @@ Key Points:
 -removes the outline of active items when using the keyboard to navigate pages
 
 -removes the underlining of anchor tags
+
+-body and html are set to 100%
 ```
-*, 
-*:before, 
-*:after {
-	box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	font-size: 10px;
+	border: 0;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-button, input[type='button'], input[type='submit'], a { outline: none;}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button, input, a, textarea { outline: none;}
 
 body, html {
 	height: 100%;
 }
 
-img {
-	height: auto;
-	max-width: 100%;
-}
-
 a {
 	text-decoration: none;
 }
+
 ```
 
 
@@ -156,8 +177,8 @@ a {
 ```
 
 ### Grid classes:
-#### .grid-container
->This is the div that holds your grids. It has a padding on top and bottom of 35px. The grid-container is where you apply background images or color. 
+#### .grid-container (no longer necessary, just recommended for ease of styling entire grid)
+>This is the div that holds your grids. The grid-container is where you apply background images or color. 
 ```
 <div class="grid-container"></div>
 ```
