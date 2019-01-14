@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <!-- Crescendo site -->
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Heebo:100|Scope+One" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="crescendo.css">
 	<link type="text/css" rel="stylesheet" href="styles.css">
 	<link type="image/svg" rel="shortcut icon" href="images/logo.png">
-	
+
 	<title>Crescendo | a flexbox grid</title>
 </head>
 
@@ -17,7 +18,7 @@
 	<nav class="nav-absolute">
 		<div class="nav-container-960">
 			<img id="nav-logo" src="images/crescendoLogo.svg">
-			
+
 			<div class="nav-links">
 				<ul>
 					<li><a href="#about">About</a></li>
@@ -25,11 +26,11 @@
 					<li><a href="https://github.com/pixelgalaxies/crescendo/blob/master/README.md">Documentation</a></li>
 				</ul>
 			</div>
-			
+
 			<img class="menu-icon" src="images/icons/menu.svg" onclick="menuOpen()">
 			<img class="close-icon" src="images/icons/x.svg" onclick="menuClose()">
 		</div>
-		
+
 		<div class="dropdown">
 			<ul>
 				<li><a href="#about" onclick="menuClose()">About</a></li>
@@ -38,62 +39,69 @@
 			</ul>
 		</div>
 	</nav>
-	
+
 	<div id="home" class="hero true-center">
 		<h1>Crescendo</h1>
 		<p>A css grid built with flexbox.</p>
 	</div>
-	
+
 	<div id="about" class="grid-container">
 		<div class="grid-960">
 			<div class="row">
 				<div class="cols-12 hcenter">
 					<h3>Why Crescendo?</h3>
-					<p>Crescendo features simple to use grids which are perfect for any project, big or small. Its two grids combined with its few utility classes are just what you need to build fast, responsive, yet elegant websites. Visit the documentation page <a href="#">here</a> and start using Crescendo today.</p>
+					<p>Crescendo features simple to use grids which are perfect for any project, big or small. Its two grids combined
+						with its few utility classes are just what you need to build fast, responsive, yet elegant websites. Visit the
+						documentation page <a href="#">here</a> and start using Crescendo today.</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12 colm-6 coll-3 hcenter">
 					<img src="images/icons/monitor.svg">
 					<h3>Mobile First</h3>
-					<p>Crescendo was built with a mobile first approach. This allows for fully-responsive functionaility when building your websites.</p>
+					<p>Crescendo was built with a mobile first approach. This allows for fully-responsive functionaility when building
+						your websites.</p>
 				</div>
-				
+
 				<div class="cols-12 colm-6 coll-3 hcenter">
 					<img src="images/icons/feather.svg">
 					<h3>Lightweight</h3>
-					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS file is 6kb and the minified file is only 4kb.</p>
+					<p>Crescendo is extremely lightweight, perfect for keeping your site running at lightning speeds. The regular CSS
+						file is 6kb and the minified file is only 4kb.</p>
 				</div>
-				
+
 				<div class="cols-12 colm-6 coll-3 hcenter">
 					<img src="images/icons/crescendoGit.svg">
 					<h3>Open Source</h3>
-					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source. View it <a href="https://github.com/pixelgalaxies/crescendo">here</a>.</p>
+					<p>Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open
+						source. View it <a href="https://github.com/pixelgalaxies/crescendo">here</a>.</p>
 				</div>
-				
+
 				<div class="cols-12 colm-6 coll-3 hcenter">
 					<img src="images/icons/thumbs-up.svg">
 					<h3>Support</h3>
-					<p>Crescendo is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera, Firefox, Edge, and finally, Safari.</p>
+					<p>Crescendo is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera,
+						Firefox, Edge, and finally, Safari.</p>
 				</div>
 			</div>
 		</div>
 	</div><!-- ends #about -->
-	
-	<div id ="features" class="hero hcenter">
+
+	<div id="features" class="hero hcenter">
 		<h3>Back to the basics.</h3>
 	</div>
-	
-	<div id="grids" class="grids grid-container">		
+
+	<div id="grids" class="grids grid-container">
 		<div class="grid-full">
 			<div class="row">
 				<div class="cols-12">
 					<h2>The Grid</h2>
-					<p>This is the basic grid. It flexes the full width of available space. Just make sure your columns equal 12, and you'll be all set.</p>
+					<p>This is the basic grid. It flexes the full width of available space. Just make sure your columns equal 12, and
+						you'll be all set.</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12 hcenter grid-content">
 					<p>12</p>
@@ -160,13 +168,14 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="grids grid-container">
 		<div class="grid-960">
 			<div class="row">
 				<div class="cols-12">
 					<h2>The Fixed-width Grid</h2>
-					<p>There are two fixed-width grids. They're the essentially the same as the basic grid only they will stop expanding when the screen's width reaches a certain size, either 960 pixels or 1200 pixels.</p>
+					<p>There are two fixed-width grids. They're the essentially the same as the basic grid only they will stop
+						expanding when the screen's width reaches a certain size, either 960 pixels or 1200 pixels.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -233,9 +242,9 @@
 					<p>6</p>
 				</div>
 			</div>
-	</div> 
+		</div>
 	</div><!-- ends grids -->
-	
+
 	<div id="utilities" class="grid-container">
 		<div class="grid-960">
 			<div class="row">
@@ -243,75 +252,76 @@
 					<h3>Utility Classes</h3>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12">
 					<h4>The Circle Class</h4>
 					<p>This is the .circle class. It makes its item, you guessed it, circular.</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="colm-4 true-center">
 					<div class="circle hide circle-object"></div>
 				</div>
-				
+
 				<div class="colm-4 cols-12 hcenter">
 					<img class="circle" src="images/crescendoTreesMobile.jpg" alt="">
 				</div>
-				
+
 				<div class="colm-4 true-center">
 					<div class="circle hide circle-object"></div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12">
 					<h4>Alignment Classes</h4>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-6 utl right">
 					<p>.right</p>
 				</div>
-				
+
 				<div class="cols-6 utl left">
 					<p>.left</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-4 utl true-center">
 					<p>.true-center</p>
 				</div>
-				
+
 				<div class="cols-4 utl hcenter">
 					<p>.hcenter</p>
 				</div>
-				
+
 				<div class="cols-4 utl vcenter">
 					<p>.vcenter</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-6 utl start">
 					<p>.start</p>
 				</div>
-				
+
 				<div class="cols-6 utl end">
 					<p>.end</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12">
 					<h4>Column Goodies</h4>
-					<p>Sometimes you're going to want to quickly line stuff up horizontally in a column. You could nest a grid, or you could use one of the following classes.</p>
+					<p>Sometimes you're going to want to quickly line stuff up horizontally in a column. You could nest a grid, or you
+						could use one of the following classes.</p>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="cols-12 colm-6">
 					<p>This is the .inner-between class. It flexes items horizontally and puts equal space between each item.</p>
@@ -331,14 +341,16 @@
 					</div>
 				</div>
 			</div>
+
 		</div> <!-- ends grid-960 -->
 	</div><!-- ends utilites-->
-	
-	
+
+
 	<footer>
 		<h5>Crescendo was created by<a href="http://www.dustinclark.info">Dustin Clark</a>&copy;2016-2018</h5>
 	</footer>
-	
+
 	<script src="crescendo.js"></script>
 </body>
+
 </html>
