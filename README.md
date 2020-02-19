@@ -1,8 +1,8 @@
 # Crescendo 
 ### Crescendo is a mobile-first grid library built with the Flexible Box Layout Module or as you might know it, Flexbox. 
-current version 2.2
+current version 3
 ### Support
-Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Mozilla Firefox, Microsoft Edge, Safari).
+Crescendo was built in Google Chrome and tested on all modern browsers, Opera, Mozilla Firefox, Microsoft Edge, Safari.
 
 ### Installation:
 To use Crescendo, just paste these snippets into your head tags:
@@ -14,12 +14,16 @@ To use Crescendo, just paste these snippets into your head tags:
 ```
 Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
-#### Changes in 2.2
--Added more resets and presets 
+#### Changes in 3
+-Removed all styling on elements
 
--Removed the need for the grid-container class (padding: 35px 0;) User is now free to call the container whatever they please and style it however they want.
+-Rebuilt with Sass
 
--Cleaned up CSS
+-Removed some utility classes
+
+-Cleaned up SCSS in general
+
+-New class names!
 
 ### Resets and Presets:
 Key Points:
