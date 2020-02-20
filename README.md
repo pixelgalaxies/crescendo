@@ -26,113 +26,150 @@ Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw
 -New class names!
 
 ### Resets and Presets:
-Key Points:
-
--font-size is defaulted to 10px
-
--removes the outline of active items when using the keyboard to navigate pages
-
--removes the underlining of anchor tags
-
--body and html are set to 100%
+>Complete reset and preset CSS styles:
 ```
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-button, input, a, textarea { outline: none;}
-
-body, html {
+html,
+body {
+	width: 100%;
 	height: 100%;
 }
 
-a {
-	text-decoration: none;
+img {
+	max-height: 100%;
+	max-width: 100%;
 }
-
 ```
 
 
 ### Navigation classes:
-#### .nav
+#### .navbar
 >This class goes in the nav tag. It will make sure its width is 100% of available space.
 ```
-<nav class="nav"></nav>
+<nav class="navbar"></nav>
 ```
 
-#### .nav-absolute
->This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position as absolute so it will overlay anything at the top of the screen.
+#### .navbar-set
+>This class goes in the nav tag. It will make sure its max-width doesn't exceed 992px or 1200px depending on the size of the window.
 ```
-<nav class="nav-absolute"></nav>
-```
-
-#### .nav-fixed
->This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position to fixed so it will stay fixed to the top of your screen.
-```
-<nav class="nav-fixed"></nav>
+<nav class="navbar-set"></nav>
 ```
 
-#### .nav-container
->This class goes in a div tag that is nested in your nav. It will hold all of your content. 
->*Note this is a flexed div. It will flex its contents in a row and put a space between them.
+#### .nav-logo
+>This class belongs in an achor tag that will contain your logo.
 ```
-<div class="nav-container"></div>
+<a class="nav-logo href="#"><img src=""></a>
 ```
+	    
+#### .nav-icon
+>This class belongs in the div that is nested in the nav-bar div. It will hold your mobile icons for the menu and the close buttons. 
+```
+<div class="nav-icon></div>
+```    
 
-#### .nav-container-fw
->This class goes in a div tag that is nested in your nav. It will hold all of your content. It will have a maximum width of 960px;
->*Note this is a flexed div. It will flex its contents in a row and put a space between them.*
-```
-<div class="nav-container-fw"></div>
-```
-
-#### .nav-links
->This class belongs in a div that is nested in the nav-container. It will hold your links and will disappear at smaller screens.
-```
-<div class="nav-links></div>
-```
-
-#### .menu-icon
+#### .nav-icon--menu
 >This class goes in the img tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. Be sure to include the onclick attribute for the drop down functionality.
 ```
 <img class="menu-icon" src="#" onclick="menuOpen()">
@@ -142,6 +179,12 @@ a {
 >This class goes in the img tag you want to use as your close icon. It disappears when you press it and will only appear when the menu-icon img is pressed.
 ```
 <img class="close-icon" src="#" onclick="menuClose()">
+```
+
+#### .nav-list
+>This class belongs in a ul that is nested in the navbar. It will hold your links and will disappear at smaller screens but will slide open when the menu icon is pressed. 
+```
+<div class="nav-links></div>
 ```
 
 #### .dropdown
