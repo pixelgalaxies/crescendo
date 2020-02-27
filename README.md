@@ -1,8 +1,8 @@
 # Crescendo 
-### Crescendo is a mobile-first grid library built with the Flexible Box Layout Module or as you might know it, Flexbox. 
-current version 3
+### Crescendo is a css library to help create grid layouts using the Flexible Box Layout Module or as you might know it, Flexbox. 
+current version: 3
 ### Support
-Crescendo was built in Google Chrome and tested on all modern browsers, Opera, Mozilla Firefox, Microsoft Edge, Safari.
+Crescendo was tested on all modern browsers: Google Chrome, Opera, Mozilla Firefox, Microsoft Edge, Safari.
 
 ### Installation:
 To use Crescendo, just paste these snippets into your head tags:
@@ -14,7 +14,7 @@ To use Crescendo, just paste these snippets into your head tags:
 ```
 Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
-#### Changes in 3
+#### Changes in version 3
 -Removed all styling on elements
 
 -Rebuilt with Sass
@@ -187,44 +187,27 @@ img {
 <div class="nav-links></div>
 ```
 
-#### .dropdown
->This class goes in a div inside the nav but outside of the nav container. This is because of positioning issues when nav-absolute is used. 
+#### Example:
 ```
-<div class="dropdown">
-  <ul>
-    <li><a href="#" onclick="menuClose()"></a></li>
-    <li><a href="#" onclick="menuClose()"></a></li>
-    <li><a href="#" onclick="menuClose()"></a></li>
-  </ul>
-</div>
-```
-
-#### All together now.
-```
-<nav class="nav-absolute">
-		<div class="nav-container">
-			<div class="nav-links">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</div>
-			<img class="menu-icon" src="#" onclick="menuOpen()">
-			<img class="close-icon" src="#" onclick="menuClose()">
+<header>
+	<nav class="navbar-set">
+		<div class="nav-icon">
+			<i class="im im-menu nav-icon--menu"></i>
+			<i class="im im-x-mark nav-icon--close"></i>
 		</div>
-		<div class="dropdown">
-			<ul>
-				<li><a href="#" onclick="menuClose()"></a></li>
-				<li><a href="#" onclick="menuClose()"></a></li>
-				<li><a href="#" onclick="menuClose()"></a></li>
-			</ul>
-		</div>
+		<a href="#" class="nav-logo"><img src="/images/logo.png" alt="" /></a>
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#">About</a></li>
+			<li class="nav-item"><a href="#">Features</a></li>
+			<li class="nav-item"><a href="#">Components</a></li>
+			<li class="nav-item"><a href="https://github.com/pixelgalaxies/crescendo">Documentation</a></li>
+		</ul>
 	</nav>
+</header>
 ```
 
 ### Grid classes:
-#### .grid-container (no longer necessary, just recommended for ease of styling entire grid)
+#### .grid-container (not necessary, but recommended for ease of styling entire grid, including the "outside" of it)
 >This is the div that holds your grids. The grid-container is where you apply background images or color. 
 ```
 <div class="grid-container"></div>
@@ -237,22 +220,29 @@ img {
 <div class="grid"></div>
 ```
 
-#### .grid-fw
->This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 960px, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start). 
+#### .grid-set
+>This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 992px or 1200px depending on the screen size, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start). 
 ```
-<div class="grid-fw"></div>
+<div class="grid-set"></div>
 ```
 
 #### .row
->Flex-basis is set to 100% to span the entire width of available space. The row class div houses your column divs. 
+>Flex-basis is set to 100% to span the entire width of available space. The row houses your column divs. 
 ```
 <div class="row"></div>
 ```
 
-#### .cols-\* .colm-\* .coll-\*
->Syntax: cols-12, colm-6, coll-3, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a column. The s, m, and l before the dashes indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with cols-\* and it will inherit this behavior all the way up to desktop screens. Just remember, if you want multiple behaviors, all col\*-\* need to add up to twelve in their respective rows.
+#### .col-12
+>The col-12 class will span 100% of the row at all viewport sizes. It replaces the need for col-\*\*-12 classes.
 ```
-<div class="cols-12"></div>
+<div class="col-12"></div>
+```
+
+#### .col-xs-\*, .col-sm-\*, .col-md-\*, .col-lg-\*, .col-xl-\*
+>Syntax: col-sm-4, col-md-6, col-lg-3, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a column. The xs, sm, md, lg, and xl indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with col-xs-\* and it will inherit this behavior all the way up to desktop screens. 
+```
+<div class="col-xs-6"></div>
+<div class="col-xs-6"></div>
 ```
 
 
