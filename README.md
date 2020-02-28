@@ -146,7 +146,7 @@ img {
 
 ### Navigation classes:
 #### .navbar
->This class goes in the nav tag. It will make sure its width is 100% of available space.
+>This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar-set for a fixed-width navbar. 
 ```
 <nav class="navbar"></nav>
 ```
@@ -170,15 +170,15 @@ img {
 ```    
 
 #### .nav-icon--menu
->This class goes in the img tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. Be sure to include the onclick attribute for the drop down functionality.
+>This class goes in the img or icon tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. 
 ```
-<img class="menu-icon" src="#" onclick="menuOpen()">
+<img class=".nav-icon--menu" src="#">
 ```
 
-#### .close-icon
->This class goes in the img tag you want to use as your close icon. It disappears when you press it and will only appear when the menu-icon img is pressed.
+#### .nav-icon--close
+>This class goes in the img or icon tag you want to use as your close icon. It disappears when you press it and will only appear when the nav-icon--menu img is pressed.
 ```
-<img class="close-icon" src="#" onclick="menuClose()">
+<img class="nav-icon--close" src="#">
 ```
 
 #### .nav-list
@@ -190,17 +190,16 @@ img {
 #### Example:
 ```
 <header>
-	<nav class="navbar-set">
+	<nav class="navbar">
 		<div class="nav-icon">
 			<i class="im im-menu nav-icon--menu"></i>
 			<i class="im im-x-mark nav-icon--close"></i>
 		</div>
-		<a href="#" class="nav-logo"><img src="/images/logo.png" alt="" /></a>
+		<a href="#" class="nav-logo"><img src="#" alt="" /></a>
 		<ul class="nav-list">
-			<li class="nav-item"><a href="#">About</a></li>
-			<li class="nav-item"><a href="#">Features</a></li>
-			<li class="nav-item"><a href="#">Components</a></li>
-			<li class="nav-item"><a href="https://github.com/pixelgalaxies/crescendo">Documentation</a></li>
+			<li class="nav-item"><a href="#">Link 1</a></li>
+			<li class="nav-item"><a href="#">Link 2</a></li>
+			<li class="nav-item"><a href="#">Link 3</a></li>
 		</ul>
 	</nav>
 </header>
@@ -208,7 +207,7 @@ img {
 
 ### Grid classes:
 #### .grid-container (not necessary, but recommended for ease of styling entire grid, including the "outside" of it)
->This is the div that holds your grids. The grid-container is where you apply background images or color. 
+>This is the div that holds your grids. The grid-container is where you could apply background images or color. 
 ```
 <div class="grid-container"></div>
 ```
@@ -246,75 +245,44 @@ img {
 ```
 
 
-#### All together now.
->The following code will have the columns flex 100% at small screen sizes and then split 50/50 starting at medium screen sizes.
+#### Example:
+>The following code will have the columns flex 100% at xs and sm screen sizes and then split 50/50 starting at md screen sizes.
 ```
 <div class="grid">
   <div class="row">
-    <div class="cols-12 colm-6"></div>
-    <div class="cols-12 colm-6"></div>
+    <div class="colm-6"></div>
+    <div class="colm-6"></div>
   </div>
 </div>
 ```
-
-### Button Classes:
-#### .btn
->Use this class on anything you want to look like a button. It centers text and adds a padding of 10px. Also, when clicked, the item fades a teeny tiny bit to resemble a click. Crescendo leaves the font-size (*remember Crescendo defaults font-size to 10px*) and width up to the user to specify. 
-```
-<a href="#" class="btn">Anchor</a>
-<button class="btn">Button</button>
-```
-#### .btn-primary, .btn-success, .btn-warning, .btn-error
->Crescendo comes with four buttons everyone should be familiar with. They feature familiar but more muted, less vibrant colors. These classes with have round edges and set width of 120px;
 
 ### Utility Classes:
-#### .inner-between
->Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid.
-```
-<div class="grid">
-  <div class="row">
-    <div class="colm-6">
-      <div class="inner-between"></div>
-    </div>
-    <div class="colm-6">
-      <div class="inner-between"></div>
-    </div>
-  </div>
-</div>
-```
+#### .hero
+>This class when given to a div creates a hero section spanning the entire viewport horizontally. The hero flexes its items into a column. Combine with other utility classes to arrange content.
 
-#### .inner-around
->> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column for content you may want to distribute equally across the span of a column, instead of making a whole new grid. 
 ```
-<div class="grid">
-  <div class="row">
-    <div class="colm-6">
-      <div class="inner-around"></div>
-    </div>
-    <div class="colm-6">
-      <div class="inner-around"></div>
-    </div>
-  </div>
+<div class="hero true-center">
+	<h1>A Heading</h1>
+	<p>Some descriptive text.</p>
 </div>
-```
-
-#### .jumbo
->This class when given to a div creates a jumbotron spanning the entire viewport horizontally. The jumbotron flexes it’s items into a column. Combine with other utility classes to arrange content.
->> h1 tags and p tags have a larger font-size in a jumbotron div and will adjust depending on the size of the viewport. 
-```
-<div class="jumbo"></div>
 ```
 
 #### .true-center
 >Centers items vertically and horizontally.
 ```
-<div class="jumbo true-center"></div>
+<div class="true-center"></div>
 ```
 
-#### .center
->Aligns content to the center of a column.
+#### .hcenter
+>Aligns content to the center of a column horizontally.
 ```
-<div class="cols-10 center"></div>
+<div class="col-sm-6 center"></div>
+```
+
+#### .vcenter
+>Aligns content to the center of a column vertically.
+```
+<div class="col-sm-6 venter"></div>
 ```
 
 #### .right 
@@ -329,12 +297,6 @@ img {
 <div class="cols-10 left"></div>
 ```
 
-#### .just-center
->Shifts content to the center of their flex box. Determined by flex-direction.
-```
-<div class="cols-10 just-center"></div>
-```
-
 #### .start 
 >Shifts content to the start of their flex box. Determined by flex-direction.
 ```
@@ -347,39 +309,23 @@ img {
 <div class="cols-10 end"></div>
 ```
 
-#### .round
->Gives the rounded edges (25px).
+### Components
+#### The Topple
+>The topple is basically a toggle/ collapse component. The data-toggle attribute of the upper element, should always math the id of the lower element. Each element should have the .topple class or the .toTopple class. The classes that show and hide the lower element are .tidy (pulled up) and .spilled (pulled down). 
 ```
-<img src=#" class="round">
-```
-
-#### .round
->Items becomes circular (50%).
-```
-<img src=#" class="circle">
-```
-
-
-###Headers:
-
->#### Headers take on alternate sizes in Crescendo. 
-
-Smallest screens:
-```
-h1 { font-size: 2.6rem;}
-h2 { font-size: 2.4rem; }
-h3 { font-size: 2.2rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1.8rem; }
-h6 { font-size: 1.6rem; }
+<div class="row topple" data-topple="topple-example">
+	<div class="col-12 true-center">
+		<div class="topple-title">
+			<span> Example Topple <i class="im im-angle-down"></i></span>
+		</div>
+	</div>
+</div>
+				
+<div class="row toTopple tidy" id="topple-example">
+	<div class="col-12">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+</div>
 ```
 
-Medium and Large screens:
-```
-h1 { font-size: 4rem;}
-h2 { font-size: 3.5rem; }
-h3 { font-size: 3rem; }
-h4 { font-size: 2.5rem; }
-h5 { font-size: 2rem; }
-h6 { font-size: 1.5rem; }
-```
+
