@@ -5,14 +5,9 @@ current version: 3
 Crescendo was tested on all modern browsers: Google Chrome, Opera, Mozilla Firefox, Microsoft Edge, Safari.
 
 ### Installation:
-To use Crescendo, just paste these snippets into your head tags:
-```
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.js">
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo-mini.css">
+CDN LINKS COMING SOON. 
 
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.css">
-```
-Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
+You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
 #### Changes in version 3
 -Removed all styling on elements
