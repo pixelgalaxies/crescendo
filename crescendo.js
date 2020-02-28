@@ -1,48 +1,28 @@
-// Javascript for Crescendo
-// Author: Dustin Clark
-
-
-//displays dropdown items and switches icon
-function menuOpen() {
-	document.getElementsByClassName("dropdown")[0].style.display="block";
-	
-	document.getElementsByClassName("menu-icon")[0].style.display="none";
-	
-	document.getElementsByClassName("close-icon")[0].style.display="inherit";
-}
-
-
-//closes dropdown items and switches icons
-function menuClose() {
-	document.getElementsByClassName("dropdown")[0].style.display="none";
-	
-	document.getElementsByClassName("menu-icon")[0].style.display="inherit";
-	
-	document.getElementsByClassName("close-icon")[0].style.display="none";
-}
-
-//this function is called every time the window is resized
-//will hide everything that needs to be hidden based on window size
-function hide() {
-	if (window.innerWidth < 768) {
-		document.getElementsByClassName("menu-icon")[0].style.display="inherit";
-		
-		document.getElementsByClassName("close-icon")[0].style.display="none";
-		
-		document.getElementsByClassName("dropdown")[0].style.display="none";
-		
-		document.getElementsByClassName("nav-links")[0].style.display="none";
+// function for navigation
+document.querySelector(".nav-icon").addEventListener("click", function() {
+	document.querySelector(".nav-list").classList.toggle("mobile-show");
+	document.querySelector(".nav-icon").classList.toggle("close");
+	if (document.querySelector(".nav-icon").classList.contains("close")) {
+		document.querySelector(".nav-icon--close").style.display = "inherit";
+		document.querySelector(".nav-icon--menu").style.display = "none";
+	} else {
+		document.querySelector(".nav-icon--close").style.display = "none";
+		document.querySelector(".nav-icon--menu").style.display = "inherit";
 	}
-	else {
-		document.getElementsByClassName("menu-icon")[0].style.display="none";
-		
-		document.getElementsByClassName("close-icon")[0].style.display="none";
-		
-		document.getElementsByClassName("dropdown")[0].style.display="none";
-		
-		document.getElementsByClassName("nav-links")[0].style.display="inherit";
-	}
-	
-}
+});
 
-window.addEventListener("resize", hide);
+// function for topples
+const topples = Array.from(document.querySelectorAll(".topple"));
+for (let i = 0; i < topples.length; i++) {
+	topples[i].addEventListener("click", function() {
+		let dataTopple = this.getAttribute("data-topple");
+		let toTopple = document.querySelector("#" + dataTopple);
+		if (toTopple.classList.contains("tidy")) {
+			toTopple.classList.remove("tidy");
+			toTopple.classList.add("spilled");
+		} else {
+			toTopple.classList.remove("spilled");
+			toTopple.classList.add("tidy");
+		}
+	});
+}
