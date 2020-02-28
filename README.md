@@ -283,25 +283,25 @@ img {
 #### .right 
 >Aligns content to the right of a column and "down" in a row.
 ```
-<div class="cols-10 right"></div>
+<div class="col-sm-6 right"></div>
 ```
 
 #### .left
 >Aligns content to the left of a column and "up" in a row.
 ```
-<div class="cols-10 left"></div>
+<div class="col-sm-6 left"></div>
 ```
 
 #### .start 
 >Shifts content to the start of their flex box. Determined by flex-direction.
 ```
-<div class="cols-10 start"></div>
+<div class="col-sm-6 start"></div>
 ```
 
 #### .end
 >Shifts content to the end of their flex box. Determined by flex-direction.
 ```
-<div class="cols-10 end"></div>
+<div class="col-sm-6 end"></div>
 ```
 
 ### Components
