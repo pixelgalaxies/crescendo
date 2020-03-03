@@ -1,0 +1,506 @@
+/*
+Crescendo v3
+Author Dustin Clark 
+Jan 2020
+*/
+
+/*
+------------------------------- Variables
+*/
+$gap: 15px;
+
+/*
+------------------------------- Resets and presets 
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* 
+--------------------------------------Navigation
+*/
+
+header {
+	width: 100%;
+}
+.navbar,
+.navbar-set {
+	width: 100%;
+}
+.nav-list {
+	list-style-type: none;
+	max-height: 0;
+	width: 100%;
+	transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+	position: absolute;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	box-shadow: 4px 2px 4px black;
+	&.mobile-show {
+		transition: max-height 0.5s ease;
+		max-height: 100%;
+	}
+	li {
+		text-align: center;
+	}
+}
+
+.nav-logo {
+	img {
+		display: block;
+	}
+}
+
+.nav-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	z-index: 1;
+	&--close {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar,
+	.navbar-set {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav-list {
+		flex-direction: row;
+		justify-content: flex-end;
+		max-height: 100%;
+		position: unset;
+		box-shadow: none;
+	}
+	.nav-icon {
+		display: none;
+	}
+}
+
+/*
+----------------------------------- Hero
+*/
+.hero {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/*
+----------------------------------- Topple
+*/
+.topple {
+	cursor: pointer;
+	width: 100%;
+}
+.toTopple {
+	overflow: hidden;
+	width: 100%;
+	&.tidy {
+		max-height: 0;
+		transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+	}
+	&.spilled {
+		max-height: 99em;
+		transition: max-height 1s ease-in;
+	}
+}
+
+/*
+------------------------------------ Grids
+*/
+.grid,
+.grid-set,
+[class^="col"] {
+	display: flex;
+	flex-direction: column;
+}
+
+[class^="col"] {
+	margin: calc(#{$gap}/ 2);
+}
+
+/*
+------------------------------------ Row
+*/
+.row {
+	display: flex;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*
+---------------------------------------- Utilities
+*/
+.true-center {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/* centers both veritically and horizontally */
+
+.hcenter {
+	align-items: center;
+}
+/* use on column flex boxes to center content horizontally */
+
+.right {
+	align-items: flex-end;
+}
+/* use on column flex boxes to float right */
+
+.left {
+	align-items: flex-start;
+}
+/* use on column flex boxes to float left */
+
+.vcenter {
+	justify-content: center;
+}
+/* centers flex items based on flex direction */
+
+.start {
+	justify-content: flex-start;
+}
+/* use on flex boxes to shift items up or left, depeding on direction */
+
+.end {
+	justify-content: flex-end;
+}
+/* use on flex boxes to shift items down or right, depeding on direction */
+
+/*
+------------------------------------ Media queries
+
+------------------------------------ xs screens 0 - 575
+*/
+@media (min-width: 0) {
+	.col-12 {
+		flex-basis: calc(100% - #{$gap});
+	}
+	.col-xs-11 {
+		flex-basis: calc((100% * 11 / 12) - #{$gap});
+	}
+	.col-xs-10 {
+		flex-basis: calc((100% * 10 / 12) - #{$gap});
+	}
+	.col-xs-9 {
+		flex-basis: calc((100% * 9 / 12) - #{$gap});
+	}
+	.col-xs-8 {
+		flex-basis: calc((100% * 8 / 12) - #{$gap});
+	}
+	.col-xs-7 {
+		flex-basis: calc((100% * 7 / 12) - #{$gap});
+	}
+	.col-xs-6 {
+		flex-basis: calc((100% * 6 / 12) - #{$gap});
+	}
+	.col-xs-5 {
+		flex-basis: calc((100% * 5 / 12) - #{$gap});
+	}
+	.col-xs-4 {
+		flex-basis: calc((100% * 4 / 12) - #{$gap});
+	}
+	.col-xs-3 {
+		flex-basis: calc((100% * 3 / 12) - #{$gap});
+	}
+	.col-xs-2 {
+		flex-basis: calc((100% * 2 / 12) - #{$gap});
+	}
+	.col-xs-1 {
+		flex-basis: calc((100% * 1 / 12) - #{$gap});
+	}
+
+	[class^="col-sm"],
+	[class^="col-md"],
+	[class^="col-lg"],
+	[class^="col-xl"] {
+		flex-basis: calc(100% - #{$gap});
+	}
+}
+
+/*
+--------------------------------------- xs screens 576 - 767
+*/
+@media (min-width: 576px) {
+	.col-sm-11 {
+		flex-basis: calc((100% * 11 / 12) - #{$gap});
+	}
+	.col-sm-10 {
+		flex-basis: calc((100% * 10 / 12) - #{$gap});
+	}
+	.col-sm-9 {
+		flex-basis: calc((100% * 9 / 12) - #{$gap});
+	}
+	.col-sm-8 {
+		flex-basis: calc((100% * 8 / 12) - #{$gap});
+	}
+	.col-sm-7 {
+		flex-basis: calc((100% * 7 / 12) - #{$gap});
+	}
+	.col-sm-6 {
+		flex-basis: calc((100% * 6 / 12) - #{$gap});
+	}
+	.col-sm-5 {
+		flex-basis: calc((100% * 5 / 12) - #{$gap});
+	}
+	.col-sm-4 {
+		flex-basis: calc((100% * 4 / 12) - #{$gap});
+	}
+	.col-sm-3 {
+		flex-basis: calc((100% * 3 / 12) - #{$gap});
+	}
+	.col-sm-2 {
+		flex-basis: calc((100% * 2 / 12) - #{$gap});
+	}
+	.col-sm-1 {
+		flex-basis: calc((100% * 1 / 12) - #{$gap});
+	}
+}
+
+/*
+---------------------------------------  medium screens 768 - 991
+*/
+@media (min-width: 768px) {
+	.col-md-11 {
+		flex-basis: calc((100% * 11 / 12) - #{$gap});
+	}
+	.col-md-10 {
+		flex-basis: calc((100% * 10 / 12) - #{$gap});
+	}
+	.col-md-9 {
+		flex-basis: calc((100% * 9 / 12) - #{$gap});
+	}
+	.col-md-8 {
+		flex-basis: calc((100% * 8 / 12) - #{$gap});
+	}
+	.col-md-7 {
+		flex-basis: calc((100% * 7 / 12) - #{$gap});
+	}
+	.col-md-6 {
+		flex-basis: calc((100% * 6 / 12) - #{$gap});
+	}
+	.col-md-5 {
+		flex-basis: calc((100% * 5 / 12) - #{$gap});
+	}
+	.col-md-4 {
+		flex-basis: calc((100% * 4 / 12) - #{$gap});
+	}
+	.col-md-3 {
+		flex-basis: calc((100% * 3 / 12) - #{$gap});
+	}
+	.col-md-2 {
+		flex-basis: calc((100% * 2 / 12) - #{$gap});
+	}
+	.col-md-1 {
+		flex-basis: calc((100% * 1 / 12) - #{$gap});
+	}
+}
+
+/*
+--------------------------------------- large screens
+*/
+@media (min-width: 992px) {
+	.col-lg-11 {
+		flex-basis: calc((100% * 11 / 12) - #{$gap});
+	}
+	.col-lg-10 {
+		flex-basis: calc((100% * 10 / 12) - #{$gap});
+	}
+	.col-lg-9 {
+		flex-basis: calc((100% * 9 / 12) - #{$gap});
+	}
+	.col-lg-8 {
+		flex-basis: calc((100% * 8 / 12) - #{$gap});
+	}
+	.col-lg-7 {
+		flex-basis: calc((100% * 7 / 12) - #{$gap});
+	}
+	.col-lg-6 {
+		flex-basis: calc((100% * 6 / 12) - #{$gap});
+	}
+	.col-lg-5 {
+		flex-basis: calc((100% * 5 / 12) - #{$gap});
+	}
+	.col-lg-4 {
+		flex-basis: calc((100% * 4 / 12) - #{$gap});
+	}
+	.col-lg-3 {
+		flex-basis: calc((100% * 3 / 12) - #{$gap});
+	}
+	.col-lg-2 {
+		flex-basis: calc((100% * 2 / 12) - #{$gap});
+	}
+	.col-lg-1 {
+		flex-basis: calc((100% * 1 / 12) - #{$gap});
+	}
+
+	.grid-set,
+	.navbar-set {
+		max-width: 992px;
+		margin: 0 auto;
+	}
+}
+/*
+--------------------------------------- xl screens
+*/
+@media (min-width: 1200px) {
+	.col-xl-11 {
+		flex-basis: calc((100% * 11 / 12) - #{$gap});
+	}
+	.col-xl-10 {
+		flex-basis: calc((100% * 10 / 12) - #{$gap});
+	}
+	.col-xl-9 {
+		flex-basis: calc((100% * 9 / 12) - #{$gap});
+	}
+	.col-xl-8 {
+		flex-basis: calc((100% * 8 / 12) - #{$gap});
+	}
+	.col-xl-7 {
+		flex-basis: calc((100% * 7 / 12) - #{$gap});
+	}
+	.col-xl-6 {
+		flex-basis: calc((100% * 6 / 12) - #{$gap});
+	}
+	.col-xl-5 {
+		flex-basis: calc((100% * 5 / 12) - #{$gap});
+	}
+	.col-xl-4 {
+		flex-basis: calc((100% * 4 / 12) - #{$gap});
+	}
+	.col-xl-3 {
+		flex-basis: calc((100% * 3 / 12) - #{$gap});
+	}
+	.col-xl-2 {
+		flex-basis: calc((100% * 2 / 12) - #{$gap});
+	}
+	.col-xl-1 {
+		flex-basis: calc((100% * 1 / 12) - #{$gap});
+	}
+
+	.grid-set,
+	.navbar-set {
+		max-width: 1200px;
+	}
+}

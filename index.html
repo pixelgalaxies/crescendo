@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Crescendo site -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link href="https://fonts.googleapis.com/css?family=Heebo:100|Scope+One" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
+		<link type="text/css" rel="stylesheet" href="crescendo.css" />
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<link type="image/svg" rel="shortcut icon" href="images/logo.png" />
+
+		<title>Crescendo | a flexbox grid</title>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar-set">
+				<div class="nav-icon">
+					<i class="im im-menu nav-icon--menu"></i>
+					<i class="im im-x-mark nav-icon--close"></i>
+				</div>
+				<a href="#" class="nav-logo"><img src="/images/logo.png" alt="" /></a>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#features">Features</a>
+					</li>
+					<li class="nav-item">
+						<a href="#components">Components</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://github.com/pixelgalaxies/crescendo">Documentation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="home" class="hero true-center">
+			<h1>Crescendo</h1>
+			<p>A library for building grid layouts.</p>
+		</div>
+
+		<div id="about" class="grid-container">
+			<div class="grid-set">
+				<div class="row">
+					<div class="col-12 hcenter">
+						<h2>Why Crescendo?</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-lg-3 hcenter">
+						<img src="images/icons/monitor.svg" />
+						<h3>Mobile First</h3>
+						<p>Crescendo was built with mobile devices in mind, but will ensure sites look good on a whole orchestra of devices.</p>
+					</div>
+
+					<div class="col-md-6 col-lg-3 hcenter">
+						<img src="images/icons/feather.svg" />
+						<h3>Lightweight</h3>
+						<p>Take a load off, literally. At 14 kb, Crescendo is perfect for keeping your site slim and light.</p>
+					</div>
+
+					<div class="col-md-6 col-lg-3 hcenter">
+						<img src="images/icons/crescendoGit.svg" />
+						<h3>Open Source</h3>
+						<p>
+							Not only is Crescendo built with a mobile first philosophy and incredibly lightweight, it is also 100% open source. View it
+							<a href="https://github.com/pixelgalaxies/crescendo">here</a>
+							.
+						</p>
+					</div>
+
+					<div class="col-md-6 col-lg-3 hcenter">
+						<img src="images/icons/thumbs-up.svg" />
+						<h3>Support</h3>
+						<p>Crescendo is proud to announce it will be supported by all modern browsers. This includes Chrome, Opera, Firefox, Edge, and Safari.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ends #about -->
+
+		<div id="features">
+			<div class="row">
+				<div class="col-12 hcenter">
+					<h2>Back to the basics.</h2>
+					<p>Choose your own destiny! No more fighting pre-set styling. Cresendo has removed all styling from its classes except when necessary to function.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="grids" class="grids grid-container">
+			<div class="grid-set">
+				<div class="row">
+					<div class="col-12">
+						<h3>The Grid</h3>
+						<p>This is the basic grid. It flexes the full width of available space. Just make sure your columns equal 12, and you'll be all set.</p>
+					</div>
+				</div>
+			</div>
+			<!-- end grid-set -->
+			<div class="grid">
+				<div class="row">
+					<div class="col-12 hcenter grid-content">12</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-md-6 hcenter grid-content">6</div>
+					<div class="col-12 col-md-6 hcenter grid-content">6</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-4 hcenter grid-content">4</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+				</div>
+			</div>
+			<!-- end grid -->
+		</div>
+		<!-- end grid-container -->
+
+		<div class="grids grid-container">
+			<div class="grid-set">
+				<div class="row">
+					<div class="col-12">
+						<h3>The Fixed-width Grid</h3>
+						<p>
+							This the fixed-width grid. It's essentially the same as the basic grid only it will stop expanding when the screen's width reaches a certain size, either 992 pixels or 1200 pixels.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 hcenter grid-content">12</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 hcenter grid-content">6</div>
+					<div class="col-md-6 hcenter grid-content">6</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-4 hcenter grid-content">4</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-3 hcenter grid-content">3</div>
+				</div>
+			</div>
+		</div>
+		<!-- ends grids -->
+
+		<div id="utilities" class="grid-container">
+			<div class="grid-set">
+				<div class="row">
+					<div class="col-12">
+						<h2>Utility Classes</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<h3>Alignment</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 utl right">
+						<p>.right</p>
+					</div>
+
+					<div class="col-sm-6 utl left">
+						<p>.left</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 utl true-center">
+						<p>.true-center</p>
+					</div>
+
+					<div class="col-sm-4 utl hcenter">
+						<p>.hcenter</p>
+					</div>
+
+					<div class="col-sm-4 utl vcenter">
+						<p>.vcenter</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 utl start">
+						<p>.start</p>
+					</div>
+
+					<div class="col-sm-6 utl end">
+						<p>.end</p>
+					</div>
+				</div>
+			</div>
+			<!-- ends grid-set -->
+		</div>
+		<!-- ends utilites-->
+
+		<div id="components" class="grid-container">
+			<div class="grid-set">
+				<div class="row">
+					<div class="col-12">
+						<h2>Components</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h3>The Topple</h3>
+						<p>This compnent transforms your static elements into collapsible ones, all with only a couple of class names and a data attribute.</p>
+					</div>
+				</div>
+				<div class="row topple" data-topple="topple-example">
+					<div class="col-12 true-center">
+						<div class="topple-title">
+							<span>
+								Example Topple
+								<i class="im im-angle-down"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="row toTopple tidy" id="topple-example">
+					<div class="col-12">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed in quis. Iste aperiam quis vel optio placeat expedita incidunt, ipsam doloribus rem doloremque accusamus,
+							perspiciatis error obcaecati distinctio magnam sit unde quaerat. Dolore ducimus dicta nesciunt iste, veniam earum vitae aliquam praesentium pariatur, officiis accusantium deserunt sequi
+							mollitia est excepturi exercitationem tenetur blanditiis necessitatibus. Molestias ad sapiente nobis recusandae ipsam autem! Similique voluptate doloremque harum voluptas odio.
+							Laudantium voluptatem nesciunt cum vero aut earum veniam dolor odit nam tempora amet eaque sunt distinctio adipisci libero
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end .grid-set -->
+		</div>
+		<!-- end #compnents -->
+
+		<footer>
+			<h5>
+				Crescendo was created by
+				<a href="http://www.dustinclark.info">Dustin Clark</a>
+				&copy;2016-2020
+			</h5>
+		</footer>
+
+		<script src="crescendo.js"></script>
+	</body>
+</html>

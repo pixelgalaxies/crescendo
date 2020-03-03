@@ -1,0 +1,226 @@
+/* Stylesheet for Crescendo 2
+	By Dustin Clark
+--------------------------------------------------
+*/
+/*
+------------------------------- variables
+*/
+/*
+------------------------------- Resets and presets 
+*/
+body {
+  font-family: "Scope One", serif;
+  color: #0e100d;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  padding: 20px 0;
+}
+
+/* 
+----------------------------------------Navigation
+*/
+.nav-logo img {
+  width: 50px;
+}
+
+header,
+.nav-list {
+  background-color: #0e100d;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li a {
+  color: #d8d7d8;
+}
+
+.nav-icon {
+  color: #d8d7d8;
+  top: 5px;
+  right: 5px;
+}
+
+.nav-icon--close, .nav-icon--menu {
+  font-size: 16px;
+}
+
+/* 
+----------------------------------Index Jumbotron
+*/
+#home {
+  color: #d8d7d8;
+  min-height: 100%;
+  text-shadow: #0e100d 0px 5px 10px;
+  font-family: "Heebo", sans-serif;
+}
+
+#home p {
+  font-size: 1.5rem;
+}
+
+/* 
+-----------------------------------About 
+*/
+#about {
+  background-color: #d8d7d8;
+}
+
+#about p {
+  color: #0e100d;
+}
+
+#about img {
+  height: 75px;
+  width: 75px;
+}
+
+#about a {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: #0e100d;
+}
+
+/*
+--------------------------------grids-container
+*/
+#features {
+  padding: 50px 0;
+  background-color: #0e100d;
+}
+
+#features p {
+  color: #d8d7d8;
+}
+
+#features h2 {
+  color: #d8d7d8;
+}
+
+.grids {
+  background-color: #354051;
+  color: #d8d7d8;
+}
+
+.grids p {
+  color: #d8d7d8;
+}
+
+.grid-content {
+  padding: 10px;
+  background-color: #0e100d;
+}
+
+/*
+---------------------------utility-container
+*/
+#utilities {
+  background-color: #d8d7d8;
+  color: #0e100d;
+}
+
+.utl {
+  background-color: #354051;
+  color: #d8d7d8;
+  height: 200px;
+  padding: 10px;
+}
+
+/*
+---------------------------Components
+*/
+#components {
+  background-color: #354051;
+  color: #d8d7d8;
+}
+
+#components .topple .col-12,
+#components .toTopple .col-12 {
+  background-color: #d8d7d8;
+  color: #0e100d;
+  padding: 10px;
+}
+
+.topple-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topple-title .im-angle-down {
+  font-size: 12px;
+}
+
+/* 
+--------------------------------------Footer
+*/
+footer {
+  background-color: #0e100d;
+  padding: 40px;
+  text-align: center;
+  color: #d8d7d8;
+}
+
+footer a {
+  color: #d8d7d8;
+  padding: 0 4px;
+  text-decoration: underline;
+}
+
+/* 
+-------------------------------------Media Queries
+*/
+@media (min-width: 300px) {
+  #home {
+    height: 100%;
+    background-image: url("images/crescendoTreesMobile.jpg");
+    background-attachment: scroll;
+    background-position: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .nav-list {
+    -webkit-box-shadow: 2px 2px 4px #0e100d;
+            box-shadow: 2px 2px 4px #0e100d;
+  }
+}
+
+@media (min-width: 768px) {
+  #home {
+    background-image: url("images/crescendoTrees.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .nav-list {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  header {
+    position: absolute;
+    top: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
