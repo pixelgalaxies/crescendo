@@ -14,18 +14,18 @@ if (document.querySelector(".nav-icon")) {
 }
 
 // function for topples
-const topples = Array.from(document.querySelectorAll(".topple"));
-if (topples.length > 0) {
-	for (let i = 0; i < topples.length; i++) {
-		topples[i].addEventListener("click", function() {
-			let dataTopple = this.getAttribute("data-topple");
-			let toTopple = document.querySelector("#" + dataTopple);
-			if (toTopple.classList.contains("tidy")) {
-				toTopple.classList.remove("tidy");
-				toTopple.classList.add("spilled");
+const folds = Array.from(document.querySelectorAll(".fold"));
+if (folds.length > 0) {
+	for (let i = 0; i < folds.length; i++) {
+		folds[i].addEventListener("click", function() {
+			let dataFold = this.getAttribute("data-fold");
+			let toFold = document.querySelector("#" + dataFold);
+			if (toFold.classList.contains("folded")) {
+				toFold.classList.remove("folded");
+				toFold.classList.add("unfolded");
 			} else {
-				toTopple.classList.remove("spilled");
-				toTopple.classList.add("tidy");
+				toFold.classList.remove("unfolded");
+				toFold.classList.add("folded");
 			}
 		});
 	}

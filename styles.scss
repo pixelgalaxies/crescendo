@@ -62,7 +62,7 @@ nav {
 }
 
 /* 
-----------------------------------Index Jumbotron
+----------------------------------Index Hero
 */
 #home {
 	color: $white;
@@ -145,15 +145,15 @@ nav {
 	background-color: $blue;
 	color: $white;
 
-	.topple .col-12,
-	.toTopple .col-12 {
+	.fold .col-12,
+	.toFold .col-12 {
 		background-color: $white;
 		color: $black;
 		padding: 10px;
 	}
 }
 
-.topple-title {
+.fold-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -207,18 +207,18 @@ header {
 /*
 ----------------------------------- Topple
 */
-.topple {
+.fold {
 	cursor: pointer;
 	width: 100%;
 }
-.toTopple {
+.toFold {
 	overflow: hidden;
 	width: 100%;
-	&.tidy {
+	&.folded {
 		max-height: 0;
 		transition: max-height 1s cubic-bezier(0, 1, 0, 1);
 	}
-	&.spilled {
+	&.unfolded {
 		max-height: 99em;
 		transition: max-height 1s ease-in;
 	}
