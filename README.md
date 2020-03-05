@@ -5,8 +5,8 @@ current version: 3
 Crescendo was tested on all modern browsers: Google Chrome, Opera, Mozilla Firefox, Microsoft Edge, Safari.
 
 ### Ways to use:
-https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo/crescendo.css
-https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo/crescendo.js
+https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@1a6f6e8/crescendo.css
+https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@1a6f6e8/crescendo.js
 
 You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
