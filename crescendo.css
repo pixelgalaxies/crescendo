@@ -235,23 +235,23 @@ header {
 /*
 ----------------------------------- Topple
 */
-.topple {
+.fold {
   cursor: pointer;
   width: 100%;
 }
 
-.toTopple {
+.toFold {
   overflow: hidden;
   width: 100%;
 }
 
-.toTopple.tidy {
+.toFold.folded {
   max-height: 0;
   -webkit-transition: max-height 1s cubic-bezier(0, 1, 0, 1);
   transition: max-height 1s cubic-bezier(0, 1, 0, 1);
 }
 
-.toTopple.spilled {
+.toFold.unfolded {
   max-height: 99em;
   -webkit-transition: max-height 1s ease-in;
   transition: max-height 1s ease-in;
