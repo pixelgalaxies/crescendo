@@ -306,18 +306,18 @@ img {
 ```
 
 ### Components
-#### The Topple
->The topple is basically a toggle/ collapse component. The data-toggle attribute of the upper element, should always math the id of the lower element. Each element should have the .topple class or the .toTopple class. The classes that show and hide the lower element are .tidy (pulled up) and .spilled (pulled down). 
+#### The Fold
+>The Fold is basically a toggle/ collapse component. The data-toggle attribute of the upper element, should always match the id of the lower element. Each element should have the .fold class or the .toFold class. The classes that show and hide the lower element are .folded (pulled up) and .unfolded (pulled down). 
 ```
-<div class="row topple" data-topple="topple-example">
+<div class="row fold" data-fold="fold-example">
 	<div class="col-12 true-center">
-		<div class="topple-title">
-			<span> Example Topple <i class="im im-angle-down"></i></span>
+		<div class="fold-title">
+			<span> Example Fold <i class="im im-angle-down"></i></span>
 		</div>
 	</div>
 </div>
 				
-<div class="row toTopple tidy" id="topple-example">
+<div class="row toFold folded" id="fold-example">
 	<div class="col-12">
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 	</div>
