@@ -134,7 +134,7 @@ header {
 }
 
 .navbar,
-.navbar-set {
+.navbar-fixed {
   width: 100%;
 }
 
@@ -189,7 +189,8 @@ header {
 
 @media (min-width: 768px) {
   .navbar,
-  .navbar-set {
+  .navbar-fixed {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,11 +234,27 @@ header {
 }
 
 /*
------------------------------------ Topple
+----------------------------------- Fold
 */
 .fold {
   cursor: pointer;
   width: 100%;
+}
+
+.fold.folded .fold-icon {
+  display: inline;
+}
+
+.fold.folded .unfold-icon {
+  display: none;
+}
+
+.fold.unfolded .fold-icon {
+  display: none;
+}
+
+.fold.unfolded .unfold-icon {
+  display: inline;
 }
 
 .toFold {
@@ -261,7 +278,7 @@ header {
 ------------------------------------ Grids
 */
 .grid,
-.grid-set,
+.grid-fixed,
 [class^="col"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +419,11 @@ header {
     -ms-flex-preferred-size: calc((100% * 1 / 12) - 15px);
         flex-basis: calc((100% * 1 / 12) - 15px);
   }
+  .col-xs {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   [class^="col-sm"],
   [class^="col-md"],
   [class^="col-lg"],
@@ -412,7 +434,7 @@ header {
 }
 
 /*
---------------------------------------- xs screens 576 - 767
+--------------------------------------- sm screens 576 - 767
 */
 @media (min-width: 576px) {
   .col-sm-11 {
@@ -459,10 +481,15 @@ header {
     -ms-flex-preferred-size: calc((100% * 1 / 12) - 15px);
         flex-basis: calc((100% * 1 / 12) - 15px);
   }
+  .col-sm {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 /*
----------------------------------------  medium screens 768 - 991
+---------------------------------------  md screens 768 - 991
 */
 @media (min-width: 768px) {
   .col-md-11 {
@@ -509,10 +536,15 @@ header {
     -ms-flex-preferred-size: calc((100% * 1 / 12) - 15px);
         flex-basis: calc((100% * 1 / 12) - 15px);
   }
+  .col-md {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 /*
---------------------------------------- large screens
+--------------------------------------- lg screens
 */
 @media (min-width: 992px) {
   .col-lg-11 {
@@ -559,8 +591,13 @@ header {
     -ms-flex-preferred-size: calc((100% * 1 / 12) - 15px);
         flex-basis: calc((100% * 1 / 12) - 15px);
   }
-  .grid-set,
-  .navbar-set {
+  .col-lg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .grid-fixed,
+  .navbar-fixed {
     max-width: 992px;
     margin: 0 auto;
   }
@@ -614,8 +651,13 @@ header {
     -ms-flex-preferred-size: calc((100% * 1 / 12) - 15px);
         flex-basis: calc((100% * 1 / 12) - 15px);
   }
-  .grid-set,
-  .navbar-set {
+  .col-xl {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .grid-fixed,
+  .navbar-fixed {
     max-width: 1200px;
   }
 }

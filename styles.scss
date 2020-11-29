@@ -1,4 +1,4 @@
-/* Stylesheet for Crescendo 2
+/* Stylesheet for Crescendo 3
 	By Dustin Clark
 --------------------------------------------------
 */
@@ -12,7 +12,6 @@ $blue: #354051;
 /*
 ------------------------------- Resets and presets 
 */
-
 body {
 	font-family: "Scope One", serif;
 	color: $black;
@@ -33,6 +32,10 @@ a {
 /* 
 ----------------------------------------Navigation
 */
+.navbar-fixed {
+	padding: 10px;
+}
+
 .nav-logo img {
 	width: 50px;
 }
@@ -52,12 +55,12 @@ nav {
 }
 
 .nav-icon {
+	top: 25px;
+	right: 15px;
 	color: $white;
-	top: 5px;
-	right: 5px;
 	&--close,
 	&--menu {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
@@ -158,7 +161,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 
-	.im-angle-down {
+	i {
 		font-size: 12px;
 	}
 }

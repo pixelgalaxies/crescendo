@@ -16,12 +16,12 @@
 
 	<body>
 		<header>
-			<nav class="navbar-set">
+			<nav class="navbar-fixed">
+				<a href="#" class="nav-logo"><img src="images/logo.png" alt="" /></a>
 				<div class="nav-icon">
 					<i class="im im-menu nav-icon--menu"></i>
 					<i class="im im-x-mark nav-icon--close"></i>
 				</div>
-				<a href="#" class="nav-logo"><img src="images/logo.png" alt="" /></a>
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a href="#about">About</a>
@@ -41,11 +41,11 @@
 
 		<div id="home" class="hero true-center">
 			<h1>Crescendo</h1>
-			<p>A library for building grid layouts.</p>
+			<p>A library for quick layouts.</p>
 		</div>
 
 		<div id="about" class="grid-container">
-			<div class="grid-set">
+			<div class="grid-fixed">
 				<div class="row">
 					<div class="col-12 hcenter">
 						<h2>Why Crescendo?</h2>
@@ -85,7 +85,7 @@
 		</div>
 		<!-- ends #about -->
 
-		<div id="features">
+		<div id="features" class="grid">
 			<div class="row">
 				<div class="col-12 hcenter">
 					<h2>Back to the basics.</h2>
@@ -93,9 +93,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- ends #features -->
 
-		<div id="grids" class="grids grid-container">
-			<div class="grid-set">
+		<div class="grids grid-container">
+			<div class="grid-fixed">
 				<div class="row">
 					<div class="col-12">
 						<h3>The Grid</h3>
@@ -103,71 +104,91 @@
 					</div>
 				</div>
 			</div>
-			<!-- end grid-set -->
+			
 			<div class="grid">
 				<div class="row">
 					<div class="col-12 hcenter grid-content">12</div>
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-md-6 hcenter grid-content">6</div>
-					<div class="col-12 col-md-6 hcenter grid-content">6</div>
+					<div class="col-md-1 hcenter grid-content">1</div>
+					<div class="col-md-11 hcenter grid-content">11</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-4 hcenter grid-content">4</div>
-					<div class="col-md-4 hcenter grid-content">4</div>
-					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-2 hcenter grid-content">2</div>
+					<div class="col-md-10 hcenter grid-content">10</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-md-9 hcenter grid-content">9</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md-8 hcenter grid-content">8</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 hcenter grid-content">5</div>
+					<div class="col-md-7 hcenter grid-content">7</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 hcenter grid-content">6</div>
+					<div class="col-md-6 hcenter grid-content">6</div>
 				</div>
 			</div>
 			<!-- end grid -->
 		</div>
-		<!-- end grid-container -->
+		<!-- end standard grid -->
 
 		<div class="grids grid-container">
-			<div class="grid-set">
+			<div class="grid-fixed">
 				<div class="row">
 					<div class="col-12">
-						<h3>The Fixed-width Grid</h3>
+						<h3>The Fixed-width Grid and Equal-width Columns</h3>
 						<p>
 							This the fixed-width grid. It's essentially the same as the basic grid only it will stop expanding when the screen's width reaches a certain size, either 992 pixels or 1200 pixels.
 						</p>
+						<p>For equal-width columns, you can use the prefix you would regularly use, but with the number left off. Each column will have the same width as its siblings in the row, but will break to width 100% at the specified screen size.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 hcenter grid-content">12</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
+					<div class="col-xl hcenter grid-content">col-xl</div>
 				</div>
-
 				<div class="row">
-					<div class="col-md-6 hcenter grid-content">6</div>
-					<div class="col-md-6 hcenter grid-content">6</div>
+					<div class="col-lg hcenter grid-content">col-lg</div>
+					<div class="col-lg hcenter grid-content">col-lg</div>
+					<div class="col-lg hcenter grid-content">col-lg</div>
+					<div class="col-lg hcenter grid-content">col-lg</div>
+					<div class="col-lg hcenter grid-content">col-lg</div>	
 				</div>
-
 				<div class="row">
-					<div class="col-md-4 hcenter grid-content">4</div>
-					<div class="col-md-4 hcenter grid-content">4</div>
-					<div class="col-md-4 hcenter grid-content">4</div>
+					<div class="col-md hcenter grid-content">col-md</div>
+					<div class="col-md hcenter grid-content">col-md</div>
+					<div class="col-md hcenter grid-content">col-md</div>
+					<div class="col-md hcenter grid-content">col-md</div>
+					
 				</div>
-
 				<div class="row">
-					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
-					<div class="col-md-3 hcenter grid-content">3</div>
+					<div class="col-sm hcenter grid-content">col-sm</div>
+					<div class="col-sm hcenter grid-content">col-sm</div>
+					<div class="col-sm hcenter grid-content">col-sm</div>
+				</div>
+				<div class="row">
+					<div class="col-xs hcenter grid-content">col-xs</div>
+					<div class="col-xs hcenter grid-content">col-xs</div>
 				</div>
 			</div>
 		</div>
 		<!-- ends grids -->
 
 		<div id="utilities" class="grid-container">
-			<div class="grid-set">
+			<div class="grid-fixed">
 				<div class="row">
 					<div class="col-12">
 						<h2>Utility Classes</h2>
@@ -219,7 +240,7 @@
 		<!-- ends utilites-->
 
 		<div id="components" class="grid-container">
-			<div class="grid-set">
+			<div class="grid-fixed">
 				<div class="row">
 					<div class="col-12">
 						<h2>Components</h2>
@@ -228,15 +249,16 @@
 				<div class="row">
 					<div class="col-12">
 						<h3>The Fold</h3>
-						<p>This compnent transforms your static elements into collapsible ones, all with only a couple of class names and a data attribute.</p>
+						<p>The fold is your standard collapsible element. Just a couple of classes, and you're good to go.</p>
 					</div>
 				</div>
-				<div class="row fold" data-fold="fold-example">
+				<div class="row fold folded" data-fold="fold-example">
 					<div class="col-12 true-center">
 						<div class="fold-title">
 							<span>
 								Example Fold
-								<i class="im im-angle-down"></i>
+								<i class="im im-angle-down fold-icon"></i>
+								<i class="im im-angle-up unfold-icon"></i>
 							</span>
 						</div>
 					</div>

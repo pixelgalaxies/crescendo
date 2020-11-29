@@ -20,12 +20,17 @@ if (folds.length > 0) {
 		folds[i].addEventListener("click", function() {
 			let dataFold = this.getAttribute("data-fold");
 			let toFold = document.querySelector("#" + dataFold);
+			let fold = folds[i];
 			if (toFold.classList.contains("folded")) {
 				toFold.classList.remove("folded");
 				toFold.classList.add("unfolded");
+				fold.classList.remove("folded");
+				fold.classList.add("unfolded");
 			} else {
 				toFold.classList.remove("unfolded");
 				toFold.classList.add("folded");
+				fold.classList.remove("unfolded");
+				fold.classList.add("folded");
 			}
 		});
 	}

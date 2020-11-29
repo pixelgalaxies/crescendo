@@ -135,7 +135,7 @@ header {
 	width: 100%;
 }
 .navbar,
-.navbar-set {
+.navbar-fixed {
 	width: 100%;
 }
 .nav-list {
@@ -178,7 +178,8 @@ header {
 
 @media (min-width: 768px) {
 	.navbar,
-	.navbar-set {
+	.navbar-fixed {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -205,11 +206,27 @@ header {
 }
 
 /*
------------------------------------ Topple
+----------------------------------- Fold
 */
 .fold {
 	cursor: pointer;
 	width: 100%;
+	&.folded {
+		.fold-icon {
+			display: inline;
+		}
+		.unfold-icon {
+			display: none;
+		}
+	}
+	&.unfolded {
+		.fold-icon {
+			display: none;
+		}
+		.unfold-icon {
+			display: inline;
+		}
+	}
 }
 .toFold {
 	overflow: hidden;
@@ -228,7 +245,7 @@ header {
 ------------------------------------ Grids
 */
 .grid,
-.grid-set,
+.grid-fixed,
 [class^="col"] {
 	display: flex;
 	flex-direction: column;
@@ -330,6 +347,9 @@ header {
 	.col-xs-1 {
 		flex-basis: calc((100% * 1 / 12) - #{$gap});
 	}
+	.col-xs {
+		flex: 1;
+	}
 
 	[class^="col-sm"],
 	[class^="col-md"],
@@ -340,7 +360,7 @@ header {
 }
 
 /*
---------------------------------------- xs screens 576 - 767
+--------------------------------------- sm screens 576 - 767
 */
 @media (min-width: 576px) {
 	.col-sm-11 {
@@ -376,10 +396,14 @@ header {
 	.col-sm-1 {
 		flex-basis: calc((100% * 1 / 12) - #{$gap});
 	}
+
+	.col-sm {
+		flex: 1;
+	}
 }
 
 /*
----------------------------------------  medium screens 768 - 991
+---------------------------------------  md screens 768 - 991
 */
 @media (min-width: 768px) {
 	.col-md-11 {
@@ -415,10 +439,13 @@ header {
 	.col-md-1 {
 		flex-basis: calc((100% * 1 / 12) - #{$gap});
 	}
+	.col-md {
+		flex: 1;
+	}
 }
 
 /*
---------------------------------------- large screens
+--------------------------------------- lg screens
 */
 @media (min-width: 992px) {
 	.col-lg-11 {
@@ -454,9 +481,12 @@ header {
 	.col-lg-1 {
 		flex-basis: calc((100% * 1 / 12) - #{$gap});
 	}
+	.col-lg {
+		flex: 1;
+	}
 
-	.grid-set,
-	.navbar-set {
+	.grid-fixed,
+	.navbar-fixed {
 		max-width: 992px;
 		margin: 0 auto;
 	}
@@ -499,8 +529,12 @@ header {
 		flex-basis: calc((100% * 1 / 12) - #{$gap});
 	}
 
-	.grid-set,
-	.navbar-set {
+	.col-xl {
+		flex: 1;
+	}
+
+	.grid-fixed,
+	.navbar-fixed {
 		max-width: 1200px;
 	}
 }

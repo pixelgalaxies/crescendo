@@ -1,4 +1,4 @@
-/* Stylesheet for Crescendo 2
+/* Stylesheet for Crescendo 3
 	By Dustin Clark
 --------------------------------------------------
 */
@@ -28,6 +28,10 @@ a {
 /* 
 ----------------------------------------Navigation
 */
+.navbar-fixed {
+  padding: 10px;
+}
+
 .nav-logo img {
   width: 50px;
 }
@@ -46,13 +50,13 @@ nav li a {
 }
 
 .nav-icon {
+  top: 25px;
+  right: 15px;
   color: #d8d7d8;
-  top: 5px;
-  right: 5px;
 }
 
 .nav-icon--close, .nav-icon--menu {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* 
@@ -163,7 +167,7 @@ nav li a {
           justify-content: center;
 }
 
-.fold-title .im-angle-down {
+.fold-title i {
   font-size: 12px;
 }
 
