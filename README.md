@@ -1,184 +1,209 @@
 # Crescendo 
-### Crescendo is a mobile-first grid library built with the Flexible Box Layout Module or as you might know it, Flexbox. 
-current version 2.2
+### Crescendo is a css library to help create grid layouts using the Flexible Box Layout Module or as you might know it, Flexbox. 
+current version: 3
 ### Support
-Crescendo was built in Google Chrome. However, it will work in all modern browsers (Opera, Mozilla Firefox, Microsoft Edge, Safari).
+Crescendo was tested on all modern browsers: Google Chrome, Opera, Mozilla Firefox, Microsoft Edge, Safari.
 
-### Installation:
-To use Crescendo, just paste these snippets into your head tags:
-```
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.js">
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo-mini.css">
+### Ways to use:
+https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.css
+https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.js
 
-<link type="text/css" rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/pg-crescendo/crescendo.css">
-```
-Or you can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
+You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
-#### Changes in 2.2
--Added more resets and presets 
+#### Changes in version 3
+-Removed all styling on elements
 
--Removed the need for the grid-container class (padding: 35px 0;) User is now free to call the container whatever they please and style it however they want.
+-Rebuilt with Sass
 
--Cleaned up CSS
+-Removed some utility classes
+
+-Cleaned up SCSS in general
+
+-New class names!
 
 ### Resets and Presets:
-Key Points:
-
--font-size is defaulted to 10px
-
--removes the outline of active items when using the keyboard to navigate pages
-
--removes the underlining of anchor tags
-
--body and html are set to 100%
+>Complete reset and preset CSS styles:
 ```
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-button, input, a, textarea { outline: none;}
-
-body, html {
+html,
+body {
+	width: 100%;
 	height: 100%;
 }
 
-a {
-	text-decoration: none;
+img {
+	max-height: 100%;
+	max-width: 100%;
 }
-
 ```
 
 
 ### Navigation classes:
-#### .nav
->This class goes in the nav tag. It will make sure its width is 100% of available space.
+#### .navbar
+>This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar-set for a fixed-width navbar. 
 ```
-<nav class="nav"></nav>
-```
-
-#### .nav-absolute
->This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position as absolute so it will overlay anything at the top of the screen.
-```
-<nav class="nav-absolute"></nav>
+<nav class="navbar"></nav>
 ```
 
-#### .nav-fixed
->This class goes in the nav tag. It will make sure its width is 100% of available space. Additionally, it sets its position to fixed so it will stay fixed to the top of your screen.
+#### .navbar-set
+>This class goes in the nav tag. It will make sure its max-width doesn't exceed 992px or 1200px depending on the size of the window.
 ```
-<nav class="nav-fixed"></nav>
-```
-
-#### .nav-container
->This class goes in a div tag that is nested in your nav. It will hold all of your content. 
->*Note this is a flexed div. It will flex its contents in a row and put a space between them.
-```
-<div class="nav-container"></div>
+<nav class="navbar-set"></nav>
 ```
 
-#### .nav-container-fw
->This class goes in a div tag that is nested in your nav. It will hold all of your content. It will have a maximum width of 960px;
->*Note this is a flexed div. It will flex its contents in a row and put a space between them.*
+#### .nav-logo
+>This class belongs in an achor tag that will contain your logo.
 ```
-<div class="nav-container-fw"></div>
+<a class="nav-logo href="#"><img src=""></a>
+```
+	    
+#### .nav-icon
+>This class belongs in the div that is nested in the nav-bar div. It will hold your mobile icons for the menu and the close buttons. 
+```
+<div class="nav-icon></div>
+```    
+
+#### .nav-icon--menu
+>This class goes in the img or icon tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. 
+```
+<img class=".nav-icon--menu" src="#">
 ```
 
-#### .nav-links
->This class belongs in a div that is nested in the nav-container. It will hold your links and will disappear at smaller screens.
+#### .nav-icon--close
+>This class goes in the img or icon tag you want to use as your close icon. It disappears when you press it and will only appear when the nav-icon--menu img is pressed.
+```
+<img class="nav-icon--close" src="#">
+```
+
+#### .nav-list
+>This class belongs in a ul that is nested in the navbar. It will hold your links and will disappear at smaller screens but will slide open when the menu icon is pressed. 
 ```
 <div class="nav-links></div>
 ```
 
-#### .menu-icon
->This class goes in the img tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices. Be sure to include the onclick attribute for the drop down functionality.
+#### Example:
 ```
-<img class="menu-icon" src="#" onclick="menuOpen()">
-```
-
-#### .close-icon
->This class goes in the img tag you want to use as your close icon. It disappears when you press it and will only appear when the menu-icon img is pressed.
-```
-<img class="close-icon" src="#" onclick="menuClose()">
-```
-
-#### .dropdown
->This class goes in a div inside the nav but outside of the nav container. This is because of positioning issues when nav-absolute is used. 
-```
-<div class="dropdown">
-  <ul>
-    <li><a href="#" onclick="menuClose()"></a></li>
-    <li><a href="#" onclick="menuClose()"></a></li>
-    <li><a href="#" onclick="menuClose()"></a></li>
-  </ul>
-</div>
-```
-
-#### All together now.
-```
-<nav class="nav-absolute">
-		<div class="nav-container">
-			<div class="nav-links">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</div>
-			<img class="menu-icon" src="#" onclick="menuOpen()">
-			<img class="close-icon" src="#" onclick="menuClose()">
+<header>
+	<nav class="navbar">
+		<div class="nav-icon">
+			<i class="im im-menu nav-icon--menu"></i>
+			<i class="im im-x-mark nav-icon--close"></i>
 		</div>
-		<div class="dropdown">
-			<ul>
-				<li><a href="#" onclick="menuClose()"></a></li>
-				<li><a href="#" onclick="menuClose()"></a></li>
-				<li><a href="#" onclick="menuClose()"></a></li>
-			</ul>
-		</div>
+		<a href="#" class="nav-logo"><img src="#" alt="" /></a>
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#">Link 1</a></li>
+			<li class="nav-item"><a href="#">Link 2</a></li>
+			<li class="nav-item"><a href="#">Link 3</a></li>
+		</ul>
 	</nav>
+</header>
 ```
 
 ### Grid classes:
-#### .grid-container (no longer necessary, just recommended for ease of styling entire grid)
->This is the div that holds your grids. The grid-container is where you apply background images or color. 
+#### .grid-container (not necessary, but recommended for ease of styling entire grid, including the "outside" of it)
+>This is the div that holds your grids. The grid-container is where you could apply background images or color. 
 ```
 <div class="grid-container"></div>
 ```
@@ -190,159 +215,113 @@ a {
 <div class="grid"></div>
 ```
 
-#### .grid-fw
->This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 960px, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start). 
+#### .grid-set
+>This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 992px or 1200px depending on the screen size, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start). 
 ```
-<div class="grid-fw"></div>
+<div class="grid-set"></div>
 ```
 
 #### .row
->Flex-basis is set to 100% to span the entire width of available space. The row class div houses your column divs. 
+>Flex-basis is set to 100% to span the entire width of available space. The row houses your column divs. 
 ```
 <div class="row"></div>
 ```
 
-#### .cols-\* .colm-\* .coll-\*
->Syntax: cols-12, colm-6, coll-3, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a column. The s, m, and l before the dashes indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with cols-\* and it will inherit this behavior all the way up to desktop screens. Just remember, if you want multiple behaviors, all col\*-\* need to add up to twelve in their respective rows.
+#### .col-12
+>The col-12 class will span 100% of the row at all viewport sizes. It replaces the need for col-\*\*-12 classes.
 ```
-<div class="cols-12"></div>
+<div class="col-12"></div>
+```
+
+#### .col-xs-\*, .col-sm-\*, .col-md-\*, .col-lg-\*, .col-xl-\*
+>Syntax: col-sm-4, col-md-6, col-lg-3, etc. As long as the numbers add up to twelve, the grid will work. Columns flex downward into a column. The xs, sm, md, lg, and xl indicate the behavior at different sizes. If you want a column to have the same behavior at all screen sizes, just initialize it with col-xs-\* and it will inherit this behavior all the way up to desktop screens. 
+```
+<div class="col-xs-6"></div>
+<div class="col-xs-6"></div>
 ```
 
 
-#### All together now.
->The following code will have the columns flex 100% at small screen sizes and then split 50/50 starting at medium screen sizes.
+#### Example:
+>The following code will have the columns flex 100% at xs and sm screen sizes and then split 50/50 starting at md screen sizes.
 ```
 <div class="grid">
   <div class="row">
-    <div class="cols-12 colm-6"></div>
-    <div class="cols-12 colm-6"></div>
+    <div class="colm-6"></div>
+    <div class="colm-6"></div>
   </div>
 </div>
 ```
-
-### Button Classes:
-#### .btn
->Use this class on anything you want to look like a button. It centers text and adds a padding of 10px. Also, when clicked, the item fades a teeny tiny bit to resemble a click. Crescendo leaves the font-size (*remember Crescendo defaults font-size to 10px*) and width up to the user to specify. 
-```
-<a href="#" class="btn">Anchor</a>
-<button class="btn">Button</button>
-```
-#### .btn-primary, .btn-success, .btn-warning, .btn-error
->Crescendo comes with four buttons everyone should be familiar with. They feature familiar but more muted, less vibrant colors. These classes with have round edges and set width of 120px;
 
 ### Utility Classes:
-#### .inner-between
->Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column specifically for content you may want to push apart horizontally, instead of making a whole new grid.
-```
-<div class="grid">
-  <div class="row">
-    <div class="colm-6">
-      <div class="inner-between"></div>
-    </div>
-    <div class="colm-6">
-      <div class="inner-between"></div>
-    </div>
-  </div>
-</div>
-```
+#### .hero
+>This class when given to a div creates a hero section spanning the entire viewport horizontally. The hero flexes its items into a column. Combine with other utility classes to arrange content.
 
-#### .inner-around
->> Use this class in a div to flex content horizontally inside of a column. It’s like a row inside of a column for content you may want to distribute equally across the span of a column, instead of making a whole new grid. 
 ```
-<div class="grid">
-  <div class="row">
-    <div class="colm-6">
-      <div class="inner-around"></div>
-    </div>
-    <div class="colm-6">
-      <div class="inner-around"></div>
-    </div>
-  </div>
+<div class="hero true-center">
+	<h1>A Heading</h1>
+	<p>Some descriptive text.</p>
 </div>
-```
-
-#### .jumbo
->This class when given to a div creates a jumbotron spanning the entire viewport horizontally. The jumbotron flexes it’s items into a column. Combine with other utility classes to arrange content.
->> h1 tags and p tags have a larger font-size in a jumbotron div and will adjust depending on the size of the viewport. 
-```
-<div class="jumbo"></div>
 ```
 
 #### .true-center
 >Centers items vertically and horizontally.
 ```
-<div class="jumbo true-center"></div>
+<div class="true-center"></div>
 ```
 
-#### .center
->Aligns content to the center of a column.
+#### .hcenter
+>Aligns content to the center of a column horizontally.
 ```
-<div class="cols-10 center"></div>
+<div class="col-sm-6 center"></div>
+```
+
+#### .vcenter
+>Aligns content to the center of a column vertically.
+```
+<div class="col-sm-6 venter"></div>
 ```
 
 #### .right 
 >Aligns content to the right of a column and "down" in a row.
 ```
-<div class="cols-10 right"></div>
+<div class="col-sm-6 right"></div>
 ```
 
 #### .left
 >Aligns content to the left of a column and "up" in a row.
 ```
-<div class="cols-10 left"></div>
-```
-
-#### .just-center
->Shifts content to the center of their flex box. Determined by flex-direction.
-```
-<div class="cols-10 just-center"></div>
+<div class="col-sm-6 left"></div>
 ```
 
 #### .start 
 >Shifts content to the start of their flex box. Determined by flex-direction.
 ```
-<div class="cols-10 start"></div>
+<div class="col-sm-6 start"></div>
 ```
 
 #### .end
 >Shifts content to the end of their flex box. Determined by flex-direction.
 ```
-<div class="cols-10 end"></div>
+<div class="col-sm-6 end"></div>
 ```
 
-#### .round
->Gives the rounded edges (25px).
+### Components
+#### The Fold
+>The Fold is basically a toggle/ collapse component. The data-toggle attribute of the upper element, should always match the id of the lower element. Each element should have the .fold class or the .toFold class. The classes that show and hide the lower element are .folded (pulled up) and .unfolded (pulled down). 
 ```
-<img src=#" class="round">
-```
-
-#### .round
->Items becomes circular (50%).
-```
-<img src=#" class="circle">
-```
-
-
-###Headers:
-
->#### Headers take on alternate sizes in Crescendo. 
-
-Smallest screens:
-```
-h1 { font-size: 2.6rem;}
-h2 { font-size: 2.4rem; }
-h3 { font-size: 2.2rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1.8rem; }
-h6 { font-size: 1.6rem; }
+<div class="row fold" data-fold="fold-example">
+	<div class="col-12 true-center">
+		<div class="fold-title">
+			<span> Example Fold <i class="im im-angle-down"></i></span>
+		</div>
+	</div>
+</div>
+				
+<div class="row toFold folded" id="fold-example">
+	<div class="col-12">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+</div>
 ```
 
-Medium and Large screens:
-```
-h1 { font-size: 4rem;}
-h2 { font-size: 3.5rem; }
-h3 { font-size: 3rem; }
-h4 { font-size: 2.5rem; }
-h5 { font-size: 2rem; }
-h6 { font-size: 1.5rem; }
-```
+
