@@ -280,26 +280,26 @@ img {
 ```
 <div class="grid">
 	<div class="row">
-		<div class="col-xl hcenter grid-content">col-xl</div>
-		<div class="col-xl hcenter grid-content">col-xl</div>
-		<div class="col-xl hcenter grid-content">col-xl</div>
+		<div class="col-xl">col-xl</div>
+		<div class="col-xl">col-xl</div>
+		<div class="col-xl">col-xl</div>
 	</div>
 	<div class="row">
-		<div class="col-lg hcenter grid-content">col-lg</div>
-		<div class="col-lg hcenter grid-content">col-lg</div>
-		<div class="col-lg hcenter grid-content">col-lg</div>
+		<div class="col-lg">col-lg</div>
+		<div class="col-lg">col-lg</div>
+		<div class="col-lg">col-lg</div>
 	</div>
 	<div class="row">
-		<div class="col-md hcenter grid-content">col-md</div>
-		<div class="col-md hcenter grid-content">col-md</div>
+		<div class="col-md">col-md</div>
+		<div class="col-md">col-md</div>
 	</div>
 	<div class="row">
-		<div class="col-sm hcenter grid-content">col-sm</div>
-		<div class="col-sm hcenter grid-content">col-sm</div>
+		<div class="col-sm">col-sm</div>
+		<div class="col-sm">col-sm</div>
 	</div>
 	<div class="row">
-		<div class="col-xs hcenter grid-content">col-xs</div>
-		<div class="col-xs hcenter grid-content">col-xs</div>
+		<div class="col-xs">col-xs</div>
+		<div class="col-xs">col-xs</div>
 	</div>
 </div>
 ```
