@@ -190,7 +190,6 @@ header {
 @media (min-width: 768px) {
   .navbar,
   .navbar-fixed {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
