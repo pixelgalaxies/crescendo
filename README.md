@@ -151,7 +151,7 @@ img {
 
 #### .navbar
 
-> This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar-set for a fixed-width navbar.
+> This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar-fixed for a fixed-width navbar.
 
 ```
 <nav class="navbar"></nav>
