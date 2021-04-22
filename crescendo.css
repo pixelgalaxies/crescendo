@@ -134,7 +134,7 @@ header {
 }
 
 .navbar,
-.navbar-fixed {
+.navbar-fluid {
   width: 100%;
 }
 
@@ -189,7 +189,7 @@ header {
 
 @media (min-width: 768px) {
   .navbar,
-  .navbar-fixed {
+  .navbar-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -277,7 +277,7 @@ header {
 ------------------------------------ Grids
 */
 .grid,
-.grid-fixed,
+.grid-fluid,
 [class^="col"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,8 +595,8 @@ header {
         -ms-flex: 1;
             flex: 1;
   }
-  .grid-fixed,
-  .navbar-fixed {
+  .grid,
+  .navbar {
     max-width: 992px;
     margin: 0 auto;
   }
@@ -655,8 +655,8 @@ header {
         -ms-flex: 1;
             flex: 1;
   }
-  .grid-fixed,
-  .navbar-fixed {
+  .grid,
+  .navbar {
     max-width: 1200px;
   }
 }
