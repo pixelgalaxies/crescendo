@@ -2,7 +2,7 @@
 
 ### Crescendo is a css library to help create grid layouts using the Flexible Box Layout Module or as you might know it, Flexbox.
 
-current version: 3
+current version: 3.1
 
 ### Support
 
@@ -15,15 +15,9 @@ https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.js
 
 You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/master/crescendo.zip).
 
-#### Changes in version 3
+#### Changes in version 3.1
 
--Removed all styling on elements
-
--Rebuilt with Sass
-
--Removed some utility classes
-
--Cleaned up SCSS in general
+-Cleaned up README
 
 -New class names!
 
@@ -149,20 +143,20 @@ img {
 
 ### Navigation classes:
 
+#### .navbar-fluid
+
+> This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar class for a fixed-width navbar.
+
+```
+<nav class="navbar-fluid"></nav>
+```
+
 #### .navbar
-
-> This class goes in the nav tag. It will make sure its width is 100% of available space. Or you can use the navbar-fixed for a fixed-width navbar.
-
-```
-<nav class="navbar"></nav>
-```
-
-#### .navbar-fixed
 
 > This class goes in the nav tag. It will make sure its max-width doesn't exceed 992px or 1200px depending on the size of the window.
 
 ```
-<nav class="navbar-fixed"></nav>
+<nav class="navbar"></nav>
 ```
 
 #### .nav-logo
@@ -234,20 +228,20 @@ img {
 <div class="grid-container"></div>
 ```
 
-#### .grid
+#### .grid-fluid
 
 > Width is set to 100% of the viewport. The grid flexes in a column with the content starting in the default position(flex-start).
 
 ```
-<div class="grid"></div>
+<div class="grid-fluid"></div>
 ```
 
-#### .grid-fixed
+#### .grid
 
 > This is the fixed-width grid. It will flex the entire viewport until it reaches a width of 992px or 1200px depending on the screen size, then it will stop expanding. The grid flexes in a column with the content starting in the default position(flex-start).
 
 ```
-<div class="grid-fixed"></div>
+<div class="grid"></div>
 ```
 
 #### .row
