@@ -157,8 +157,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  -webkit-box-shadow: 4px 2px 4px black;
-          box-shadow: 4px 2px 4px black;
 }
 
 .nav-list.mobile-show {
@@ -210,8 +208,6 @@ header {
             justify-content: flex-end;
     max-height: 100%;
     position: unset;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .nav-icon {
     display: none;

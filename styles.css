@@ -206,10 +206,6 @@ footer a {
   h3 {
     font-size: 2rem;
   }
-  .nav-list {
-    -webkit-box-shadow: 2px 2px 4px #0e100d;
-            box-shadow: 2px 2px 4px #0e100d;
-  }
 }
 
 @media (min-width: 768px) {
