@@ -206,6 +206,7 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    width: auto;
     max-height: 100%;
     position: unset;
   }
