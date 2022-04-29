@@ -13,118 +13,10 @@ $gap: 15px;
 ------------------------------- Resets and presets 
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*, *:before, *:after {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 	box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-html,
-body {
-	width: 100%;
-	height: 100%;
-}
-
-img {
-	max-height: 100%;
-	max-width: 100%;
 }
 
 /* 
@@ -134,13 +26,14 @@ img {
 header {
 	width: 100%;
 }
+
 .navbar,
 .navbar-fluid {
 	width: 100%;
 }
+
 .nav-list {
-	list-style-type: none;
-	max-height: 0;
+	list-style: none;
 	width: 100%;
 	transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 	position: absolute;
@@ -148,19 +41,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-height: 0;
 	overflow: hidden;
 	&.mobile-show {
 		transition: max-height 0.5s ease;
 		max-height: 100%;
-	}
-	li {
-		text-align: center;
-	}
-}
-
-.nav-logo {
-	img {
-		display: block;
 	}
 }
 
@@ -169,18 +54,28 @@ header {
 	top: 0;
 	right: 0;
 	cursor: pointer;
-	z-index: 1;
-	&--close {
-		display: none;
-	}
+  > span {
+    display: block;
+    transform-origin: left center;
+    transition: all .25s ease-in-out;
+    
+    &:not(:last-child) {margin-bottom: 6px;}
+  }
+  
+  &.nav-open {
+    > span:first-child {transform: rotate(45deg);}
+    > span:nth-child(2) {opacity: 0;}
+    > span:last-child {transform: rotate(-45deg);
+    }
+  }
 }
 
 @media (min-width: 768px) {
 	.navbar,
 	.navbar-fluid {
-		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		display: flex;
 	}
 	.nav-list {
 		flex-direction: row;
@@ -208,7 +103,6 @@ header {
 */
 .fold {
 	cursor: pointer;
-	width: 100%;
 	&.folded {
 		.fold-icon {
 			display: inline;
@@ -226,9 +120,8 @@ header {
 		}
 	}
 }
-.toFold {
+.to-fold {
 	overflow: hidden;
-	width: 100%;
 	&.folded {
 		max-height: 0;
 		transition: max-height 1s cubic-bezier(0, 1, 0, 1);
@@ -258,9 +151,11 @@ header {
 */
 .row {
 	display: flex;
-	flex: 0 0 auto;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	margin: calc(#{$gap} / -2);
+	&:not(:last-of-type) {
+    margin-bottom: calc(#{$gap} / 2);
+  }
 }
 
 /*
