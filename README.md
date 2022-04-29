@@ -26,118 +26,10 @@ You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/ma
 > Complete reset and preset CSS styles:
 
 ```
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*, *:before, *:after {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 	box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-html,
-body {
-	width: 100%;
-	height: 100%;
-}
-
-img {
-	max-height: 100%;
-	max-width: 100%;
 }
 ```
 
@@ -175,22 +67,6 @@ img {
 <div class="nav-icon></div>
 ```
 
-#### .nav-icon--menu
-
-> This class goes in the img or icon tag you want to use as your menu icon. It disappears on larger screens and will only appear on mobile devices.
-
-```
-<img class=".nav-icon--menu" src="#">
-```
-
-#### .nav-icon--close
-
-> This class goes in the img or icon tag you want to use as your close icon. It disappears when you press it and will only appear when the nav-icon--menu img is pressed.
-
-```
-<img class="nav-icon--close" src="#">
-```
-
 #### .nav-list
 
 > This class belongs in a ul that is nested in the navbar. It will hold your links and will disappear at smaller screens but will slide open when the menu icon is pressed.
@@ -204,9 +80,10 @@ img {
 ```
 <header>
 	<nav class="navbar">
-		<div class="nav-icon">
-			<i class="im im-menu nav-icon--menu"></i>
-			<i class="im im-x-mark nav-icon--close"></i>
+		<div role="button" class="nav-icon">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
 		<a href="#" class="nav-logo"><img src="#" alt="" /></a>
 		<ul class="nav-list">
