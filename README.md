@@ -61,10 +61,14 @@ You can download it [**here**](https://github.com/pixelgalaxies/crescendo/raw/ma
 
 #### .nav-icon
 
-> This class belongs in the div that is nested in the nav-bar div. It will hold your mobile icons for the menu and the close buttons.
+> This class belongs in the div that is nested in the nav-bar div. It will hold your the spans for the hamburger.
 
 ```
-<div class="nav-icon></div>
+<div role="button" class="nav-icon">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
 ```
 
 #### .nav-list
