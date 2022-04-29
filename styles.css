@@ -194,7 +194,6 @@ nav li a {
 */
 #home {
   color: #d8d7d8;
-  min-height: 100%;
   text-shadow: #0e100d 0px 5px 10px;
   font-family: "Heebo", sans-serif;
 }
@@ -322,7 +321,7 @@ footer a {
 */
 @media (min-width: 300px) {
   #home {
-    height: 100%;
+    height: 100vh;
     background-image: url("images/crescendoTreesMobile.jpg");
     background-attachment: scroll;
     background-position: center;
