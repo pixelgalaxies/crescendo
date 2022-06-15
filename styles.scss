@@ -158,7 +158,7 @@ a {
 ----------------------------------------Navigation
 */
 .navbar {
-	padding: 10px;
+	padding: 15px;
 }
 
 .nav-logo {
@@ -182,15 +182,23 @@ nav {
 	}
 }
 
-.nav-icon {
-	top: 25px;
-	right: 15px;
-  > span {
-    width: 30px;
-    height: 4px;
-    background-color: $white;
-  }
+.nav-list {
+	top: 80px;
 }
+
+.nav-icon {
+  span, span:before, span:after {
+		background-color: $white;
+		height: 2px;
+		width: 30px;
+	}
+	&.nav-open {
+		span {
+			background-color: transparent;
+		}
+	}
+}
+
 
 /* 
 ----------------------------------Index Hero
@@ -315,7 +323,7 @@ footer {
 @media (min-width: 300px) {
 	#home {
 		height: 100vh;
-		background-image: url("images/crescendoTreesMobile.jpg");
+		background-image: url("images/crescendoTrees.jpg");
 		background-attachment: scroll;
 		background-position: center;
 	}
@@ -333,9 +341,8 @@ footer {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	#home {
-		background-image: url("images/crescendoTrees.jpg");
 		background-attachment: fixed;
 		background-size: cover;
 	}

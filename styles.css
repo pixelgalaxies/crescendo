@@ -11,8 +11,7 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -155,7 +154,7 @@ a {
 ----------------------------------------Navigation
 */
 .navbar {
-  padding: 10px;
+  padding: 15px;
 }
 
 .nav-logo {
@@ -173,20 +172,21 @@ nav li {
   padding: 10px;
   text-align: center;
 }
-
 nav li a {
   color: #d8d7d8;
 }
 
-.nav-icon {
-  top: 25px;
-  right: 15px;
+.nav-list {
+  top: 80px;
 }
 
-.nav-icon > span {
-  width: 30px;
-  height: 4px;
+.nav-icon span, .nav-icon span:before, .nav-icon span:after {
   background-color: #d8d7d8;
+  height: 2px;
+  width: 30px;
+}
+.nav-icon.nav-open span {
+  background-color: transparent;
 }
 
 /* 
@@ -197,7 +197,6 @@ nav li a {
   text-shadow: #0e100d 0px 5px 10px;
   font-family: "Heebo", sans-serif;
 }
-
 #home p {
   font-size: 1.5rem;
 }
@@ -208,16 +207,13 @@ nav li a {
 #about {
   background-color: #d8d7d8;
 }
-
 #about p {
   color: #0e100d;
 }
-
 #about img {
   height: 75px;
   width: 75px;
 }
-
 #about a {
   font-size: 1.1rem;
   text-decoration: underline;
@@ -231,11 +227,9 @@ nav li a {
   padding-block: 50px;
   background-color: #0e100d;
 }
-
 #features p {
   color: #d8d7d8;
 }
-
 #features h2 {
   color: #d8d7d8;
 }
@@ -244,7 +238,6 @@ nav li a {
   background-color: #354051;
   color: #d8d7d8;
 }
-
 .grids p {
   color: #d8d7d8;
 }
@@ -276,7 +269,6 @@ nav li a {
   background-color: #354051;
   color: #d8d7d8;
 }
-
 #components .fold .col-12,
 #components .to-fold .col-12 {
   background-color: #d8d7d8;
@@ -285,17 +277,10 @@ nav li a {
 }
 
 .fold-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .fold-title i {
   font-size: 12px;
 }
@@ -309,7 +294,6 @@ footer {
   text-align: center;
   color: #d8d7d8;
 }
-
 footer a {
   color: #d8d7d8;
   padding: 0 4px;
@@ -322,34 +306,35 @@ footer a {
 @media (min-width: 300px) {
   #home {
     height: 100vh;
-    background-image: url("images/crescendoTreesMobile.jpg");
+    background-image: url("images/crescendoTrees.jpg");
     background-attachment: scroll;
     background-position: center;
   }
+
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 3rem;
   }
+
   h3 {
     font-size: 2rem;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #home {
-    background-image: url("images/crescendoTrees.jpg");
     background-attachment: fixed;
     background-size: cover;
   }
+
   .nav-list {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   header {
     position: absolute;
     top: 0;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -30,6 +30,8 @@ header {
 .navbar,
 .navbar-fluid {
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav-list {
@@ -50,32 +52,47 @@ header {
 }
 
 .nav-icon {
-	position: absolute;
-	top: 0;
-	right: 0;
+	height: 45px;
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 	cursor: pointer;
-  > span {
-    display: block;
-    transform-origin: left center;
-    transition: all .25s ease-in-out;
-    
-    &:not(:last-child) {margin-bottom: 6px;}
-  }
-  
-  &.nav-open {
-    > span:first-child {transform: rotate(45deg);}
-    > span:nth-child(2) {opacity: 0;}
-    > span:last-child {transform: rotate(-45deg);
-    }
-  }
+	> span {
+		position: relative;
+		transition: all .25s ease-in-out;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			transition: all .25s ease-in-out;
+			left: 0;
+		}
+		&:before {
+			transform: translateY(-8px);
+		}
+		&:after {
+			transform: translateY(8px);
+		}
+		
+	}
+	&.nav-open {
+		> span {
+			&:before {
+				transform: rotate(45deg);
+			}
+			&:after {
+				transform: rotate(-45deg)
+			}
+		}
+	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	.navbar,
 	.navbar-fluid {
-		justify-content: space-between;
-		align-items: center;
 		display: flex;
+		align-items: center;
 	}
 	.nav-list {
 		flex-direction: row;
@@ -201,7 +218,7 @@ header {
 /*
 ------------------------------------ Media queries
 
------------------------------------- xs screens 0 - 575
+------------------------------------ xs screens 0 - 499
 */
 @media (min-width: 0) {
 	.col-12 {
@@ -253,9 +270,9 @@ header {
 }
 
 /*
---------------------------------------- sm screens 576 - 767
+--------------------------------------- sm screens 500 - 767
 */
-@media (min-width: 576px) {
+@media (min-width: 500px) {
 	.col-sm-11 {
 		flex-basis: calc((100% * 11 / 12) - #{$gap});
 	}
@@ -296,7 +313,7 @@ header {
 }
 
 /*
----------------------------------------  md screens 768 - 991
+---------------------------------------  md screens 768 - 1023
 */
 @media (min-width: 768px) {
 	.col-md-11 {
@@ -338,9 +355,9 @@ header {
 }
 
 /*
---------------------------------------- lg screens
+--------------------------------------- lg screens 1024 - 1279
 */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 	.col-lg-11 {
 		flex-basis: calc((100% * 11 / 12) - #{$gap});
 	}
@@ -380,14 +397,14 @@ header {
 
 	.grid,
 	.navbar {
-		max-width: 992px;
+		max-width: 1024px;
 		margin: 0 auto;
 	}
 }
 /*
---------------------------------------- xl screens
+--------------------------------------- xl screens 1280+
 */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.col-xl-11 {
 		flex-basis: calc((100% * 11 / 12) - #{$gap});
 	}
