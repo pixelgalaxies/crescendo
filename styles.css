@@ -310,15 +310,12 @@ footer a {
     background-attachment: scroll;
     background-position: center;
   }
-
   h1 {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 3rem;
   }
-
   h3 {
     font-size: 2rem;
   }
@@ -328,11 +325,9 @@ footer a {
     background-attachment: fixed;
     background-size: cover;
   }
-
   .nav-list {
     box-shadow: none;
   }
-
   header {
     position: absolute;
     top: 0;
